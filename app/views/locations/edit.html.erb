@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Edit#location</h1>
+  <%= simple_form_for(@location) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :location_type, collection: ['contributor', 'ngo'] %>
+    <%= f.submit %>
+  <% end %>
+</div>

@@ -1,7 +1,7 @@
 class Location < ApplicationRecord
   belongs_to :user, optional: true
-  has_many :contributions
-  has_many :comments
+  has_many :contributions, dependent: :destroy
+  has_many :comments, dependent: :destroy
 
   validates :name, presence: true
   # locations type enum? [contributor, NGO]
