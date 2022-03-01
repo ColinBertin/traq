@@ -1,0 +1,1466 @@
+---
+- name: 世田谷区立三宿小学校 SETAGAYAKU RITSU SAN YADO SHOUGAKKOU
+  latitude: 35.64816391
+  longitude: 139.67650585
+  address: Tōkyō-to Setagaya-ku Mishuku 1 Chome−12−6
+- name: 世田谷区立多聞小学校 SETAGAYAKU RITSU TABUN SHOUGAKKOU
+  latitude: 35.65262999
+  longitude: 139.67365317
+  address: Tōkyō-to Setagaya-ku Mishuku 2 Chome−26−11
+- name: 世田谷区立中里小学校 SETAGAYAKU RITSU NAKAZATO SHOUGAKKOU
+  latitude: 35.63960372
+  longitude: 139.67377302
+  address: Tōkyō-to Setagaya-ku Sangenjaya 1 Chome−4−1
+- name: 世田谷区立三軒茶屋小学校 SETAGAYAKU RITSU SANGENJAYA SHOUGAKKOU
+  latitude: 35.64042561
+  longitude: 139.66316558
+  address: Tōkyō-to Setagaya-ku Sangenjaya 2 Chome−42−1
+- name: 世田谷区立上北沢小学校 SETAGAYAKU RITSU KAMIKITA SAWA SHOUGAKKOU
+  latitude: 35.6696878
+  longitude: 139.62128198
+  address: 4 Chome-22-29 Kamikitazawa Setagaya-ku Tōkyō-to 156-0057 Japan
+- name: 世田谷区立用賀中学校 SETAGAYAKU RITSU YOUGA CHUUGAKKOU
+  latitude: 35.63043161
+  longitude: 139.62682739
+  address: Tōkyō-to Setagaya-ku Kamiyōga 5 Chome−15−1
+- name: 世田谷区立用賀小学校 SETAGAYAKU RITSU YOUGA SHOUGAKKOU
+  latitude: 35.63621413
+  longitude: 139.62642439
+  address: Tōkyō-to Setagaya-ku Kamiyōga 6 Chome−14−1
+- name: 世田谷区立上祖師谷中学校 SETAGAYAKU RITSU UE SO SHI YANAKA GAKKOU
+  latitude: 35.66037129
+  longitude: 139.59334001
+  address: 7 Chome-10-1 Kamisoshigaya Setagaya-ku Tōkyō-to 157-0065 Japan
+- name: 世田谷区立駒繋小学校 SETAGAYAKU RITSU KOMA KEI SHOUGAKKOU
+  latitude: 35.64030102
+  longitude: 139.68056132
+  address: Tōkyō-to Setagaya-ku Shimouma 1 Chome−42−12
+- name: 世田谷区立駒留中学校 SETAGAYAKU RITSU KOMA RYUU CHUUGAKKOU
+  latitude: 35.63744851
+  longitude: 139.67812828
+  address: Tōkyō-to Setagaya-ku Shimouma 4 Chome−18−1
+- name: 世田谷区立桜小学校 SETAGAYAKU RITSU SAKURA SHOUGAKKOU
+  latitude: 35.64303595
+  longitude: 139.64523084
+  address: Tōkyō-to Setagaya-ku Setagaya 2 Chome−4−15
+- name: 世田谷区立玉川小学校 SETAGAYAKU RITSU TAMAGAWA SHOUGAKKOU
+  latitude: 35.61077583
+  longitude: 139.64333497
+  address: Tōkyō-to Setagaya-ku Nakamachi 2 Chome−29−1
+- name: 世田谷区立玉川中学校 SETAGAYAKU RITSU TAMAGAWA CHUUGAKKOU
+  latitude: 35.61676401
+  longitude: 139.64349857
+  address: Tōkyō-to Setagaya-ku Nakamachi 4 Chome−21−1
+- name: 世田谷区立中町小学校 SETAGAYAKU RITSU NAKAMACHI SHOUGAKKOU
+  latitude: 35.61732506
+  longitude: 139.64277641
+  address: Tōkyō-to Setagaya-ku Nakamachi 4 Chome−23−1
+- name: 世田谷区立富士中学校 SETAGAYAKU RITSU FUJI CHUUGAKKOU
+  latitude: 35.65700181
+  longitude: 139.6774027
+  address: Tōkyō-to Setagaya-ku Daizawa 1 Chome−23−17
+- name: 世田谷区立池之上小学校 SETAGAYAKU RITSU IKE YUKI UE SHOUGAKKOU
+  latitude: 35.6599097
+  longitude: 139.67302243
+  address: 2 Chome-42-9 Daizawa Setagaya-ku Tōkyō-to 155-0032 Japan
+- name: 世田谷区立代沢小学校 SETAGAYAKU RITSU SHIROSAWA SHOUGAKKOU
+  latitude: 35.65506567
+  longitude: 139.66785636
+  address: Tōkyō-to Setagaya-ku Daizawa 5 Chome−1−10
+- name: 世田谷区立花見堂小学校 SETAGAYAKU TACHIBANA KEN DOU SHOUGAKKOU
+  latitude: 35.65192144
+  longitude: 139.66264857
+  address: Tōkyō-to Setagaya-ku Daita 1 Chome−13−9
+- name: 世田谷区立代田小学校 SETAGAYAKU RITSU DAI TA SHOUGAKKOU
+  latitude: 35.65847892
+  longitude: 139.65847093
+  address: Tōkyō-to Setagaya-ku Daita 4 Chome−2−3
+- name: 世田谷区立守山小学校 SETAGAYAKU RITSU MORIYAMA SHOUGAKKOU
+  latitude: 35.66540323
+  longitude: 139.66153156
+  address: Tōkyō-to Setagaya-ku Daita 6 Chome−21−5
+- name: 世田谷区立八幡山小学校 SETAGAYAKU RITSU YAHATAYAMA SHOUGAKKOU
+  latitude: 35.66186367
+  longitude: 139.62188495
+  address: Tōkyō-to Setagaya-ku Hachimanyama 1 Chome−14−1
+- name: 世田谷区立北沢小学校 SETAGAYAKU RITSU KITAZAWA SHOUGAKKOU
+  latitude: 35.66808655
+  longitude: 139.67224999
+  address: Tōkyō-to Setagaya-ku Kitazawa 4 Chome−32−20
+- name: 世田谷区立北沢中学校 SETAGAYAKU RITSU KITAZAWA CHUUGAKKOU
+  latitude: 35.66935294
+  longitude: 139.6671365
+  address: Tōkyō-to Setagaya-ku Kitazawa 5 Chome−12−3
+- name: 世田谷区立武蔵丘小学校 SETAGAYAKU RITSU MUSASHI OKA SHOUGAKKOU
+  latitude: 35.67726417
+  longitude: 139.60566626
+  address: Tōkyō-to Setagaya-ku Kitakarasuyama 1 Chome−47−11
+- name: 世田谷区立烏山北小学校 SETAGAYAKU RITSU KARASUYAMA KITA SHOUGAKKOU
+  latitude: 35.67336443
+  longitude: 139.59981684
+  address: 6 Chome-2-9 Kitakarasuyama Setagaya-ku Tōkyō-to 157-0061 Japan
+- name: 世田谷区立千歳台小学校 SETAGAYAKU RITSU CHITOSE DAI SHOUGAKKOU
+  latitude: 35.65899984
+  longitude: 139.61346348
+  address: Tōkyō-to Setagaya-ku Chitosedai 4 Chome−24−1
+- name: 世田谷区立千歳中学校 SETAGAYAKU RITSU CHITOSE CHUUGAKKOU
+  latitude: 35.6584469
+  longitude: 139.60619461
+  address: Tōkyō-to Setagaya-ku Chitosedai 6 Chome−15−1
+- name: 世田谷区立塚戸小学校 SETAGAYAKU RITSU TSUKA KO SHOUGAKKOU
+  latitude: 35.65684434
+  longitude: 139.60732236
+  address: Tōkyō-to Setagaya-ku Chitosedai 6 Chome−7−1
+- name: 世田谷区立烏山中学校 SETAGAYAKU RITSU KARASUYAMA CHUUGAKKOU
+  latitude: 35.67200351
+  longitude: 139.60087236
+  address: Tōkyō-to Setagaya-ku Minamikarasuyama 4 Chome−26−1
+- name: 世田谷区立喜多見小学校 SETAGAYAKU RITSU KITAMI SHOUGAKKOU
+  latitude: 35.62614848
+  longitude: 139.60188287
+  address: Tōkyō-to Setagaya-ku Kitami 3 Chome−11−1
+- name: 世田谷区立喜多見中学校 SETAGAYAKU RITSU KITAMI CHUUGAKKOU
+  latitude: 35.62555122
+  longitude: 139.59406421
+  address: Tōkyō-to Setagaya-ku Kitami 4 Chome−20−1
+- name: 世田谷区立砧小学校 SETAGAYAKU RITSU KINUTA SHOUGAKKOU
+  latitude: 35.63174487
+  longitude: 139.60542932
+  address: Tōkyō-to Setagaya-ku Kitami 6 Chome−9−1
+- name: 世田谷区立東大原小学校 SETAGAYAKU RITTOU OOHARA SHOUGAKKOU
+  latitude: 35.66680316
+  longitude: 139.66452015
+  address: 1 Chome-4-6 Ōhara Setagaya-ku Tōkyō-to 156-0041 Japan
+- name: 世田谷区立三宿中学校 SETAGAYAKU RITSU SAN YADO CHUUGAKKOU
+  latitude: 35.64555869
+  longitude: 139.67786972
+  address: Taishidō 1 Chome−3−43 区立三宿中学校
+- name: 世田谷区立太子堂中学校 SETAGAYAKU RITSU TAISHIDOU CHUUGAKKOU
+  latitude: 35.65084118
+  longitude: 139.66882586
+  address: Taishidō 3 Chome−27 区立太子堂中学校
+- name: 世田谷区立太子堂小学校 SETAGAYAKU RITSU TAISHIDOU SHOUGAKKOU
+  latitude: 35.64649164
+  longitude: 139.66687895
+  address: Taishidō 5 Chome−7−4 区立太子堂小学校
+- name: 世田谷区立東玉川小学校 SETAGAYAKU RITTOU TAMAGAWA SHOUGAKKOU
+  latitude: 35.59855877
+  longitude: 139.68057952
+  address: Tōkyō-to Setagaya-ku Okusawa 1 Chome−1−1
+- name: 世田谷区立奥沢中学校 SETAGAYAKU RITSU OKUSAWA CHUUGAKKOU
+  latitude: 35.60276651
+  longitude: 139.67945438
+  address: Tōkyō-to Setagaya-ku Okusawa 1 Chome−42−1
+- name: 世田谷区立奥沢小学校 SETAGAYAKU RITSU OKUSAWA SHOUGAKKOU
+  latitude: 35.59980016
+  longitude: 139.67475776
+  address: Tōkyō-to Setagaya-ku Okusawa 3 Chome−1−1
+- name: 世田谷区立九品仏小学校 SETAGAYAKU RITSU KUHONBUTSU SHOUGAKKOU
+  latitude: 35.60326575
+  longitude: 139.66005589
+  address: Tōkyō-to Setagaya-ku Okusawa 8 Chome−12−1
+- name: 世田谷区立世田谷小学校 SETAGAYAKU RITSU SETAGAYA SHOUGAKKOU
+  latitude: 35.64982958
+  longitude: 139.644789
+  address: Tōkyō-to Setagaya-ku Miyasaka 1 Chome−38−4
+- name: 世田谷区立尾山台小学校 SETAGAYAKU RITSU OYAMA DAI SHOUGAKKOU
+  latitude: 35.60459883
+  longitude: 139.65425634
+  address: Tōkyō-to Setagaya-ku Oyamadai 3 Chome−11−1
+- name: 世田谷区立尾山台中学校 SETAGAYAKU RITSU OYAMA DAI CHUUGAKKOU
+  latitude: 35.60594036
+  longitude: 139.65578115
+  address: Tōkyō-to Setagaya-ku Oyamadai 3 Chome−27−23
+- name: 世田谷区立弦巻中学校 SETAGAYAKU RITSU GENMAKI CHUUGAKKOU
+  latitude: 35.63728397
+  longitude: 139.64916403
+  address: Tsurumaki 1 Chome−42−22 区立弦巻中学校
+- name: 世田谷区立弦巻小学校 SETAGAYAKU RITSU GENMAKI SHOUGAKKOU
+  latitude: 35.63968099
+  longitude: 139.65255258
+  address: Tsurumaki 1 Chome−9−18 区立弦巻小学校
+- name: 世田谷区立松丘小学校 SETAGAYAKU TATEMATSU OKA SHOUGAKKOU
+  latitude: 35.63884755
+  longitude: 139.64446714
+  address: Tsurumaki 3 Chome−23−12 区立松丘小学校
+- name: 世田谷区立砧中学校 SETAGAYAKU RITSU KINUTA CHUUGAKKOU
+  latitude: 35.63363057
+  longitude: 139.60126284
+  address: Tōkyō-to Setagaya-ku Seijō 1 Chome−10−1
+- name: 世田谷区立明正小学校 SETAGAYAKU RITSU MEI SEI SHOUGAKKOU
+  latitude: 35.63535524
+  longitude: 139.59926562
+  address: Tōkyō-to Setagaya-ku Seijō 3 Chome−3−1
+- name: 世田谷区立千歳小学校 SETAGAYAKU RITSU CHITOSE SHOUGAKKOU
+  latitude: 35.65166134
+  longitude: 139.59796772
+  address: Tōkyō-to Setagaya-ku Seijō 9 Chome−6−1
+- name: 世田谷区立深沢中学校 SETAGAYAKU RITSU FUKAZAWA CHUUGAKKOU
+  latitude: 35.62655738
+  longitude: 139.64812554
+  address: Tōkyō-to Setagaya-ku Shinmachi 1 Chome−26−29
+- name: 世田谷区立深沢小学校 SETAGAYAKU RITSU FUKAZAWA SHOUGAKKOU
+  latitude: 35.62737125
+  longitude: 139.65161411
+  address: Tōkyō-to Setagaya-ku Shinmachi 1 Chome−4−24
+- name: 世田谷区立松原小学校 SETAGAYAKU TATEMATSU HARA SHOUGAKKOU
+  latitude: 35.66433639
+  longitude: 139.65062419
+  address: Tōkyō-to Setagaya-ku Matsubara 5 Chome−43−26
+- name: 世田谷区立梅丘中学校 SETAGAYAKU RITSU UME OKA CHUUGAKKOU
+  latitude: 35.65913424
+  longitude: 139.65241586
+  address: Tōkyō-to Setagaya-ku Matsubara 6 Chome−5
+- name: 世田谷区立桜木中学校 SETAGAYAKU RITSU SAKURAGI CHUUGAKKOU
+  latitude: 35.64568001
+  longitude: 139.64237267
+  address: Tōkyō-to Setagaya-ku Sakura 1 Chome−48−15
+- name: 世田谷区立経堂小学校 SETAGAYAKU RITSU KYOUDOU SHOUGAKKOU
+  latitude: 35.65632566
+  longitude: 139.63073997
+  address: Tōkyō-to Setagaya-ku Sakurajōsui 1 Chome−23−3
+- name: 世田谷区立緑丘中学校 SETAGAYAKU RITSU MIDORI OKA CHUUGAKKOU
+  latitude: 35.66156953
+  longitude: 139.63155918
+  address: Tōkyō-to Setagaya-ku Sakurajōsui 3 Chome−19−12
+- name: 世田谷区立松沢中学校 SETAGAYAKU TATEMATSU SAWA CHUUGAKKOU
+  latitude: 35.66648849
+  longitude: 139.63460046
+  address: Tōkyō-to Setagaya-ku Sakurajōsui 4 Chome−5−2
+- name: 世田谷区立桜丘小学校 SETAGAYAKU RITSU SAKURAOKA SHOUGAKKOU
+  latitude: 35.64446595
+  longitude: 139.63092923
+  address: Tōkyō-to Setagaya-ku Sakuragaoka 1 Chome−19−17
+- name: 世田谷区立桜丘中学校 SETAGAYAKU RITSU SAKURAOKA CHUUGAKKOU
+  latitude: 35.64372156
+  longitude: 139.62955438
+  address: Tōkyō-to Setagaya-ku Sakuragaoka 2 Chome−1−39
+- name: 世田谷区立笹原小学校 SETAGAYAKU RITSU SASAHARA SHOUGAKKOU
+  latitude: 35.64532388
+  longitude: 139.62133282
+  address: Tōkyō-to Setagaya-ku Sakuragaoka 5 Chome−19−1
+- name: 世田谷区立城山小学校 SETAGAYAKU RITSU SHIROYAMA SHOUGAKKOU
+  latitude: 35.64864098
+  longitude: 139.65066078
+  address: 2 Chome-8-5 Umegaoka Setagaya-ku Tōkyō-to 154-0022 Japan
+- name: 世田谷区立山崎小学校 SETAGAYAKU TATEYAMA SAKI SHOUGAKKOU
+  latitude: 35.65135743
+  longitude: 139.6552492
+  address: Tōkyō-to Setagaya-ku Umegaoka 3 Chome−9−1
+- name: 世田谷区立池尻小学校 SETAGAYAKU RITSU IKEJIRI SHOUGAKKOU
+  latitude: 35.64600868
+  longitude: 139.67969455
+  address: Tōkyō-to Setagaya-ku Ikejiri 2 Chome−4−10
+- name: 世田谷区立東深沢小学校 SETAGAYAKU RITTOU FUKAZAWA SHOUGAKKOU
+  latitude: 35.61803349
+  longitude: 139.65803605
+  address: 4 Chome-11-1 Fukasawa Setagaya-ku Tōkyō-to 158-0081 Japan
+- name: 世田谷区立東深沢中学校 SETAGAYAKU RITTOU FUKAZAWA CHUUGAKKOU
+  latitude: 35.61883056
+  longitude: 139.65376696
+  address: Tōkyō-to Setagaya-ku Fukasawa 4 Chome−18−28
+- name: 世田谷区立瀬田小学校 SETAGAYAKU RITSU SETA SHOUGAKKOU
+  latitude: 35.61850827
+  longitude: 139.63189976
+  address: Tōkyō-to Setagaya-ku Seta 2 Chome−15−1
+- name: 世田谷区立瀬田中学校 SETAGAYAKU RITSU SETA CHUUGAKKOU
+  latitude: 35.6183694
+  longitude: 139.63341348
+  address: Tōkyō-to Setagaya-ku Seta 2 Chome−17−1
+- name: 世田谷区立玉堤小学校 SETAGAYAKU RITSU TAMATSUTSUMI SHOUGAKKOU
+  latitude: 35.59991339
+  longitude: 139.64742402
+  address: Tamazutsumi 2 Chome−11−1 区立玉堤小学校
+- name: 世田谷区立二子玉川小学校 SETAGAYAKU RITSU FUTAGOTAMAGAWA SHOUGAKKOU
+  latitude: 35.61643636
+  longitude: 139.62625336
+  address: Tamagawa 4 Chome−6−1 区立二子玉川小学校
+- name: 世田谷区立八幡小学校 SETAGAYAKU RITSU HACHIMAN SHOUGAKKOU
+  latitude: 35.60278279
+  longitude: 139.66689709
+  address: Tamagawadenenchōfu 2 Chome−17−15
+- name: 世田谷区立桜町小学校 SETAGAYAKU RITSU SAKURAMACHI SHOUGAKKOU
+  latitude: 35.62452978
+  longitude: 139.64230114
+  address: Tōkyō-to Setagaya-ku Yōga 1 Chome−5−1
+- name: 世田谷区立京西小学校 SETAGAYAKU RITSU KYOU NISHI SHOUGAKKOU
+  latitude: 35.62911798
+  longitude: 139.63123253
+  address: Tōkyō-to Setagaya-ku Yōga 4 Chome−27−4
+- name: 世田谷区立山野小学校 SETAGAYAKU TATEYAMA NO SHOUGAKKOU
+  latitude: 35.64353781
+  longitude: 139.61333631
+  address: Tōkyō-to Setagaya-ku Kinuta 6 Chome−7−1
+- name: 世田谷区立祖師谷小学校 SETAGAYAKU RITSU SO SHI TANI SHOUGAKKOU
+  latitude: 35.64590394
+  longitude: 139.60478965
+  address: Tōkyō-to Setagaya-ku Soshigaya 3 Chome−49−1
+- name: 世田谷区立八幡中学校 SETAGAYAKU RITSU HACHIMAN CHUUGAKKOU
+  latitude: 35.61092047
+  longitude: 139.66120824
+  address: Todoroki 6 Chome−4−1 区立八幡中学校
+- name: 世田谷区立等々力小学校 SETAGAYAKU RITSU TODOROKI SHOUGAKKOU
+  latitude: 35.61649192
+  longitude: 139.65366427
+  address: Todoroki 7 Chome−26−1 区立等々力小学校
+- name: 世田谷区立烏山小学校 SETAGAYAKU RITSU KARASUYAMA SHOUGAKKOU
+  latitude: 35.66350702
+  longitude: 139.59285384
+  address: Tōkyō-to Setagaya-ku Kyūden 1 Chome−2−1
+- name: 世田谷区立給田小学校 SETAGAYAKU RITSU KYUUDEN SHOUGAKKOU
+  latitude: 35.67110614
+  longitude: 139.59235363
+  address: Tōkyō-to Setagaya-ku Kyūden 4 Chome−24−1
+- name: 世田谷区立船橋中学校 SETAGAYAKU RITSU FUNABASHI CHUUGAKKOU
+  latitude: 35.65566983
+  longitude: 139.6189215
+  address: Tōkyō-to Setagaya-ku Funabashi 4 Chome−20−1
+- name: 世田谷区立船橋小学校 SETAGAYAKU RITSU FUNABASHI SHOUGAKKOU
+  latitude: 35.65320616
+  longitude: 139.61689397
+  address: Tōkyō-to Setagaya-ku Funabashi 4 Chome−41−1
+- name: 世田谷区立希望丘小学校 SETAGAYAKU RITSU KIBOU OKA SHOUGAKKOU
+  latitude: 35.65654204
+  longitude: 139.62165181
+  address: Tōkyō-to Setagaya-ku Funabashi 4 Chome−9−1
+- name: 世田谷区立希望丘中学校 SETAGAYAKU RITSU KIBOU OKA CHUUGAKKOU
+  latitude: 35.65925838
+  longitude: 139.620974
+  address: Tōkyō-to Setagaya-ku Hachimanyama 1 Chome−9
+- name: 世田谷区立若林中学校 SETAGAYAKU RITSU WAKABAYASHI CHUUGAKKOU
+  latitude: 35.64951325
+  longitude: 139.65715744
+  address: Tōkyō-to Setagaya-ku Wakabayashi 5 Chome−27−18
+- name: 世田谷区立若林小学校 SETAGAYAKU RITSU WAKABAYASHI SHOUGAKKOU
+  latitude: 35.65072704
+  longitude: 139.65905169
+  address: Tōkyō-to Setagaya-ku Wakabayashi 5 Chome−38−1
+- name: 世田谷区立赤堤小学校 SETAGAYAKU RITSU AKA TSUTSUMI SHOUGAKKOU
+  latitude: 35.65533151
+  longitude: 139.63755055
+  address: 1 Chome-41-24 Akatsutsumi Setagaya-ku Tōkyō-to 156-0044 Japan
+- name: 世田谷区立松沢小学校 SETAGAYAKU TATEMATSU SAWA SHOUGAKKOU
+  latitude: 35.66546651
+  longitude: 139.63928621
+  address: Tōkyō-to Setagaya-ku Akatsutsumi 4 Chome−44−22
+- name: 世田谷区立旭小学校 SETAGAYAKU RITSU ASAHI SHOUGAKKOU
+  latitude: 35.63480697
+  longitude: 139.67038735
+  address: Tōkyō-to Setagaya-ku Nozawa 1 Chome−4−3
+- name: 世田谷区立中丸小学校 SETAGAYAKU RITSU NAKA MARU SHOUGAKKOU
+  latitude: 35.63256839
+  longitude: 139.67282887
+  address: Tōkyō-to Setagaya-ku Nozawa 3 Chome−34−16
+- name: 世田谷区立砧南中学校 SETAGAYAKU RITSU KINUTA NANCHUU GAKKOU
+  latitude: 35.62105227
+  longitude: 139.61356552
+  address: Tōkyō-to Setagaya-ku Kamata 3 Chome−13−20
+- name: 世田谷区立砧南小学校 SETAGAYAKU RITSU KINUTA MINAMI SHOUGAKKOU
+  latitude: 35.62259369
+  longitude: 139.61267938
+  address: Tōkyō-to Setagaya-ku Kamata 4 Chome−3−1
+- name: 世田谷区立駒沢小学校 SETAGAYAKU RITSU KOMAZAWA SHOUGAKKOU
+  latitude: 35.63296801
+  longitude: 139.65785791
+  address: Tōkyō-to Setagaya-ku Komazawa 2 Chome−10−6
+- name: 世田谷区立駒沢中学校 SETAGAYAKU RITSU KOMAZAWA CHUUGAKKOU
+  latitude: 35.63656757
+  longitude: 139.65576633
+  address: Tōkyō-to Setagaya-ku Komazawa 2 Chome−39−25
+- name: 神田一橋中学校 KANDA HITOTSUBASHI CHUUGAKKOU
+  latitude: 35.69426068
+  longitude: 139.75679441
+  address: Tōkyō-to Chiyoda-ku Hitotsubashi 2 Chome−6−14
+- name: いきいきプラザ一番町 IKIIKI PURAZA ICHIBANCHOU
+  latitude: 35.6870388
+  longitude: 139.73949333
+  address: Tōkyō-to Chiyoda-ku Ichibanchō 12−2
+- name: 九段小学校 KUDAN SHOUGAKKOU
+  latitude: 35.69052178
+  longitude: 139.74071253
+  address: 18-20 Sanbanchō Chiyoda-ku Tōkyō-to 102-0075 Japan
+- name: 九段生涯学習館 KUDAN SHOUGAIGAKUSHUU KAN
+  latitude: 35.69516879
+  longitude: 139.75210585
+  address: Tōkyō-to Chiyoda-ku Kudanminami 1 Chome−5
+- name: 番町小学校 BAN MACHI SHOUGAKKOU
+  latitude: 35.68820798
+  longitude: 139.73401042
+  address: Tōkyō-to Chiyoda-ku Rokubanchō 8
+- name: スポーツセンター SPORTSCENTER
+  latitude: 35.68918931
+  longitude: 139.76756333
+  address: Tōkyō-to Chiyoda-ku Uchikanda 2 Chome−1−8
+- name: 昌平童夢館(昌平小学校) SHOUHEI WARABE YUME KAN ( SHOUHEI SHOUGAKKOU )
+  latitude: 35.70130475
+  longitude: 139.76985449
+  address: Tōkyō-to Chiyoda-ku Sotokanda 3 Chome−4−7
+- name: アーツ千代田3331 A-TSU CHIYODA 3331
+  latitude: 35.70421003
+  longitude: 139.77068211
+  address: Tōkyō-to Chiyoda-ku Sotokanda 6 Chome−11−14
+- name: 九段中等教育学校 KUDAN CHUUTOUKYOUIKU GAKKOU
+  latitude: 35.69661571
+  longitude: 139.74646178
+  address: Tōkyō-to Chiyoda-ku Fujimi 1 Chome−10−14
+- name: 富士見みらい館 FUJIMI MIRAI KAN
+  latitude: 35.69731562
+  longitude: 139.74611178
+  address: Tōkyō-to Chiyoda-ku Fujimi 1 Chome−10−3
+- name: 麹町中学校 KOUJIMACHI CHUUGAKKOU
+  latitude: 35.680502
+  longitude: 139.73886447
+  address: Tōkyō-to Chiyoda-ku Hirakawachō 2 Chome−5−1
+- name: お茶の水小学校 O CHA NO MIZU SHOUGAKKOU
+  latitude: 35.69739099
+  longitude: 139.76020514
+  address: Tōkyō-to Chiyoda-ku Sarugakuchō 1 Chome−1−1
+- name: 神田さくら館(千代田小学校) KANDA SAKURA KAN ( CHIYODA SHOUGAKKOU )
+  latitude: 35.69348887
+  longitude: 139.76817431
+  address: Tsukasamachi 2 Chome−16−8
+- name: ちよだパークサイドプラザ(和泉小学校) CHIYODA PARK SAIDOPURAZA ( IZUMI SHOUGAKKOU )
+  latitude: 35.69939131
+  longitude: 139.77842098
+  address: Tōkyō-to Chiyoda-ku Kanda Izumichō 区立和泉小学校
+- name: 高齢者センター KOUREISHA CENTER
+  latitude: 35.69711036
+  longitude: 139.75654708
+  address: 2 Chome-20 Kanda Jinbōchō Chiyoda-ku Tōkyō-to 101-0051 Japan
+- name: 旧今川中学校 KYUU IMAGAWA CHUUGAKKOU
+  latitude: 35.69169753
+  longitude: 139.77309357
+  address: Tōkyō-to Chiyoda-ku Kajichō 2 Chome−4−2
+- name: 麹町小学校 KOUJIMACHI SHOUGAKKOU
+  latitude: 35.6855223
+  longitude: 139.73964893
+  address: Tōkyō-to Chiyoda-ku Kōjimachi 2 Chome
+- name: 台東区立東泉小学校 TAITOUKU RITTOU IZUMI SHOUGAKKOU
+  latitude: 35.72855522
+  longitude: 139.79214307
+  address: Taitō-ku Minowa 1 Chome−23−9 区立東泉小学校
+- name: 台東区立黒門小学校 TAITOUKU RITSU KUROMON SHOUGAKKOU
+  latitude: 35.70706531
+  longitude: 139.77103474
+  address: Taitō-ku Ueno 1 Chome−16−20 区立黒門小学校
+- name: 台東区立忍岡中学校 TAITOUKU RITSU NIN OKA CHUUGAKKOU
+  latitude: 35.7196227
+  longitude: 139.77909763
+  address: Taitō-ku Uenokōen 18−20 区立忍岡中学校
+- name: 台東区立上野中学校 TAITOUKU RITSU UENO CHUUGAKKOU
+  latitude: 35.72121136
+  longitude: 139.7747257
+  address: Taitō-ku Uenosakuragi 1 Chome−14−55 区立上野中学校
+- name: 台東区立旧坂本小学校 TAITOUKU RITSU KYUU SAKAMOTO SHOUGAKKOU
+  latitude: 35.72009774
+  longitude: 139.78236127
+  address: Taitō-ku Shitaya 1 Chome−12−8 東京都教職員組合台東支部
+- name: 台東区立柏葉中学校 TAITOUKU RITSU KASHIWABA CHUUGAKKOU
+  latitude: 35.723542
+  longitude: 139.78588588
+  address: Taitō-ku Shitaya 3 Chome−1−29 区立柏葉中学校
+- name: 台東区立桜橋中学校 TAITOUKU RITSU SAKURABASHI CHUUGAKKOU
+  latitude: 35.7207574
+  longitude: 139.80707946
+  address: Taitō-ku Imado 2 Chome−1−8 区立桜橋中学校
+- name: 台東区立大正小学校 TAITOUKU RITSUDAI SEI SHOUGAKKOU
+  latitude: 35.72083942
+  longitude: 139.7880774
+  address: Taitō-ku Iriya 2 Chome−23−8 区立大正小学校
+- name: 台東区立駒形中学校 TAITOUKU RITSU KOMAGATA CHUUGAKKOU
+  latitude: 35.71745912
+  longitude: 139.78420572
+  address: Taitō-ku Kitaueno 2 Chome−15−1 区立駒形中学校
+- name: 台東区立金竜小学校 TAITOUKU RITSU KINRYUU SHOUGAKKOU
+  latitude: 35.7186202
+  longitude: 139.79024399
+  address: Taitō-ku Senzoku 1 Chome−9−9 区立金竜小学校
+- name: 台東一丁目区民館 TAITOU ITCHOUME KUMIN KAN
+  latitude: 35.70184658
+  longitude: 139.77787641
+  address: Taitō 1 Chome−25−5 いきいきプラザ
+- name: 台東区立御徒町台東中学校 TAITOUKU RITSU OKACHIMACHI TAITOU CHUUGAKKOU
+  latitude: 35.70697938
+  longitude: 139.77743724
+  address: Taitō 4 Chome−13−16 区立御徒町台東中学校
+- name: 台東区立平成小学校 TAITOUKU RITSU HEISEI SHOUGAKKOU
+  latitude: 35.71867302
+  longitude: 139.79446304
+  address: 4 Chome-21-5 Asakusa Taitō-ku Tōkyō-to 111-0032 Japan
+- name: 台東区立旧済美小学校 TAITOUKU RITSU KYUU SUMI BI SHOUGAKKOU
+  latitude: 35.70714071
+  longitude: 139.7892338
+  address: Taitō-ku Kotobuki 1 Chome−10−9 認定こども園ことぶきこども園
+- name: 台東区立旧小島小学校 TAITOUKU RITSU KYUU KOJIMA SHOUGAKKOU
+  latitude: 35.70602687
+  longitude: 139.78419535
+  address: Taitō-ku Kojima 2 Chome−9−10 台東区役所産業振興課融資担当
+- name: 台東区立旧田中小学校 TAITOUKU RITSU KYUU TANAKA SHOUGAKKOU
+  latitude: 35.72804398
+  longitude: 139.79724515
+  address: Taitō-ku Nihonzutsumi 2 Chome−25−4 区立たなかデイホーム
+- name: 老人福祉センター ROUJIN FUKUSHI CENTER
+  latitude: 35.70945701
+  longitude: 139.78163411
+  address: 2 Chome-25-14 Higashiueno Taitō-ku Tōkyō-to 110-0015 Japan
+- name: 東上野区民館 TOUJOU NO KUMIN KAN
+  latitude: 35.71129289
+  longitude: 139.77961187
+  address: Taitō-ku Higashiueno 3 Chome−24−6 区立東上野区民館
+- name: 台東区立上野小学校 TAITOUKU RITSU UENO SHOUGAKKOU
+  latitude: 35.71360666
+  longitude: 139.7832921
+  address: Taitō-ku Higashiueno 6 Chome−16−8 区立清島温水プール
+- name: 台東区立東浅草小学校 TAITOUKU RITTOU ASAKUSA SHOUGAKKOU
+  latitude: 35.72443078
+  longitude: 139.79820674
+  address: Taitō-ku Higashiasakusa 2 Chome−27−19 東浅草なかよし図書館
+- name: 台東区立松葉小学校 TAITOUKU TATEMATSU HA SHOUGAKKOU
+  latitude: 35.71228183
+  longitude: 139.7864697
+  address: Taitō-ku Matsugaya 1 Chome−13−16 区立松葉小学校
+- name: ケアハウス松が谷 KEAHAUSU MATSU GA TANI
+  latitude: 35.71750638
+  longitude: 139.78762485
+  address: Taitō-ku Matsugaya 4 Chome−4−3 まつがや地域包括支援センター
+- name: 台東区立根岸小学校 TAITOUKU RITSU NEGISHI SHOUGAKKOU
+  latitude: 35.72367797
+  longitude: 139.77896702
+  address: Taitō-ku Negishi 3 Chome−9−8 区立根岸小学校
+- name: 台東区立金曽木小学校 TAITOUKU RITSU KIN SO KI SHOUGAKKOU
+  latitude: 35.72580297
+  longitude: 139.78518315
+  address: Taitō-ku Negishi 4 Chome−16−22 区立金曽木小学校
+- name: 台東区立忍岡小学校 TAITOUKU RITSU NIN OKA SHOUGAKKOU
+  latitude: 35.7140367
+  longitude: 139.76697355
+  address: Taitō-ku Ikenohata 2 Chome−1−22 区立忍岡小学校
+- name: 台東区立千束小学校 TAITOUKU RITSU SEN SOKU SHOUGAKKOU
+  latitude: 35.7193674
+  longitude: 139.79405192
+  address: Taitō-ku Asakusa 4 Chome−24−11 区立千束小学校
+- name: 特別養護老人ホーム浅草 TOKUBETSU YOUGO ROUJIN HOME ASAKUSA
+  latitude: 35.71909241
+  longitude: 139.79337144
+  address: Taitō-ku Asakusa 4 Chome−26−2 あさくさ地域包括支援センター
+- name: 台東区立富士小学校 TAITOUKU RITSU FUJI SHOUGAKKOU
+  latitude: 35.71875378
+  longitude: 139.79862389
+  address: Taitō-ku Asakusa 4 Chome−48−9 区立富士小学校
+- name: 台東区立旧柳北小学校 TAITOUKU RITSU KYUU YANAGI KITA SHOUGAKKOU
+  latitude: 35.69953029
+  longitude: 139.78252087
+  address: Taitō-ku Asakusabashi 5 Chome−1−35 区立蔵前小学校
+- name: 台東区立石浜小学校 TAITOUKU TATEISHI HAMA SHOUGAKKOU
+  latitude: 35.7249899
+  longitude: 139.80395442
+  address: Taitō-ku Kiyokawa 1 Chome−14−21 日本堤消防団第四分団本部
+- name: 台東区立旧竜泉中学校 TAITOUKU RITSU KYUU RYUU IZUMI CHUUGAKKOU
+  latitude: 35.72562228
+  longitude: 139.78964084
+  address: Taitō-ku Ryūsen 2 Chome−10−6 社会福祉法人康保会康保会保育園
+- name: 台東区立浅草小学校 TAITOUKU RITSU ASAKUSA SHOUGAKKOU
+  latitude: 35.71346805
+  longitude: 139.79913235
+  address: Taitō-ku Hanakawado 1 Chome−14−15 区立浅草小学校
+- name: 台東区立浅草中学校 TAITOUKU RITSU ASAKUSA CHUUGAKKOU
+  latitude: 35.69980817
+  longitude: 139.78990394
+  address: Taitō-ku Kuramae 1 Chome−3−4 区立浅草中学校
+- name: 特別養護老人ホーム蔵前 TOKUBETSU YOUGO ROUJIN HOME KURAMAE
+  latitude: 35.70368555
+  longitude: 139.79295611
+  address: Taitō-ku Kuramae 2 Chome−11−7 区立特別養護老人ホーム蔵前
+- name: 台東区立蔵前小学校 TAITOUKU RITSU KURAMAE SHOUGAKKOU
+  latitude: 35.70441043
+  longitude: 139.78935071
+  address: 4 Chome-19-11 Kuramae Taitō-ku Tōkyō-to 111-0051 Japan
+- name: 特別養護老人ホーム谷中 TOKUBETSU YOUGO ROUJIN HOME YANAKA
+  latitude: 35.72405234
+  longitude: 139.76432625
+  address: Taitō-ku Yanaka 2 Chome−17−20 老人ホーム谷中
+- name: 台東区立谷中小学校 TAITOUKU RITSU YANAKA SHOUGAKKOU
+  latitude: 35.72369964
+  longitude: 139.76517899
+  address: Taitō-ku Yanaka 2 Chome−9−16 区立台桜幼稚園
+- name: 台東区立田原小学校 TAITOUKU TATSUTA HARA SHOUGAKKOU
+  latitude: 35.71010713
+  longitude: 139.79300268
+  address: Taitō-ku Kaminarimon 1 Chome−5−14 区立田原小学校
+- name: 品川区立第三日野小学校 SHINAGAWAKU RITSU DAISANNICHI NO SHOUGAKKOU
+  latitude: 35.6328
+  longitude: 139.72381896
+  address: Tōkyō-to Shinagawa-ku Kamiōsaki 1 Chome−19−19
+- name: 品川区立上大崎シルバーセンター SHINAGAWAKU RITSU UE OOSAKI SILVERCENTER
+  latitude: 35.63459698
+  longitude: 139.72207462
+  address: Tōkyō-to Shinagawa-ku Kamiōsaki 1 Chome−3−12
+- name: 品川区立中延小学校 SHINAGAWAKU RITSU NAKANOBE SHOUGAKKOU
+  latitude: 35.61256593
+  longitude: 139.70950137
+  address: Tōkyō-to Shinagawa-ku Nakanobu 1 Chome−11−15
+- name: 品川区立源氏前小学校 SHINAGAWAKU RITSU GENJI MAE SHOUGAKKOU
+  latitude: 35.60344752
+  longitude: 139.71167644
+  address: Tōkyō-to Shinagawa-ku Nakanobu 6 Chome−2−18
+- name: 品川区立大間窪小学校 SHINAGAWAKU RITSUDAI KAN KUBO SHOUGAKKOU
+  latitude: 35.60682523
+  longitude: 139.72567796
+  address: 1 Chome-3-36 Futaba Shinagawa-ku Tōkyō-to 142-0043 Japan
+- name: 品川区立上神明小学校 SHINAGAWAKU RITSU UE JINMEI SHOUGAKKOU
+  latitude: 35.60292542
+  longitude: 139.71574556
+  address: 4 Chome-4-10 Futaba Shinagawa-ku Tōkyō-to 142-0043 Japan
+- name: 品川区立小中一貫校八潮学園 SHINAGAWAKU RITSU KONAKA IKKAN KOU YASHIO GAKUEN
+  latitude: 35.60139084
+  longitude: 139.75252895
+  address: 5 Chome-12-61 Yashio Shinagawa-ku Tōkyō-to 140-0003 Japan
+- name: 品川区立北品川シルバーセンター SHINAGAWAKU RITSU KITA SHINAGAWA SILVERCENTER
+  latitude: 35.62053248
+  longitude: 139.74177065
+  address: Tōkyō-to Shinagawa-ku Kitashinagawa 1 Chome−29−12
+- name: 品川区立北品川児童センター SHINAGAWAKU RITSU KITA SHINAGAWA JIDOU CENTER
+  latitude: 35.61881053
+  longitude: 139.74394832
+  address: Tōkyō-to Shinagawa-ku Kitashinagawa 2 Chome−7−21
+- name: 品川区立小中一貫校品川学園 SHINAGAWAKU RITSU KONAKA IKKAN KOU SHINAGAWA GAKUEN
+  latitude: 35.61811044
+  longitude: 139.73797383
+  address: Tōkyō-to Shinagawa-ku Kitashinagawa 3 Chome−9−30
+- name: 品川区立御殿山小学校 SHINAGAWAKU RITSU GOTEN YAMA SHOUGAKKOU
+  latitude: 35.62313187
+  longitude: 139.73177137
+  address: 5 Chome-2-6 Kitashinagawa Shinagawa-ku Tōkyō-to 140-0001 Japan
+- name: 品川区立小関児童センター SHINAGAWAKU RITSU OZEKI JIDOU CENTER
+  latitude: 35.62013781
+  longitude: 139.73243255
+  address: 5 Chome-8-15 Kitashinagawa Shinagawa-ku Tōkyō-to 140-0001 Japan
+- name: 品川区立城南小学校 SHINAGAWAKU RITSU JOUNAN SHOUGAKKOU
+  latitude: 35.61332782
+  longitude: 139.74274585
+  address: Tōkyō-to Shinagawa-ku Minamishinagawa 2 Chome−8−21
+- name: 品川区立南品川児童センター SHINAGAWAKU RITSU MINAMI SHINAGAWA JIDOU CENTER
+  latitude: 35.61348323
+  longitude: 139.73868783
+  address: Tōkyō-to Shinagawa-ku Minamishinagawa 4 Chome−5−28
+- name: 品川区立浅間台小学校 SHINAGAWAKU RITSU ASAMA DAI SHOUGAKKOU
+  latitude: 35.61148339
+  longitude: 139.73649363
+  address: Tōkyō-to Shinagawa-ku Minamishinagawa 6 Chome−8−8
+- name: 品川区立鈴ヶ森中学校 SHINAGAWAKU RITSU SUZU MORI CHUUGAKKOU
+  latitude: 35.59309684
+  longitude: 139.73773038
+  address: Tōkyō-to Shinagawa-ku Minamiōi 2 Chome−3−14
+- name: 品川区立鈴ヶ森小学校 SHINAGAWAKU RITSU SUZU MORI SHOUGAKKOU
+  latitude: 35.59447712
+  longitude: 139.73524159
+  address: Tōkyō-to Shinagawa-ku Minamiōi 4 Chome−16−2
+- name: 品川区立浜川小学校 SHINAGAWAKU RITSU HAMAKAWA SHOUGAKKOU
+  latitude: 35.59827945
+  longitude: 139.73620248
+  address: Tōkyō-to Shinagawa-ku Minamiōi 4 Chome−3−27
+- name: 品川区立水神児童センター SHINAGAWAKU RITSU MIZU KAMI JIDOU CENTER
+  latitude: 35.59545472
+  longitude: 139.73393331
+  address: Tōkyō-to Shinagawa-ku Minamiōi 5 Chome−13−19
+- name: 品川区立一本橋児童センター SHINAGAWAKU RITSU IPPONBASHI JIDOU CENTER
+  latitude: 35.60465063
+  longitude: 139.72963328
+  address: Tōkyō-to Shinagawa-ku Ōi 2 Chome−25−1
+- name: 品川区立山中小学校 SHINAGAWAKU TATEYAMA CHUUSHOU GAKKOU
+  latitude: 35.60278697
+  longitude: 139.72992499
+  address: Tōkyō-to Shinagawa-ku Ōi 3 Chome−7−19
+- name: 品川区立大井倉田児童センター SHINAGAWAKU RITSUDAI I KURATA JIDOU CENTER
+  latitude: 35.60235661
+  longitude: 139.73369139
+  address: 4 Chome-11-34 Ōi Shinagawa-ku Tōkyō-to 140-0014 Japan
+- name: 品川区立小中一貫校伊藤学園 SHINAGAWAKU RITSU KONAKA IKKAN KOU ITOU GAKUEN
+  latitude: 35.60000662
+  longitude: 139.72616149
+  address: Tōkyō-to Shinagawa-ku Ōi 5 Chome−1−37
+- name: 品川区立滝王子児童センター SHINAGAWAKU RITSU TAKI OUJI JIDOU CENTER
+  latitude: 35.59821807
+  longitude: 139.72898913
+  address: Tōkyō-to Shinagawa-ku Ōi 5 Chome−19−14
+- name: 品川区立大井第一小学校 SHINAGAWAKU RITSUDAI I DAIICHI SHOUGAKKOU
+  latitude: 35.59872087
+  longitude: 139.73118617
+  address: Tōkyō-to Shinagawa-ku Ōi 6 Chome−1−32
+- name: 品川区立大崎シルバーセンター SHINAGAWAKU RITSUDAI SAKI SILVERCENTER
+  latitude: 35.61669081
+  longitude: 139.7261054
+  address: 2 Chome-7-13 Ōsaki Shinagawa-ku Tōkyō-to 141-0032 Japan
+- name: 品川区立芳水小学校 SHINAGAWAKU RITSU HOU MIZU SHOUGAKKOU
+  latitude: 35.61925437
+  longitude: 139.72471655
+  address: Tōkyō-to Shinagawa-ku Ōsaki 3 Chome−12−22
+- name: 品川区立中原児童センター SHINAGAWAKU RITSU NAKAHARA JIDOU CENTER
+  latitude: 35.62209269
+  longitude: 139.71260361
+  address: Tōkyō-to Shinagawa-ku Koyama 1 Chome−4−1
+- name: 品川区立後地小学校 SHINAGAWAKU RITSU NOCHI CHI SHOUGAKKOU
+  latitude: 35.62156768
+  longitude: 139.70857064
+  address: Tōkyō-to Shinagawa-ku Koyama 2 Chome−4−6
+- name: 品川区立後地児童センター SHINAGAWAKU RITSU NOCHI CHI JIDOU CENTER
+  latitude: 35.62062891
+  longitude: 139.70919839
+  address: Tōkyō-to Shinagawa-ku Koyama 2 Chome−9−19
+- name: 品川区立小山小学校 SHINAGAWAKU RITSU OYAMA SHOUGAKKOU
+  latitude: 35.61600158
+  longitude: 139.70324905
+  address: Tōkyō-to Shinagawa-ku Koyama 5 Chome−10−6
+- name: 品川区立小山シルバーセンター SHINAGAWAKU RITSU OYAMA SILVERCENTER
+  latitude: 35.61489615
+  longitude: 139.70262414
+  address: 5 Chome-17-8 Koyama Shinagawa-ku Tōkyō-to 142-0062 Japan
+- name: 品川区立荏原第六中学校 SHINAGAWAKU RITSU EHARA DAIROKU CHUUGAKKOU
+  latitude: 35.61640705
+  longitude: 139.7000021
+  address: Tōkyō-to Shinagawa-ku Koyama 5 Chome−20−19
+- name: 品川区立小山台小学校 SHINAGAWAKU RITSU KOYAMADAI SHOUGAKKOU
+  latitude: 35.62279246
+  longitude: 139.70347104
+  address: Tōkyō-to Shinagawa-ku Koyamadai 1 Chome−18−24
+- name: 品川区立平塚シルバーセンター SHINAGAWAKU RITSU HIRATSUKA SILVERCENTER
+  latitude: 35.61691274
+  longitude: 139.71396197
+  address: 2 Chome-10-20 Hiratsuka Shinagawa-ku Tōkyō-to 142-0051 Japan
+- name: 品川区立京陽小学校 SHINAGAWAKU RITSU KYOU YOU SHOUGAKKOU
+  latitude: 35.6151157
+  longitude: 139.71307877
+  address: Tōkyō-to Shinagawa-ku Hiratsuka 2 Chome−19−20
+- name: 品川区立平塚児童センター SHINAGAWAKU RITSU HIRATSUKA JIDOU CENTER
+  latitude: 35.61879037
+  longitude: 139.71740885
+  address: Tōkyō-to Shinagawa-ku Hiratsuka 2 Chome−2−3
+- name: 品川区立小中一貫校荏原平塚学園 SHINAGAWAKU RITSU KONAKA IKKAN KOU EHARA HIRATSUKA GAKUEN
+  latitude: 35.61532396
+  longitude: 139.71010124
+  address: Tōkyō-to Shinagawa-ku Hiratsuka 3 Chome−16−26
+- name: 品川区立戸越台中学校 SHINAGAWAKU RITSU TOKOSHI DAI CHUUGAKKOU
+  latitude: 35.6157046
+  longitude: 139.7175867
+  address: Togoshi 1 Chome−15−23 区立戸越台中学校
+- name: 品川区立宮前小学校 SHINAGAWAKU RITSU MIYAMAE SHOUGAKKOU
+  latitude: 35.61187726
+  longitude: 139.71832841
+  address: Togoshi 4 Chome−5−10 区立宮前小学校
+- name: 品川区立大原児童センター SHINAGAWAKU RITSUDAI HARA JIDOU CENTER
+  latitude: 35.60732771
+  longitude: 139.71533713
+  address: Togoshi 6 Chome−16−1 大原児童センター
+- name: 品川区立大原小学校 SHINAGAWAKU RITSUDAI HARA SHOUGAKKOU
+  latitude: 35.60732217
+  longitude: 139.71599819
+  address: Togoshi 6 Chome−17−3 区立大原小学校
+- name: 品川区立清水台小学校 SHINAGAWAKU RITSU SHIMIZU DAI SHOUGAKKOU
+  latitude: 35.60718312
+  longitude: 139.70274658
+  address: 1 Chome-11-10 Hatanodai Shinagawa-ku Tōkyō-to 142-0064 Japan
+- name: 品川区立第二延山小学校 SHINAGAWAKU RITSU DAINI EN YAMA SHOUGAKKOU
+  latitude: 35.61011893
+  longitude: 139.70361308
+  address: Tōkyō-to Shinagawa-ku Hatanodai 1 Chome−6−1
+- name: 品川区立旗の台シルバーセンター SHINAGAWAKU RITSU HATA NO DAI SILVERCENTER
+  latitude: 35.60258363
+  longitude: 139.70466876
+  address: Tōkyō-to Shinagawa-ku Hatanodai 4 Chome−13−1
+- name: 品川区立旗台小学校 SHINAGAWAKU RITSU HATA DAI SHOUGAKKOU
+  latitude: 35.60335298
+  longitude: 139.70419378
+  address: Tōkyō-to Shinagawa-ku Hatanodai 4 Chome−7−11
+- name: 品川区立荏原第五中学校 SHINAGAWAKU RITSU EHARA DAIGO CHUUGAKKOU
+  latitude: 35.60315575
+  longitude: 139.7021023
+  address: Tōkyō-to Shinagawa-ku Hatanodai 5 Chome−11−13
+- name: 品川区立旗の台児童センター SHINAGAWAKU RITSU HATA NO DAI JIDOU CENTER
+  latitude: 35.60375567
+  longitude: 139.70045244
+  address: Tōkyō-to Shinagawa-ku Hatanodai 5 Chome−19−5
+- name: 品川区立心身障害者福祉会館 SHINAGAWAKU RITSU SHINSHIN SHOUGAISHA FUKUSHI KAIKAN
+  latitude: 35.60500276
+  longitude: 139.70041907
+  address: Tōkyō-to Shinagawa-ku Hatanodai 5 Chome−2−2
+- name: 品川区立東中延児童センター SHINAGAWAKU RITTOU NAKANOBE JIDOU CENTER
+  latitude: 35.60780541
+  longitude: 139.71380669
+  address: Tōkyō-to Shinagawa-ku Higashinakanobu 2 Chome−5−10
+- name: 品川区立日野学園 SHINAGAWAKU RITSU HINO GAKUEN
+  latitude: 35.62450384
+  longitude: 139.72816884
+  address: Tōkyō-to Shinagawa-ku Higashigotanda 2 Chome−11−1
+- name: 品川区立総合体育館 SHINAGAWAKU RITSU SOUGOU TAIIKUKAN
+  latitude: 35.62417888
+  longitude: 139.72826329
+  address: Tōkyō-to Shinagawa-ku Higashigotanda 2 Chome−11−2
+- name: 品川区立五反田シルバーセンター SHINAGAWAKU RITSU GOTANDA SILVERCENTER
+  latitude: 35.62193196
+  longitude: 139.72944106
+  address: Tōkyō-to Shinagawa-ku Higashigotanda 2 Chome−15−6
+- name: 品川区立東五反田児童センター SHINAGAWAKU RITTOU GOTANDA JIDOU CENTER
+  latitude: 35.62801165
+  longitude: 139.72338858
+  address: Tōkyō-to Shinagawa-ku Higashigotanda 5 Chome−24
+- name: 品川区立東品川児童センター SHINAGAWAKU RITTOU SHINAGAWA JIDOU CENTER
+  latitude: 35.61912723
+  longitude: 139.7460398
+  address: Tōkyō-to Shinagawa-ku Higashishinagawa 1 Chome−34−9
+- name: 品川区立台場小学校 SHINAGAWAKU RITSU DAIBA SHOUGAKKOU
+  latitude: 35.62138242
+  longitude: 139.74318439
+  address: Tōkyō-to Shinagawa-ku Higashishinagawa 1 Chome−8
+- name: 品川区立東海中学校 SHINAGAWAKU RITTOU KAICHUU GAKKOU
+  latitude: 35.61261978
+  longitude: 139.74897039
+  address: Tōkyō-to Shinagawa-ku Higashishinagawa 3 Chome−30−15
+- name: 品川区立城南第二小学校 SHINAGAWAKU RITSU JOUNAN DAINI SHOUGAKKOU
+  latitude: 35.61557766
+  longitude: 139.74598994
+  address: Tōkyō-to Shinagawa-ku Higashishinagawa 3 Chome−4−5
+- name: 品川区立東大井児童センター SHINAGAWAKU RITTOU OOI JIDOU CENTER
+  latitude: 35.60348178
+  longitude: 139.74137134
+  address: 1 Chome-22-16 Higashiōi Shinagawa-ku Tōkyō-to 140-0011 Japan
+- name: 品川区立鮫浜小学校 SHINAGAWAKU RITSU SAME HAMA SHOUGAKKOU
+  latitude: 35.60171531
+  longitude: 139.74066869
+  address: Tōkyō-to Shinagawa-ku Higashiōi 2 Chome−10−14
+- name: 品川区立浜川中学校 SHINAGAWAKU RITSU HAMAKAWA CHUUGAKKOU
+  latitude: 35.60019873
+  longitude: 139.73794395
+  address: Tōkyō-to Shinagawa-ku Higashiōi 3 Chome−18−34
+- name: 品川区立立会小学校 SHINAGAWAKU RITSU TACHIAI SHOUGAKKOU
+  latitude: 35.60446772
+  longitude: 139.74019083
+  address: Tōkyō-to Shinagawa-ku Higashiōi 4 Chome−15−9
+- name: 品川区立総合区民会館(きゅりあん) SHINAGAWAKU RITSU SOUGOU KUMIN KAIKAN ( KYURIAN )
+  latitude: 35.60617568
+  longitude: 139.73583554
+  address: 5 Chome-18-1 Higashiōi Shinagawa-ku Tōkyō-to 140-0011 Japan
+- name: 品川区立関ヶ原シルバーセンター SHINAGAWAKU RITSU KAN HARA SILVERCENTER
+  latitude: 35.60188179
+  longitude: 139.73650509
+  address: Tōkyō-to Shinagawa-ku Higashiōi 6 Chome−11−11
+- name: 品川区立荏原第一中学校 SHINAGAWAKU RITSU EHARA DAIICHI CHUUGAKKOU
+  latitude: 35.61944577
+  longitude: 139.71286755
+  address: Tōkyō-to Shinagawa-ku Ebara 1 Chome−24−30
+- name: 平塚橋シルバーセンター HIRATSUKA HASHI SILVERCENTER
+  latitude: 35.61439906
+  longitude: 139.70996517
+  address: Tōkyō-to Shinagawa-ku Nishinakanobu 1 Chome−2−8
+- name: 品川区立中延児童センター SHINAGAWAKU RITSU NAKANOBE JIDOU CENTER
+  latitude: 35.61241871
+  longitude: 139.70849591
+  address: Tōkyō-to Shinagawa-ku Nishinakanobu 1 Chome−6−16
+- name: 品川区立延山小学校 SHINAGAWAKU RITSU EN YAMA SHOUGAKKOU
+  latitude: 35.60901075
+  longitude: 139.70808215
+  address: Tōkyō-to Shinagawa-ku Nishinakanobu 2 Chome−17−5
+- name: 品川区立西中延児童センター SHINAGAWAKU RITSU NISHI NAKANOBE JIDOU CENTER
+  latitude: 35.60733316
+  longitude: 139.70814608
+  address: Tōkyō-to Shinagawa-ku Nishinakanobu 3 Chome−8−5
+- name: 品川区立西五反田シルバーセンター SHINAGAWAKU RITSU NISHIGOTANDA SILVERCENTER
+  latitude: 35.62653393
+  longitude: 139.71690587
+  address: Tōkyō-to Shinagawa-ku Nishigotanda 3 Chome−9−10
+- name: 品川区立第四日野小学校 SHINAGAWAKU RITSU DAIYOKKA NO SHOUGAKKOU
+  latitude: 35.62580338
+  longitude: 139.71234241
+  address: Tōkyō-to Shinagawa-ku Nishigotanda 4 Chome−29−9
+- name: 品川区立第一日野小学校 SHINAGAWAKU RITSU DAIICHINICHI NO SHOUGAKKOU
+  latitude: 35.62216774
+  longitude: 139.71609775
+  address: Tōkyō-to Shinagawa-ku Nishigotanda 6 Chome−5−32
+- name: 品川区立三ツ木児童センター SHINAGAWAKU RITSU MITSUGI JIDOU CENTER
+  latitude: 35.614005
+  longitude: 139.72621659
+  address: Tōkyō-to Shinagawa-ku Nishishinagawa 2 Chome−6−13
+- name: 品川区立大崎中学校 SHINAGAWAKU RITSUDAI SAKI CHUUGAKKOU
+  latitude: 35.61583526
+  longitude: 139.72301124
+  address: Tōkyō-to Shinagawa-ku Nishishinagawa 3 Chome−10−6
+- name: 品川区立三木小学校 SHINAGAWAKU RITSU MIKI SHOUGAKKOU
+  latitude: 35.61503267
+  longitude: 139.72663597
+  address: Tōkyō-to Shinagawa-ku Nishishinagawa 3 Chome−16−28
+- name: 品川区立冨士見台中学校 SHINAGAWAKU RITSU FUJIMIDAI CHUUGAKKOU
+  latitude: 35.59855372
+  longitude: 139.71526242
+  address: Tōkyō-to Shinagawa-ku Nishiōi 5 Chome−5−14
+- name: 品川区立伊藤小学校 SHINAGAWAKU RITSU ITOU SHOUGAKKOU
+  latitude: 35.59875374
+  longitude: 139.71727891
+  address: Tōkyō-to Shinagawa-ku Nishiōi 5 Chome−6−8
+- name: 品川区立冨士見台児童センター SHINAGAWAKU RITSU FUJIMIDAI JIDOU CENTER
+  latitude: 35.60137559
+  longitude: 139.71427074
+  address: Tōkyō-to Shinagawa-ku Nishiōi 6 Chome−1−8
+- name: 品川区立伊藤児童センター SHINAGAWAKU RITSU ITOU JIDOU CENTER
+  latitude: 35.60074517
+  longitude: 139.71754548
+  address: Tōkyō-to Shinagawa-ku Nishiōi 6 Chome−13−1
+- name: 品川区立ゆたか児童センター SHINAGAWAKU RITSU YUTAKA JIDOU CENTER
+  latitude: 35.61153294
+  longitude: 139.72270583
+  address: Tōkyō-to Shinagawa-ku Yutakachō 1 Chome−18−15
+- name: 品川区立戸越小学校 SHINAGAWAKU RITSU TOKOSHI SHOUGAKKOU
+  latitude: 35.61076076
+  longitude: 139.72097266
+  address: Tōkyō-to Shinagawa-ku Yutakachō 2 Chome−1−20
+- name: 品川区立ゆたかシルバーセンター SHINAGAWAKU RITSU YUTAKA SILVERCENTER
+  latitude: 35.608336
+  longitude: 139.71960618
+  address: Tōkyō-to Shinagawa-ku Yutakachō 3 Chome−2−15
+- name: 品川区立豊葉の杜中学校 SHINAGAWAKU RITSU YUTAKA HA NO MORI CHUUGAKKOU
+  latitude: 35.60896096
+  longitude: 139.72109215
+  address: Tōkyō-to Shinagawa-ku Yutakachō 3 Chome−5−31
+- name: 品川区立南ゆたか児童センター SHINAGAWAKU RITSU MINAMI YUTAKA JIDOU CENTER
+  latitude: 35.60647789
+  longitude: 139.72091446
+  address: Tōkyō-to Shinagawa-ku Yutakachō 4 Chome−17−21
+- name: 品川区立杜松小学校 SHINAGAWAKU RITSU MORI MATSU SHOUGAKKOU
+  latitude: 35.60602799
+  longitude: 139.72266989
+  address: Tōkyō-to Shinagawa-ku Yutakachō 4 Chome−24−15
+- name: 渋谷区立富谷小学校 SHIBUYAKU RITSU TOMIYA SHOUGAKKOU
+  latitude: 35.66933399
+  longitude: 139.68686811
+  address: Tōkyō-to Shibuya-ku Uehara 1 Chome−46−4
+- name: 渋谷区立上原小学校 SHIBUYAKU RITSU UEHARA SHOUGAKKOU
+  latitude: 35.66625358
+  longitude: 139.67884948
+  address: Tōkyō-to Shibuya-ku Uehara 3 Chome−13−20
+- name: 渋谷区立上原中学校 SHIBUYAKU RITSU UEHARA CHUUGAKKOU
+  latitude: 35.66696736
+  longitude: 139.67753568
+  address: Tōkyō-to Shibuya-ku Uehara 3 Chome−41−2
+- name: 渋谷区立代々木小学校 SHIBUYAKU RITSU YOYOGI SHOUGAKKOU
+  latitude: 35.68457697
+  longitude: 139.6979721
+  address: Tōkyō-to Shibuya-ku Yoyogi 2 Chome−35
+- name: 渋谷区あやめの苑・代々木 SHIBUYAKU AYAMENO EN . YOYOGI
+  latitude: 35.68256041
+  longitude: 139.69312816
+  address: Tōkyō-to Shibuya-ku Yoyogi 3 Chome−35−1
+- name: 渋谷区立山谷小学校 SHIBUYAKU TATEYAMA TANI SHOUGAKKOU
+  latitude: 35.68130782
+  longitude: 139.69472252
+  address: Tōkyō-to Shibuya-ku Yoyogi 3 Chome−47−1
+- name: 渋谷区立幡代小学校 SHIBUYAKU RITSU HATA DAI SHOUGAKKOU
+  latitude: 35.67917446
+  longitude: 139.68417908
+  address: Tōkyō-to Shibuya-ku Hatsudai 1 Chome−32−12
+- name: 渋谷区立千駄谷小学校 SHIBUYAKU RITSU SENDAGAYA SHOUGAKKOU
+  latitude: 35.67534215
+  longitude: 139.70762716
+  address: Tōkyō-to Shibuya-ku Sendagaya 2 Chome−4−1
+- name: 渋谷区立鳩森小学校 SHIBUYAKU RITSU HATO MORI SHOUGAKKOU
+  latitude: 35.68248018
+  longitude: 139.70578538
+  address: Tōkyō-to Shibuya-ku Sendagaya 5 Chome−9−1
+- name: 渋谷区立神南小学校 SHIBUYAKU RITSU KAMI MINAMI SHOUGAKKOU
+  latitude: 35.66337381
+  longitude: 139.69741187
+  address: Tōkyō-to Shibuya-ku Udagawachō 5−1
+- name: 渋谷区ケアステーション・笹幡本町 SHIBUYAKU KEASTATION . SASA HATA HONCHOU
+  latitude: 35.67644671
+  longitude: 139.67249688
+  address: Tōkyō-to Shibuya-ku Hatagaya 2 Chome−21−9
+- name: 渋谷区生活実習所つばさ SHIBUYAKU SEIKATSU JISSHUU TOKORO TSUBASA
+  latitude: 35.6794158
+  longitude: 139.67200515
+  address: Tōkyō-to Shibuya-ku Hatagaya 3 Chome−39−1
+- name: 渋谷区立中幡小学校 SHIBUYAKU RITSU NAKA HATA SHOUGAKKOU
+  latitude: 35.68046848
+  longitude: 139.67285503
+  address: Tōkyō-to Shibuya-ku Hatagaya 3 Chome−49−1
+- name: 渋谷区立臨川小学校 SHIBUYAKU RITSU RIN KAWA SHOUGAKKOU
+  latitude: 35.64903968
+  longitude: 139.71625245
+  address: Tōkyō-to Shibuya-ku Hiroo 1 Chome−9−17
+- name: 渋谷区立加計塚小学校 SHIBUYAKU RITSU KA KEI TSUKA SHOUGAKKOU
+  latitude: 35.64439852
+  longitude: 139.7145278
+  address: Tōkyō-to Shibuya-ku Ebisu 4 Chome−21−10
+- name: 渋谷区立長谷戸小学校 SHIBUYAKU RITSU HASE KO SHOUGAKKOU
+  latitude: 35.64739525
+  longitude: 139.70634508
+  address: Tōkyō-to Shibuya-ku Ebisunishi 1 Chome−23−1
+- name: 渋谷区立本町東小学校 SHIBUYAKU RITSU HONCHOU HIGASHI SHOUGAKKOU
+  latitude: 35.68768175
+  longitude: 139.68200116
+  address: 3 Chome-45-11 Honmachi Shibuya-ku Tōkyō-to 151-0071 Japan
+- name: 渋谷区立本町小学校 SHIBUYAKU RITSU HONCHOU SHOUGAKKOU
+  latitude: 35.68504867
+  longitude: 139.67998756
+  address: 4 Chome-37-1 Honmachi Shibuya-ku Tōkyō-to 151-0071 Japan
+- name: 渋谷区立本町中学校 SHIBUYAKU RITSU HONCHOU CHUUGAKKOU
+  latitude: 35.68604583
+  longitude: 139.68192624
+  address: Tōkyō-to Shibuya-ku Honmachi 4 Chome−3−1
+- name: 渋谷区立常磐松小学校 SHIBUYAKU RITSU JOUBAN MATSU SHOUGAKKOU
+  latitude: 35.65566384
+  longitude: 139.71034717
+  address: Tōkyō-to Shibuya-ku Higashi 1 Chome−7−10
+- name: 渋谷区ひがし健康プラザ SHIBUYAKU HIGASHI KENKOU PURAZA
+  latitude: 35.65084215
+  longitude: 139.70974187
+  address: Tōkyō-to Shibuya-ku Higashi 3 Chome−14−13
+- name: 渋谷区立広尾小学校 SHIBUYAKU RITSU HIROO SHOUGAKKOU
+  latitude: 35.65180319
+  longitude: 139.71205828
+  address: Tōkyō-to Shibuya-ku Higashi 3 Chome−3−3
+- name: 渋谷区立松濤中学校 SHIBUYAKU TATEMATSU TOU CHUUGAKKOU
+  latitude: 35.66119334
+  longitude: 139.69089585
+  address: Tōkyō-to Shibuya-ku Shōtō 1 Chome−20−4
+- name: 渋谷区立猿楽小学校 SHIBUYAKU RITSU ENRAKU SHOUGAKKOU
+  latitude: 35.65087809
+  longitude: 139.70167866
+  address: Tōkyō-to Shibuya-ku Sarugakuchō 12−35
+- name: 渋谷区高齢者ケアセンター SHIBUYAKU KOUREISHA KEACENTER
+  latitude: 35.66432656
+  longitude: 139.70073654
+  address: Tōkyō-to Shibuya-ku Jinnan 1 Chome−8−6
+- name: 渋谷区立原宿外苑中学校 SHIBUYAKU TACHIHARA YADO GAIEN CHUUGAKKOU
+  latitude: 35.67333677
+  longitude: 139.70530522
+  address: Tōkyō-to Shibuya-ku Jingūmae 1 Chome−24−6
+- name: 渋谷区ケアコミュニティ・原宿の丘 SHIBUYAKU KEAKOMYUNITEI . HARAJUKU NO OKA
+  latitude: 35.66989841
+  longitude: 139.71113817
+  address: Tōkyō-to Shibuya-ku Jingūmae 3 Chome−12−8
+- name: 港区立麻布小学校 MINATOKU RITSU AZABU SHOUGAKKOU
+  latitude: 35.66194152
+  longitude: 139.73855273
+  address: Tōkyō-to Minato-ku Azabudai 1 Chome−5−15
+- name: 渋谷区ケアコミュニティ・原宿の丘 SHIBUYAKU KEAKOMYUNITEI . HARAJUKU NO OKA
+  latitude: 35.66989841
+  longitude: 139.71113817
+  address: Tōkyō-to Shibuya-ku Jingūmae 3 Chome−12−8
+- name: 渋谷区立神宮前小学校 SHIBUYAKU RITSU JINGUUMAE SHOUGAKKOU
+  latitude: 35.667918
+  longitude: 139.70817185
+  address: Tōkyō-to Shibuya-ku Jingūmae 4 Chome−20−12
+- name: 渋谷区立笹塚小学校 SHIBUYAKU RITSU SASAZUKA SHOUGAKKOU
+  latitude: 35.6760689
+  longitude: 139.66893055
+  address: Tōkyō-to Shibuya-ku Sasazuka 2 Chome−8−1
+- name: 渋谷区立笹塚中学校 SHIBUYAKU RITSU SASAZUKA CHUUGAKKOU
+  latitude: 35.67754373
+  longitude: 139.66868329
+  address: Tōkyō-to Shibuya-ku Sasazuka 3 Chome−10−1
+- name: 渋谷区総合ケアコミュニティ・せせらぎ SHIBUYAKU SOUGOU KEAKOMYUNITEI . SESERAGI
+  latitude: 35.67530818
+  longitude: 139.6818961
+  address: Tōkyō-to Shibuya-ku Nishihara 1 Chome−40−10
+- name: 渋谷区スポーツセンター SHIBUYAKU SPORTSCENTER
+  latitude: 35.67556368
+  longitude: 139.68096561
+  address: 1 Chome-40-18 Nishihara Shibuya-ku Tōkyō-to 151-0066 Japan
+- name: 渋谷区立代々木中学校 SHIBUYAKU RITSU YOYOGI CHUUGAKKOU
+  latitude: 35.67396115
+  longitude: 139.68320992
+  address: Tōkyō-to Shibuya-ku Nishihara 1 Chome−46−1
+- name: 渋谷区けやきの苑・西原 SHIBUYAKU KEYAKINO EN . NISHIHARA
+  latitude: 35.67407493
+  longitude: 139.67951857
+  address: Tōkyō-to Shibuya-ku Nishihara 2 Chome−19−1
+- name: 渋谷区立西原小学校 SHIBUYAKU RITSU NISHIHARA SHOUGAKKOU
+  latitude: 35.67400825
+  longitude: 139.67862143
+  address: Tōkyō-to Shibuya-ku Nishihara 2 Chome−22−1
+- name: 渋谷区立鉢山中学校 SHIBUYAKU RITSU HACHI SANCHUU GAKKOU
+  latitude: 35.65321673
+  longitude: 139.70293124
+  address: Tōkyō-to Shibuya-ku Uguisudanichō 9−1
+- name: 港区立赤羽小学校 MINATOKU RITSU AKABANE SHOUGAKKOU
+  latitude: 35.65323145
+  longitude: 139.74252212
+  address: Tōkyō-to Minato-ku Mita 1 Chome−4−52
+- name: 旧南海小学校 KYUU NANKAI SHOUGAKKOU
+  latitude: 35.64611005
+  longitude: 139.743039
+  address: 3 Chome-4-3 Mita Minato-ku Tōkyō-to 108-0073 Japan
+- name: 港区立御田小学校 MINATOKU RITSU O TA SHOUGAKKOU
+  latitude: 35.64317137
+  longitude: 139.738034
+  address: Tōkyō-to Minato-ku Mita 4 Chome−11−38
+- name: 三田中学校 MITA CHUUGAKKOU
+  latitude: 35.64522954
+  longitude: 139.74085034
+  address: Tōkyō-to Minato-ku Mita 4 Chome−13−13
+- name: 豊岡いきいきプラザ TOYOOKA IKIIKI PURAZA
+  latitude: 35.64650159
+  longitude: 139.73966151
+  address: Tōkyō-to Minato-ku Mita 5 Chome−7−7
+- name: 港区立南山小学校 MINATOKU RITSU NANZAN SHOUGAKKOU
+  latitude: 35.65725574
+  longitude: 139.731123
+  address: Tōkyō-to Minato-ku Motoazabu 3 Chome−8−15
+- name: 麻布福祉会館 AZABU FUKUSHI KAIKAN
+  latitude: 35.65595031
+  longitude: 139.73055921
+  address: 3 Chome-9-11 Motoazabu Minato-ku Tōkyō-to 106-0046 Japan
+- name: 麻布区民センター AZABU KUMIN CENTER
+  latitude: 35.66063602
+  longitude: 139.73494754
+  address: Tōkyō-to Minato-ku Roppongi 5 Chome−16−45
+- name: 港区立六本木中学校 MINATOKU RITSU ROPPONGI CHUUGAKKOU
+  latitude: 35.66082482
+  longitude: 139.7322561
+  address: Tōkyō-to Minato-ku Roppongi 6 Chome−8−16
+- name: 港区立青山中学校 MINATOKU RITSU AOYAMA CHUUGAKKOU
+  latitude: 35.67419259
+  longitude: 139.72215369
+  address: Tōkyō-to Minato-ku Kitaaoyama 1 Chome−1−9
+- name: 青山いきいきプラザ AOYAMA IKIIKI PURAZA
+  latitude: 35.66919034
+  longitude: 139.72124287
+  address: Tōkyō-to Minato-ku Minamiaoyama 2 Chome−16−5
+- name: 港区立青山小学校 MINATOKU RITSU AOYAMA SHOUGAKKOU
+  latitude: 35.66987356
+  longitude: 139.71906248
+  address: Tōkyō-to Minato-ku Minamiaoyama 2 Chome−21−2
+- name: 青南いきいきプラザ AO MINAMI IKIIKI PURAZA
+  latitude: 35.66646556
+  longitude: 139.71731277
+  address: Tōkyō-to Minato-ku Minamiaoyama 4 Chome−10−1
+- name: 港区立青南小学校 MINATOKU RITSU AO MINAMI SHOUGAKKOU
+  latitude: 35.66350475
+  longitude: 139.71614355
+  address: Tōkyō-to Minato-ku Minamiaoyama 4 Chome−21−15
+- name: 南麻布いきいきプラザ MINAMI AZABU IKIIKI PURAZA
+  latitude: 35.65143425
+  longitude: 139.73510063
+  address: Tōkyō-to Minato-ku Minamiazabu 1 Chome−5−26
+- name: 港区立東町小学校 MINATOKU RITTOU MACHI SHOUGAKKOU
+  latitude: 35.65070101
+  longitude: 139.7354784
+  address: Tōkyō-to Minato-ku Minamiazabu 1 Chome−8−11
+- name: 本村いきいきプラザ MOTOMURA IKIIKI PURAZA
+  latitude: 35.65098419
+  longitude: 139.73046218
+  address: Tōkyō-to Minato-ku Minamiazabu 3 Chome−5−15
+- name: 港区立本村小学校 MINATOKU RITSU MOTOMURA SHOUGAKKOU
+  latitude: 35.64981765
+  longitude: 139.72995949
+  address: Tōkyō-to Minato-ku Minamiazabu 3 Chome−9−33
+- name: 港区立港陽小学校・中学校 MINATOKU RITSU MINATO YOU SHOUGAKKOU . CHUUGAKKOU
+  latitude: 35.63364569
+  longitude: 139.77712254
+  address: Tōkyō-to Minato-ku Daiba 1 Chome−1−5
+- name: 台場区民センター DAIBA KUMIN CENTER
+  latitude: 35.62999333
+  longitude: 139.777081
+  address: Tōkyō-to Minato-ku Daiba 1 Chome−5−1
+- name: 港区立生涯学習センター MINATOKU RITSU SHOUGAIGAKUSHUU CENTER
+  latitude: 35.66562215
+  longitude: 139.75711487
+  address: Tōkyō-to Minato-ku Shinbashi 3 Chome−16−3
+- name: 福祉プラザさくら川(旧桜川小学校) FUKUSHI PURAZA SAKURA KAWA ( KYUU SAKURAGAWA SHOUGAKKOU
+    )
+  latitude: 35.66120588
+  longitude: 139.75377922
+  address: Tōkyō-to Minato-ku Shinbashi 6 Chome−19−2
+- name: 新橋福祉会館 SHINBASHI FUKUSHI KAIKAN
+  latitude: 35.66235576
+  longitude: 139.75400971
+  address: Tōkyō-to Minato-ku Shinbashi 6 Chome−4−2
+- name: 旧飯倉小学校 KYUU IIKURA SHOUGAKKOU
+  latitude: 35.65814759
+  longitude: 139.74255529
+  address: Tōkyō-to Minato-ku Higashiazabu 2 Chome−1−1
+- name: 飯倉いきいきプラザ IIKURA IKIIKI PURAZA
+  latitude: 35.65690324
+  longitude: 139.74088881
+  address: Tōkyō-to Minato-ku Higashiazabu 2 Chome−16−11
+- name: エコプラザ(旧神明小学校) EKOPURAZA ( KYUU JINMEI SHOUGAKKOU )
+  latitude: 35.65884788
+  longitude: 139.75688737
+  address: Tōkyō-to Minato-ku Hamamatsuchō 1 Chome−13−1
+- name: 港南いきいきプラザ KOUNAN IKIIKI PURAZA
+  latitude: 35.62935385
+  longitude: 139.74782537
+  address: Tōkyō-to Minato-ku Kōnan 4 Chome−2−1
+- name: 港区立港南中学校 MINATOKU RITSU KOUNAN CHUUGAKKOU
+  latitude: 35.63119534
+  longitude: 139.74911131
+  address: Tōkyō-to Minato-ku Kōnan 4 Chome−3−3
+- name: 白金いきいきプラザ SHIROGANE IKIIKI PURAZA
+  latitude: 35.6448849
+  longitude: 139.73107345
+  address: Tōkyō-to Minato-ku Shirokane 3 Chome−10−12
+- name: 港区立三光小学校 MINATOKU RITSU SANKOU SHOUGAKKOU
+  latitude: 35.64439047
+  longitude: 139.72920975
+  address: Tōkyō-to Minato-ku Shirokane 3 Chome−18−2
+- name: 港区立朝日中学校 MINATOKU RITSU ASAHI CHUUGAKKOU
+  latitude: 35.64364884
+  longitude: 139.72707387
+  address: Tōkyō-to Minato-ku Shirokane 4 Chome−1−12
+- name: 港区立神応小学校 MINATOKU RITSU KAMI OU SHOUGAKKOU
+  latitude: 35.64362934
+  longitude: 139.72426579
+  address: 6 Chome-5-17 Shirokane Minato-ku Tōkyō-to 108-0072 Japan
+- name: 港区立白金小学校 MINATOKU RITSU SHIROGANE SHOUGAKKOU
+  latitude: 35.63681076
+  longitude: 139.72856007
+  address: Tōkyō-to Minato-ku Shirokanedai 1 Chome−4−26
+- name: 白金台いきいきプラザ SHIROGANEDAI IKIIKI PURAZA
+  latitude: 35.63771613
+  longitude: 139.72496593
+  address: Tōkyō-to Minato-ku Shirokanedai 4 Chome−8−5
+- name: 障害健康福祉センター SHOUGAI KENKOU FUKUSHI CENTER
+  latitude: 35.65164308
+  longitude: 139.75555717
+  address: Tōkyō-to Minato-ku Shiba 1 Chome−8−23
+- name: 港区立芝小学校 MINATOKU RITSU SHIBA SHOUGAKKOU
+  latitude: 35.65130131
+  longitude: 139.75017986
+  address: Tōkyō-to Minato-ku Shiba 2 Chome−21−3
+- name: 三田いきいきプラザ MITA IKIIKI PURAZA
+  latitude: 35.64877381
+  longitude: 139.74978276
+  address: Tōkyō-to Minato-ku Shiba 4 Chome−1−17
+- name: 港勤労福祉会館 MINATO KINROU FUKUSHI KAIKAN
+  latitude: 35.64801275
+  longitude: 139.74849123
+  address: Tōkyō-to Minato-ku Shiba 5 Chome−18−2
+- name: 芝公園福祉会館 SHIBAKOUEN FUKUSHI KAIKAN
+  latitude: 35.65418156
+  longitude: 139.75056584
+  address: Tōkyō-to Minato-ku Shibakōen 2 Chome−7−3
+- name: 港区立御成門小学校 MINATOKU RITSU ONARIMON SHOUGAKKOU
+  latitude: 35.66098357
+  longitude: 139.74951848
+  address: Tōkyō-to Minato-ku Shibakōen 3 Chome−2−4
+- name: 港区スポーツセンター MINATOKU SPORTSCENTER
+  latitude: 35.6455464
+  longitude: 139.75004396
+  address: 3 Chome-1-19 Shibaura Minato-ku Tōkyō-to 105-0023 Japan
+- name: 男女平等参画センター DANJOBYOUDOU SANKAKU CENTER
+  latitude: 35.64566302
+  longitude: 139.74903293
+  address: 3 Chome-1-47 Shibaura Minato-ku Tōkyō-to 105-0023 Japan
+- name: 芝浦港南区民センター SHIBAURA KOUNANKU TAMI CENTER
+  latitude: 35.64049698
+  longitude: 139.74861653
+  address: Tōkyō-to Minato-ku Shibaura 4 Chome−13−1
+- name: 港区立芝浦小学校 MINATOKU RITSU SHIBAURA SHOUGAKKOU
+  latitude: 35.63815832
+  longitude: 139.74631127
+  address: Tōkyō-to Minato-ku Shibaura 4 Chome−8−18
+- name: 虎ノ門いきいきプラザ(とらトピア) TORANOMON IKIIKI PURAZA ( TORA TOPIA )
+  latitude: 35.66783836
+  longitude: 139.74873217
+  address: Toranomon 1 Chome−21−10 グランスイート虎ノ門
+- name: 港区立御成門中学校 MINATOKU RITSU ONARIMON CHUUGAKKOU
+  latitude: 35.66163075
+  longitude: 139.75036838
+  address: Tōkyō-to Minato-ku Nishishinbashi 3 Chome−25−30
+- name: 西麻布福祉会館 NISHIAZABU FUKUSHI KAIKAN
+  latitude: 35.66077461
+  longitude: 139.72278473
+  address: Tōkyō-to Minato-ku Nishiazabu 2 Chome−13−3
+- name: 港区立笄小学校 MINATOKU RITSU KEI SHOUGAKKOU
+  latitude: 35.65646957
+  longitude: 139.72490692
+  address: Tōkyō-to Minato-ku Nishiazabu 3 Chome−11−16
+- name: 港区立高陵中学校 MINATOKU RITSU TAKA RYOU CHUUGAKKOU
+  latitude: 35.6568972
+  longitude: 139.72039343
+  address: Tōkyō-to Minato-ku Nishiazabu 4 Chome−14−8
+- name: 旧赤坂小学校 KYUU AKASAKA SHOUGAKKOU
+  latitude: 35.67652595
+  longitude: 139.73477748
+  address: 4 Chome-1-26 Akasaka Minato-ku Tōkyō-to 107-0052 Japan
+- name: 赤坂区民センター AKASAKA KUMIN CENTER
+  latitude: 35.6747483
+  longitude: 139.73163338
+  address: Tōkyō-to Minato-ku Akasaka 4 Chome−18−13
+- name: 赤坂いきいきプラザ AKASAKA IKIIKI PURAZA
+  latitude: 35.67035718
+  longitude: 139.73493882
+  address: Tōkyō-to Minato-ku Akasaka 6 Chome−4−8
+- name: サン・サン赤坂 SAN . SAN AKASAKA
+  latitude: 35.66996563
+  longitude: 139.73763027
+  address: Tōkyō-to Minato-ku Akasaka 6 Chome−6−14
+- name: 港区立赤坂小学校 MINATOKU RITSU AKASAKA SHOUGAKKOU
+  latitude: 35.66930721
+  longitude: 139.73103088
+  address: Tōkyō-to Minato-ku Akasaka 8 Chome−13−29
+- name: 港区立赤坂中学校 MINATOKU RITSU AKASAKA CHUUGAKKOU
+  latitude: 35.66816568
+  longitude: 139.73149755
+  address: Tōkyō-to Minato-ku Akasaka 9 Chome−2−3
+- name: 港区立高松中学校 MINATOKU RITSU TAKAMATSU CHUUGAKKOU
+  latitude: 35.64194919
+  longitude: 139.73410383
+  address: Takanawa 1 Chome−16−25 港区役所高輪地区総合支所
+- name: 港区立高輪台小学校 MINATOKU RITSU TAKANAWA DAI SHOUGAKKOU
+  latitude: 35.6364248
+  longitude: 139.73408458
+  address: Takanawa 2 Chome−8−24 区立高輪台小学校
+- name: 高輪いきいきプラザ TAKANAWA IKIIKI PURAZA
+  latitude: 35.63320022
+  longitude: 139.73569288
+  address: Takanawa 3 Chome−18−15 区立高輪保育園
+- name: 目黒区立鳥森小学校 MEGUROKU RITSU TORI MORI SHOUGAKKOU
+  latitude: 35.64412308
+  longitude: 139.69200192
+  address: Tōkyō-to Meguro-ku Kamimeguro 3 Chome−37−24
+- name: 目黒区立第三中学校 MEGUROKU RITSU DAISAN CHUUGAKKOU
+  latitude: 35.63105547
+  longitude: 139.70748713
+  address: Tōkyō-to Meguro-ku Shimomeguro 3 Chome−23−18
+- name: 目黒区立不動小学校 MEGUROKU RITSU FUDOU SHOUGAKKOU
+  latitude: 35.62690025
+  longitude: 139.69984346
+  address: 6 Chome-11-16 Shimomeguro Meguro-ku Tōkyō-to 153-0064 Japan
+- name: 目黒区立第四中学校 MEGUROKU RITSU DAIYON CHUUGAKKOU
+  latitude: 35.6286111
+  longitude: 139.69665479
+  address: 6 Chome-18-28 Shimomeguro Meguro-ku Tōkyō-to 153-0064 Japan
+- name: 目黒区立鷹番小学校 MEGUROKU RITSU TAKA BAN SHOUGAKKOU
+  latitude: 35.62776104
+  longitude: 139.69022201
+  address: Tōkyō-to Meguro-ku Chūōchō 1 Chome−20−26
+- name: スマイルプラザ中央町 SUMAIRUPURAZA CHUUOU MACHI
+  latitude: 35.63151057
+  longitude: 139.6887748
+  address: Tōkyō-to Meguro-ku Chūōchō 2 Chome−32−5
+- name: 目黒区立油面小学校 MEGUROKU RITSU ABURA MEN SHOUGAKKOU
+  latitude: 35.63239402
+  longitude: 139.69829898
+  address: Tōkyō-to Meguro-ku Nakachō 1 Chome−5−4
+- name: 目黒区立目黒中央中学校 MEGUROKU RITSU MEGURO CHUUOU CHUUGAKKOU
+  latitude: 35.63467698
+  longitude: 139.69364653
+  address: Tōkyō-to Meguro-ku Nakachō 2 Chome−37−38
+- name: 目黒区立中目黒小学校 MEGUROKU RITSU NAKAMEGURO SHOUGAKKOU
+  latitude: 35.64019314
+  longitude: 139.6991709
+  address: Tōkyō-to Meguro-ku Nakameguro 3 Chome−13−32
+- name: 特別養護老人ホーム中目黒 TOKUBETSU YOUGO ROUJIN HOME NAKAMEGURO
+  latitude: 35.63601032
+  longitude: 139.70086533
+  address: Tōkyō-to Meguro-ku Nakameguro 5 Chome−7−35
+- name: 目黒区立上目黒小学校 MEGUROKU RITSU UWAME KURO SHOUGAKKOU
+  latitude: 35.63873477
+  longitude: 139.69042444
+  address: Tōkyō-to Meguro-ku Gohongi 1 Chome−12−13
+- name: 目黒区立五本木小学校 MEGUROKU RITSU GO MOTOKI SHOUGAKKOU
+  latitude: 35.63441576
+  longitude: 139.68778312
+  address: Tōkyō-to Meguro-ku Gohongi 2 Chome−24−3
+- name: 目黒区立八雲小学校 MEGUROKU RITSU YAKUMO SHOUGAKKOU
+  latitude: 35.61806166
+  longitude: 139.67125443
+  address: Tōkyō-to Meguro-ku Yakumo 2 Chome−5−1
+- name: 目黒区立宮前小学校 MEGUROKU RITSU MIYAMAE SHOUGAKKOU
+  latitude: 35.61536461
+  longitude: 139.66687987
+  address: Tōkyō-to Meguro-ku Yakumo 3 Chome−13−21
+- name: 目黒区立第十中学校 MEGUROKU RITSU DAI JUTCHUU GAKKOU
+  latitude: 35.62431921
+  longitude: 139.66867667
+  address: Tōkyō-to Meguro-ku Yakumo 5 Chome−2−1
+- name: 目黒区立原町小学校 MEGUROKU TACHIHARA MACHI SHOUGAKKOU
+  latitude: 35.61575137
+  longitude: 139.69049182
+  address: Tōkyō-to Meguro-ku Haramachi 2 Chome−18−12
+- name: 目黒区立第一中学校 MEGUROKU RITSU DAIICHI CHUUGAKKOU
+  latitude: 35.65466619
+  longitude: 139.68663256
+  address: Tōkyō-to Meguro-ku Ōhashi 2 Chome−11−1
+- name: 特別養護老人ホーム駒場苑 TOKUBETSU YOUGO ROUJIN HOME KOMABA EN
+  latitude: 35.65504105
+  longitude: 139.68252178
+  address: Tōkyō-to Meguro-ku Ōhashi 2 Chome−19−1
+- name: 目黒区立大岡山小学校 MEGUROKU RITSUDAI OKAYAMA SHOUGAKKOU
+  latitude: 35.61548175
+  longitude: 139.68300356
+  address: Tairamachi 2 Chome−3−1 区立大岡山小学校
+- name: 目黒区立東根小学校 MEGUROKU RITTOU NE SHOUGAKKOU
+  latitude: 35.62715777
+  longitude: 139.66802664
+  address: Tōkyō-to Meguro-ku Higashigaoka 1 Chome−20−1
+- name: 特別養護老人ホーム東が丘 TOKUBETSU YOUGO ROUJIN HOME HIGASHI GA OKA
+  latitude: 35.62635514
+  longitude: 139.67051257
+  address: Tōkyō-to Meguro-ku Higashigaoka 1 Chome−6−4
+- name: 目黒区立東山中学校 MEGUROKU RITTOU SANCHUU GAKKOU
+  latitude: 35.64647555
+  longitude: 139.69022699
+  address: Tōkyō-to Meguro-ku Higashiyama 1 Chome−24−31
+- name: 目黒区立東山小学校 MEGUROKU RITTOU YAMA SHOUGAKKOU
+  latitude: 35.64691983
+  longitude: 139.6857579
+  address: Tōkyō-to Meguro-ku Higashiyama 2 Chome−24−25
+- name: 特別養護老人ホーム東山 TOKUBETSU YOUGO ROUJIN HOME HIGASHIYAMA
+  latitude: 35.64735033
+  longitude: 139.68543569
+  address: Tōkyō-to Meguro-ku Higashiyama 3 Chome−24−6
+- name: 目黒区立第九中学校 MEGUROKU RITSU DAIKU CHUUGAKKOU
+  latitude: 35.61350731
+  longitude: 139.69454989
+  address: Tōkyō-to Meguro-ku Senzoku 1 Chome−29−26
+- name: 目黒区立田道小学校 MEGUROKU TATSUTA MICHI SHOUGAKKOU
+  latitude: 35.63759365
+  longitude: 139.70916737
+  address: Tōkyō-to Meguro-ku Meguro 1 Chome−15−28
+- name: 目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU
+  latitude: 35.63420237
+  longitude: 139.70915357
+  address: Tōkyō-to Meguro-ku Meguro 2 Chome−7−9
+- name: 目黒区立月光原小学校 MEGUROKU RITSU GEKKOU HARA SHOUGAKKOU
+  latitude: 35.62251177
+  longitude: 139.69456904
+  address: Tōkyō-to Meguro-ku Megurohonchō 4 Chome−15−3
+- name: 特別養護老人ホーム清徳苑 TOKUBETSU YOUGO ROUJIN HOME KIYOSHI TOKU EN
+  latitude: 35.62282293
+  longitude: 139.69829927
+  address: Tōkyō-to Meguro-ku Megurohonchō 4 Chome−2−1
+- name: 目黒区立向原小学校 MEGUROKU RITSU MUKAIHARA SHOUGAKKOU
+  latitude: 35.61871504
+  longitude: 139.69578294
+  address: Tōkyō-to Meguro-ku Megurohonchō 6 Chome−7−15
+- name: 目黒区立碑小学校 MEGUROKU RITSU HI SHOUGAKKOU
+  latitude: 35.61961479
+  longitude: 139.6905889
+  address: Tōkyō-to Meguro-ku Himonya 1 Chome−18−2
+- name: 目黒区立第七中学校 MEGUROKU RITSU DAINANA CHUUGAKKOU
+  latitude: 35.62292276
+  longitude: 139.6917637
+  address: Tōkyō-to Meguro-ku Himonya 1 Chome−1−33
+- name: 目黒区立第八中学校 MEGUROKU RITSU DAI HATCHUU GAKKOU
+  latitude: 35.61968402
+  longitude: 139.68249512
+  address: Tōkyō-to Meguro-ku Himonya 4 Chome−19−25
+- name: 目黒区立碑文谷公園 MEGUROKU RITSU HIMONYA KOUEN
+  latitude: 35.62654987
+  longitude: 139.68208383
+  address: Tōkyō-to Meguro-ku Himonya 6 Chome−9−11
+- name: 目黒区立第十一中学校 MEGUROKU RITSU DAI JUUICHI CHUUGAKKOU
+  latitude: 35.60946846
+  longitude: 139.67902356
+  address: Tōkyō-to Meguro-ku Midorigaoka 1 Chome−8−1
+- name: 目黒区立緑ヶ丘小学校 MEGUROKU RITSU MIDORIGAOKA SHOUGAKKOU
+  latitude: 35.6103071
+  longitude: 139.67347954
+  address: Tōkyō-to Meguro-ku Midorigaoka 2 Chome−13−1
+- name: 特別養護老人ホーム青葉台さくら苑 TOKUBETSU YOUGO ROUJIN HOME AOBADAI SAKURA EN
+  latitude: 35.64960579
+  longitude: 139.69200173
+  address: Tōkyō-to Meguro-ku Aobadai 3 Chome−21−6
+- name: 目黒区立菅刈小学校 MEGUROKU RITSU KAN KARI SHOUGAKKOU
+  latitude: 35.65167222
+  longitude: 139.6921572
+  address: Tōkyō-to Meguro-ku Aobadai 3 Chome−3−26
