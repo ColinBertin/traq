@@ -80,12 +80,17 @@ Location.create!(name: "The Nippon Foundation", address: "1 Chome−2−2 Minato
   # Contribution.create!(supply_type: "First Aid", description: "I have some first aid kits you can use", quantity: 15)
  end
 
-  food = Contribution.new(supply_type: "Water", description: "I have 50 packs of instant water to give away.", quantity: 20)
+  food = Contribution.new(supply_type: "Water", description: "I have 50 packs of water to give away.", quantity: 20)
   food.user = User.all.sample
   food.location = Location.all.sample
   food.save
 
-  food = Contribution.new(supply_type: "First Aid", description: "I have some extra pain killers to give away.", quantity: 100)
+  food = Contribution.new(supply_type: "Water", description: "I have 50 packs of instant noodle to give away.", quantity: 50)
+  food.user = User.all.sample
+  food.location = Location.all.sample
+  food.save
+
+  food = Contribution.new(supply_type: "First Aid", description: "I have some first aid to share.", quantity: 100)
   food.user = User.all.sample
   food.location = Location.all.sample
   food.save
