@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   namespace :users do
     resources :contributions, only: [:index]
   end
-  resources :locations, only: [:index, :show, :new, :create, :edit, :update] do
-    resources :comments, only: [:index, :create]
+  resources :locations do
+    resources :comments, only: [:index, :create] # check where goes the comments
+    resources :contributions, only: [:new, :create]
   end
-  resources :locations, only: [:destroy]
-  resources :contributions, only: [:new, :create, :edit, :update, :destroy]
+  resources :contributions, only: [:edit, :update, :destroy]
   resources :news, only: [:index]
 end
