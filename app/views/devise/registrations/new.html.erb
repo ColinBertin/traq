@@ -1,3 +1,7 @@
+<div class="container">
+  <div class="row justify-content-center mt-4">
+    <div class="col-12 card-no-hover p-4">
+
 <h2>Sign up</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -18,8 +22,11 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Sign up", class:"btn-primary mb-4" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+</div>
+</div>
