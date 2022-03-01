@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :users do
+    resources :contributions, only: [:index]
+  end
+  resources :locations do
+    resources :comments, only: [:index, :create] # check where goes the comments
+    resources :contributions, only: [:new, :create]
+  end
+  resources :contributions, only: [:edit, :update, :destroy]
+  resources :news, only: [:index]
 end
