@@ -8,30 +8,31 @@
 require 'yaml'
 
 puts 'Cleaning database...'
-# User.destroy_all
+User.destroy_all
 Location.destroy_all
 Contribution.destroy_all
 
 # Create User
 # Individual Contributor Profile
-# puts 'Creating users'
-# User.create!(email: "kimm@gmail.com", password:123456)
 
-# User.create!(email: "colin@gmail.com", password:123456)
+puts 'Creating users'
+User.create!(email: "kimm@gmail.com", password:123456)
 
-# User.create!(email: "takeshi@gmail.com", password:123456)
-# # People who need help
+User.create!(email: "colin@gmail.com", password:123456)
 
-# User.create!(email: "doug@dmb.com", password:123456)
+User.create!(email: "takeshi@gmail.com", password:123456)
+# People who need help
 
-# User.create!(email: "yann@yannify.com", password:123456)
+User.create!(email: "doug@dmb.com", password:123456)
 
-# User.create!(email: "louis@gmail.com", password:123456)
+User.create!(email: "yann@yannify.com", password:123456)
 
-# # NGO profile
-# User.create!(email: "redcross@donation.com", password:123456)
+User.create!(email: "louis@gmail.com", password:123456)
 
-# puts "... #{User.count} users has been created"
+# NGO profile
+User.create!(email: "redcross@donation.com", password:123456)
+
+puts "... #{User.count} users has been created"
 
 yml_file = YAML::load_file('shelters.yml')
 yml_file.each do |row|
@@ -68,14 +69,13 @@ Location.create!(name: "The Nippon Foundation", address: "1 Chome−2−2 Minato
 
 # Creating contributions
 
-# 10.times do
-#  food = Contribution.new(supply_type: "Food", description: "I have 20 packs of instant noodles
-#     in my house that I would like to give away for free", quantity: 20)
-#     food.user = User.all.sample
-#     food.location = Location.all.sample
-#     food.save
-#   # Contribution.create!(supply_type: "Water", description: "I have some packs of water that I would like to give away", quantity: 50, user_id: rand(User.all.sample))
-#   # Contribution.create!(supply_type: "First Aid", description: "I have some first aid kits you can use", quantity: 15)
+10.times do
+  food = Contribution.new(supply_type: "Food", description: "I have 20 packs of instant noodles
+    in my house that I would like to give away for free", quantity: 20)
+    food.user = User.all.sample
+    food.location = Location.all.sample
+    food.save
+  end
 
 food = Contribution.new(supply_type: "Water", description: "I have 50 packs of water to give away.", quantity: 20)
 food.user = User.all.sample
@@ -92,9 +92,14 @@ food.user = User.all.sample
 food.location = Location.all.sample
 food.save
 
+puts "#{Contribution.count} contributions have been created"
+
 # Creating Comments
 
+10.times do |c|
 com = Comment.new(content: "Staff were super helpful!")
 com.location = Location.all.sample
 com.user = User.all.sample
 com.save
+end
+puts "#{Comment.count} comments have been created"
