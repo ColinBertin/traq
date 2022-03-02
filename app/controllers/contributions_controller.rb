@@ -5,17 +5,18 @@ class ContributionsController < ApplicationController
 
   def new
     @contribution = Contribution.new
+    @location = Location.find(params[:location_id])
     authorize @contribution
   end
 
   def create
-    @location = Location.find(params[:id])
     @contribution = Contribution.new(contribution_params)
+    @location = Location.find(params[:location_id])
     @contribution.location = @location
-    @contributor.user = current_user
+    @contribution.user = current_user
     authorize @contribution
     if @contribution.save
-      redirect_to users_contributions
+      redirect_to location_path(@location)
     else
       render :new
     end
