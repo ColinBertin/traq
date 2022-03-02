@@ -7,7 +7,11 @@ class LocationsController < ApplicationController
   def show
     @location = Location.find(params[:id])
     authorize @location
+
     @contributions = Contribution.where(:location == @location)
+
+    @comment = Comment.new
+
   end
 
   def new

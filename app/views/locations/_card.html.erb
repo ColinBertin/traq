@@ -1,0 +1,8 @@
+<div class="card-blue-shadow mb-4 p-4">
+  <div class="ms-4">
+     <small><%= location.location_type%></small>
+    <h2><%= location.name %></h2>
+    <p><%= location.address%></p>
+    <%= link_to '', location_path(location), class: 'card-link' %>
+  </div>
+</div>
