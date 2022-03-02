@@ -16,11 +16,11 @@ Contribution.destroy_all
 # Individual Contributor Profile
 
 puts 'Creating users'
-User.create!(email: "kimm@gmail.com", password:123456)
+User.create!(email: "kimm@gmail.com", password:123456, admin:true)
 
-User.create!(email: "colin@gmail.com", password:123456)
+User.create!(email: "colin@gmail.com", password:123456, admin:true)
 
-User.create!(email: "takeshi@gmail.com", password:123456)
+User.create!(email: "takeshi@gmail.com", password:123456, admin:true)
 # People who need help
 
 User.create!(email: "doug@dmb.com", password:123456)
