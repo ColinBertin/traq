@@ -4,4 +4,11 @@
   <%= link_to 'All locations', locations_path  %>
   <%= link_to 'Edit your location', edit_location_path(@location)  %>
   <%= link_to 'home', root_path  %>
+  <div>
+    <%= simple_form_for [@location, @comment] do |f| %>
+      <%= f.input :content %>
+      <%= f.submit %>
+    <% end %>
+
+  </div>
 </div>
