@@ -7,6 +7,19 @@
 }
 
 .btn-flat:hover {
-  background: #0175c7;
+  background: #027fd8;
+  color: white;
+}
+
+.btn-flat-dark {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #002B78;
+  transition: background 0.3s ease;
+}
+
+.btn-flat-dark:hover {
+  background: #001c4f;
   color: white;
 }
