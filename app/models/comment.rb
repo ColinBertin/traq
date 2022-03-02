@@ -4,6 +4,4 @@ class Comment < ApplicationRecord
 
   validates :content, presence: true
 
-  include PgSearch::Model
-  # multisearchable against: [:contributions]
   end

@@ -34,11 +34,11 @@ User.create!(email: "redcross@donation.com", password:123456)
 
 puts "... #{User.count} users has been created"
 
-# yml_file = YAML::load_file('shelters.yml')
-# yml_file.each do |row|
-#   Location.create(name: row["name"], address: row["address"],
-#     latitude: row["lat"], longitude: row["long"], location_type: 2)
-# end
+yml_file = YAML::load_file('shelters.yml')
+yml_file.each do |row|
+  Location.create(name: row["name"], address: row["address"],
+    latitude: row["lat"], longitude: row["long"], location_type: 2)
+end
 
 puts "There are now #{Location.count} shelters"
 puts 'Finished making shelters'
