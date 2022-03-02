@@ -7,6 +7,12 @@ class Location < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   validates :name, presence: true
+
+  include PgSearch::Model
+  # multisearchable against: [:contributions]
+
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
   # locations type enum? [contributor, NGO]
   enum location_type: {
     contributor: 0,
