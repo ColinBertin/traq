@@ -1,15 +1,29 @@
 <div class="container">
+  <%= @location.id %>
   <h1>Locations#show</h1>
   <%= @location.name %>
   <%= link_to 'All locations', locations_path  %>
   <%= link_to 'Edit your location', edit_location_path(@location)  %>
   <%= link_to 'Add a contribution', new_location_contribution_path(@location)  %>
   <%= link_to 'home', root_path  %>
-  <div>
-    <%= simple_form_for [@location, @comment] do |f| %>
-      <%= f.input :content %>
-      <%= f.submit %>
+  <div class="contributions">
+    <% @location_contributions.each do |contribution| %>
+      <p><%= contribution.supply_type %></p>
+      <p><%= contribution.location_id %></p>
     <% end %>
-
+  </div>
+  <div class="comments">
+    <div class="messages">
+      <% @comments.each do |comment| %>
+        <small><%= comment.created_at %></small>
+        <p><%= comment.content %></p>
+      <% end %>
+    </div>
+    <div>
+      <%= simple_form_for [@location, @comment] do |f| %>
+        <%= f.input :content %>
+        <%= f.submit %>
+      <% end %>
+    </div>
   </div>
 </div>

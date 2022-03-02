@@ -5,8 +5,8 @@ class CommentPolicy < ApplicationPolicy
       scope.all
     end
 
-    def create?
-      user.present?
-    end
+  end
+  def create?
+    user.present?
   end
 end
