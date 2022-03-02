@@ -1,7 +1,5 @@
 <div class="container">
-  <%= @location.id %>
-  <h1>Locations#show</h1>
-  <%= @location.name %>
+  <h1><%= @location.name %></h1>
   <%= link_to 'All locations', locations_path  %>
   <%= link_to 'Edit your location', edit_location_path(@location)  %>
   <%= link_to 'Add a contribution', new_location_contribution_path(@location)  %>
@@ -9,7 +7,8 @@
   <div class="contributions">
     <% @location_contributions.each do |contribution| %>
       <p><%= contribution.supply_type %></p>
-      <p><%= contribution.location_id %></p>
+      <p><%= contribution.description %></p>
+      <small><%= contribution.quantity ? contribution.quantity : 'Unknown' %></small>
     <% end %>
   </div>
   <div class="comments">
