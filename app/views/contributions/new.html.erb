@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Contributions#new</h1>
+  <%= simple_form_for [@location, @contribution] do |f| %>
+    <%= f.input :supply_type %>
+    <%= f.input :description %>
+    <%= f.input :quantity %>
+    <%= f.submit %>
+  <% end %>
+</div>
