@@ -1,20 +1,13 @@
 class CommentsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
-  def index
-    @comments = policy_scope(Comment).order(created_at: :desc)
-  end
-
-  def new
-    @comment = Comment.new
-    authorize @comment
-  end
 
   def create
     @comment = Comment.new(comment_params)
     @comment.user = current_user
+    @comment.location = Location.find(params[:id])
     authorize @comment
     if @comment.save
-      redirect_to location_comments_path
+      redirect_to location_path(@comment.location)
     else
       render :new
     end
@@ -22,7 +15,7 @@ class CommentsController < ApplicationController
 
   private
 
-  def commment_params
-    params.require(:content).permit(:user, :location)
+  def comment_params
+    params.require(:comment).permit(:content)
   end
 end
