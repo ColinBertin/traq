@@ -2,6 +2,12 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
     @locations = policy_scope(Location).order(created_at: :desc)
+    @markers = @locations.geocoded.map do |location|
+      {
+        lat: location.latitude,
+        lng: location.longitude
+      }
+    end
   end
 
   def show
