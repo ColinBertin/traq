@@ -34,10 +34,11 @@ User.create!(email: "redcross@donation.com", password:123456)
 
 puts "... #{User.count} users has been created"
 
-yml_file = YAML::load_file('shelters.yml')
-yml_file.each do |row|
-  Location.create(name: row["name"], address: row["address"], location_type: 2)
-end
+# yml_file = YAML::load_file('shelters.yml')
+# yml_file.each do |row|
+#   Location.create(name: row["name"], address: row["address"],
+#     latitude: row["lat"], longitude: row["long"], location_type: 2)
+# end
 
 puts "There are now #{Location.count} shelters"
 puts 'Finished making shelters'
@@ -96,10 +97,9 @@ puts "#{Contribution.count} contributions have been created"
 
 # Creating Comments
 
-10.times do |c|
-com = Comment.new(content: "Staff were super helpful!")
-com.location = Location.all.sample
-com.user = User.all.sample
-com.save
+10.times do
+com = Comment.create!(content: "Staff were super helpful!",
+  location: Location.all.sample,
+  user: User.all.sample)
 end
 puts "#{Comment.count} comments have been created"
