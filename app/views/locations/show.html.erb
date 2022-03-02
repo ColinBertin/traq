@@ -1,28 +1,45 @@
-<div class="container">
-  <h1><%= @location.name %></h1>
-  <%= link_to 'All locations', locations_path  %>
-  <%= link_to 'Edit your location', edit_location_path(@location)  %>
-  <%= link_to 'Add a contribution', new_location_contribution_path(@location)  %>
-  <%= link_to 'home', root_path  %>
+<div class="container mt-4">
+<div class="text-center mb-2">
+  <%= link_to 'All locations', locations_path, class:"btn btn-flat"  %>
+  <%= link_to 'home', root_path, class:"btn btn-flat"  %>
+  </div>
+  <div class="card-no-hover p-4">
+  <h1 class="text-shelter"><%= @location.location_type %></h1>
+  <h1 class="card-text-title text-primary"><%= @location.name %></h1>
+
   <div class="contributions">
+  <p class="mint-green-text">SUPPLIES AVAILABLE</p>
     <% @location_contributions.each do |contribution| %>
       <p><%= contribution.supply_type %></p>
+
       <p><%= contribution.description %></p>
       <small><%= contribution.quantity ? contribution.quantity : 'Unknown' %></small>
     <% end %>
+    <div class="text-center">
+     <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-outline"  %>
+    </div>
   </div>
+</div>
+
+<div class="card-no-hover mt-4 p-4">
   <div class="comments">
     <div class="messages">
       <% @comments.each do |comment| %>
-        <small><%= comment.created_at %></small>
-        <p><%= comment.content %></p>
+        <small><%#= comment.created_at %></small>
+        <p><i class="fas fa-angle-right"></i> <%= comment.content %></p>
       <% end %>
     </div>
     <div>
       <%= simple_form_for [@location, @comment] do |f| %>
-        <%= f.input :content %>
-        <%= f.submit %>
+        <%= f.input :content, input_html: {class:"comment-box"}  %>
+        <div class="text-center">
+          <%= f.button :submit, "Add Comment", class:"btn btn-outline" %>
+        </div>
+
       <% end %>
+
     </div>
   </div>
+</div>
+  <%= link_to 'Edit your location', edit_location_path(@location)  %>
 </div>
