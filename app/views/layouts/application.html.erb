@@ -14,5 +14,11 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    <%# <div data-controller="location"></div> %>
+    <script>
+      navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position.coords.latitude, position.coords.longitude);
+          });
+    </script>
   </body>
 </html>
