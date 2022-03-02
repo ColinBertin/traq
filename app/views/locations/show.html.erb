@@ -27,16 +27,18 @@
     <div class="comments">
       <div class="messages">
         <% @comments.each do |comment| %>
-          <small><%#= comment.created_at %></small>
-          <p><i class="fas fa-angle-right"></i> <%= comment.content %></p>
+          <small><%= comment.created_at %></small>
+          <p id="comment-<%= comment.id %>"><i class="fas fa-angle-right"></i> <%= comment.content %></p>
         <% end %>
       </div>
       <div>
-        <%= simple_form_for [@location, @comment] do |f| %>
-          <%= f.input :content, input_html: {class:"comment-box"}  %>
-          <div class="text-center">
-            <%= f.button :submit, "Add Comment", class:"btn btn-outline" %>
-          </div>
+        <% if user_signed_in? %>
+          <%= simple_form_for([@location, @comment], remote: true) do |f| %>
+            <%= f.input :content, input_html: {class:"comment-box"}  %>
+            <div class="text-center">
+              <%= f.button :submit, "Add Comment", class:"btn btn-outline" %>
+            </div>
+          <% end %>
         <% end %>
       </div>
     </div>
