@@ -9,4 +9,9 @@
             data: { confirm: "Are you sure you want to delete this locations?" } do %>
       <i class="fas fa-times"></i>
     <% end %>
+    <% if location.contributions.any? %>
+      <% location.contributions.each do |contribution| %>
+        <p><%= contribution.supply_type %></p>
+      <% end %>
+    <% end %>
   </div>

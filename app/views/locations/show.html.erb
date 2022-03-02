@@ -11,6 +11,9 @@
   <p class="mint-green-text">SUPPLIES AVAILABLE</p>
     <% @location_contributions.each do |contribution| %>
       <p><%= contribution.supply_type %></p>
+
+      <p><%= contribution.description %></p>
+      <small><%= contribution.quantity ? contribution.quantity : 'Unknown' %></small>
     <% end %>
     <div class="text-center">
      <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-outline"  %>
