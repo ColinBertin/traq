@@ -1,17 +1,17 @@
 <div class="container">
   <h1>Locations#index</h1>
-  <div>
+    <div class="mb-4">
+      <%= link_to 'home', root_path, class: "btn btn-flat" %>
+      <%= link_to 'Add a location', new_location_path, class: "btn btn-flat"  %>
+    </div>
     <% @locations.each do |location| %>
-      <p><%= location.name %></p>
-      <%= link_to location_path(location),
-          class: "text-danger cards-delete-btn",
-          method: :delete,
-          data: { confirm: "Are you sure you want to delete this locations?" } do %>
-        <i class="fas fa-times"></i>
-      <% end %>
+      <%= render "locations/card", location: location %>
+        <%= link_to location_path(location),
+            class: "text-danger cards-delete-btn",
+            method: :delete,
+            data: { confirm: "Are you sure you want to delete this locations?" } do %>
+          <i class="fas fa-times"></i>
+        <% end %>
       <%= link_to 'location', location_path(location)%>
     <% end %>
-  </div>
-  <%= link_to 'home', root_path  %>
-  <%= link_to 'Add a location', new_location_path  %>
 </div>
