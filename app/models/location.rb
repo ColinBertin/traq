@@ -1,4 +1,7 @@
 class Location < ApplicationRecord
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
+
   belongs_to :user, optional: true
   has_many :contributions, dependent: :destroy
   has_many :comments, dependent: :destroy
