@@ -2,16 +2,14 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
     @locations = policy_scope(Location).order(created_at: :desc)
-<<<<<<< HEAD
     if params[:search].present?
       @locations = Location.global_search(params[:search]["search"])
-=======
+    end
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
         lng: location.longitude
       }
->>>>>>> a69fe94ba7eb844aaeeb9bc1fa5428cc6377c3a5
     end
   end
 
