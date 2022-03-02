@@ -1,9 +1,14 @@
 <div class="container">
-  <h1>Contributions#new</h1>
+    <div class="row justify-content-center mt-4">
+    <div class="card-no-hover p-4">
+      <h1 class="card-text-title text-primary text-center">Add Contribution</h1>
+
   <%= simple_form_for [@location, @contribution] do |f| %>
-    <%= f.input :supply_type %>
-    <%= f.input :description %>
-    <%= f.input :quantity %>
-    <%= f.submit %>
+    <%= f.input :supply_type, input_html: {class:"comment-box"} %>
+    <%= f.input :description, input_html: {class:"comment-box"} %>
+    <%= f.input :quantity, input_html: {class:"comment-box"} %>
+    <%= f.button :submit, "Add Contribution", class:"btn btn-flat" %>
   <% end %>
+    <%= link_to 'back to the location', location_path(@location), class:"btn btn-outline mt-2" %>
+</div>
 </div>
