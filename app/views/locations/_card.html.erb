@@ -1,8 +1,19 @@
 <div class="card-blue-shadow mb-4 p-4">
   <div class="ms-4">
-     <small><%= location.location_type%></small>
+    <small><%= location.location_type%></small>
     <h2><%= location.name %></h2>
     <p><%= location.address%></p>
     <%= link_to '', location_path(location), class: 'card-link' %>
+    <%= link_to location_path(location),
+            class: "text-danger cards-delete-btn",
+            method: :delete,
+            data: { confirm: "Are you sure you want to delete this locations?" } do %>
+      <i class="fas fa-times"></i>
+    <% end %>
+    <% if location.contributions.any? %>
+      <% location.contributions.each do |contribution| %>
+        <p><%= contribution.supply_type %></p>
+      <% end %>
+    <% end %>
   </div>
 </div>
