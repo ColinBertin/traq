@@ -3,6 +3,7 @@ class ContributionsController < ApplicationController
     @contributions = policy_scope(Contribution).order(created_at: :desc)
     if params[:query].present?
       @contributions = @contributions.where("supply_type ILIKE ?", "%#{params[:query]}%")
+    end
   end
 
   def new
