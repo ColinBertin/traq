@@ -9,7 +9,7 @@
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
-  <div class="locations_card">
+  <div class="locations_card mt-4">
     <% @locations.each do |location| %>
       <%= render "locations/card", location: location %>
     <% end %>
