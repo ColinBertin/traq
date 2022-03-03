@@ -8,9 +8,6 @@ class Location < ApplicationRecord
 
   validates :name, presence: true
 
-  include PgSearch::Model
-  # multisearchable against: [:contributions]
-
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
   # locations type enum? [contributor, NGO]
@@ -19,4 +16,11 @@ class Location < ApplicationRecord
     ngo: 1,
     shelter: 2
   }, _default: 0
+
+  include PgSearch::Model
+  pg_search_scope :global_search,
+    against: [ :address, :name ],
+    using: {
+      tsearch: { prefix: true }
+    }
 end

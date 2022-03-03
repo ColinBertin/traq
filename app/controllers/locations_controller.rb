@@ -2,6 +2,9 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
     @locations = policy_scope(Location).order(created_at: :desc)
+    if params[:search].present?
+      @locations = Location.global_search(params[:search]["search"])
+    end
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
@@ -16,6 +19,13 @@ class LocationsController < ApplicationController
     @location_contributions = Contribution.where(location_id: @location.id) # current location show...?
     @comment = Comment.new
     @comments = Comment.where(location_id: @location.id)
+    @marker_location = Location.where(id: params[:id])
+    @markers = @marker_location.geocoded.map do |location|
+      {
+        lat: location.latitude,
+        lng: location.longitude
+      }
+    end
   end
 
   def new
