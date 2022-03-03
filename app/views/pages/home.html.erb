@@ -1,17 +1,14 @@
 <h1>WELCOME TO TRAQ</h1>
 <p>By Kim, Takeshi & Colin </p>
-
 <div class="container">
-<%= simple_form_for :search, url: root_path, method: "GET", class:"d-flex align-items space-beween", html: { class: 'form-inline' }  do |f| %>
-  <%= f.input :search, input_html: {value: ""} %>
-  <%= f.submit "Search", class: "btn btn-flat-dark" %>
-<% end %>
-
-
-<div class="d-flex justify-content-center">
-
+  <%= simple_form_for :search, url: root_path, method: "GET", class:"d-flex align-items space-beween", html: { class: 'form-inline' }  do |f| %>
+    <%= f.input :search, input_html: {value: ""} %>
+    <%= f.submit "Search", class: "btn btn-flat-dark" %>
+  <% end %>
+  <div class="d-flex justify-content-center">
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="data-toggle="modal" data-target="#exampleModal"><%= link_to "Emergency Number", "#", class: "btn btn-flat"%></div>
+  </div>
 </div>
-<div class="d-flex justify-content-center">
-<%= link_to "Emergency Number", "#", class: "btn btn-flat" %>
-</div>
-</div>
+<%= render "pages/modal"%>
