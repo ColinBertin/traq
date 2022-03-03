@@ -7,12 +7,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <%= simple_form_for :search, url: locations_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-      <%= f.input :search, input_html: {value: ""} %>
-      <%= f.submit "Search", class: "btn btn-primary" %>
-    <% end %>
       <ul class="navbar-nav me-auto">
-
         <% if user_signed_in? %>
           <li class="nav-item active ">
             <%= link_to "Home", "#", class: "nav-link" %>

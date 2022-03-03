@@ -1,15 +1,13 @@
-<div class="container mt-4">
+<div class="container mt-4 px-4">
   <div class="text-center mb-2">
     <%= link_to 'All locations', locations_path, class:"btn btn-flat"  %>
     <%= link_to 'home', root_path, class:"btn btn-flat"  %>
   </div>
-
   <div style="width: 100%; height: 600px;"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
-  
   <div class="card-no-hover p-4">
     <h1 class="text-shelter"><%= @location.location_type %></h1>
     <h1 class="card-text-title text-primary"><%= @location.name %></h1>
@@ -29,8 +27,6 @@
     <div class="comments">
       <div class="messages">
         <% @comments.each do |comment| %>
-
-        
           <small><%= comment.created_at %></small>
           <p id="comment-<%= comment.id %>"><i class="fas fa-angle-right"></i> <%= comment.content %></p>
         <% end %>
