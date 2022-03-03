@@ -8,9 +8,6 @@ class Location < ApplicationRecord
 
   validates :name, presence: true
 
-  geocoded_by :address
-  after_validation :geocode, if: :will_save_change_to_address?
-  # locations type enum? [contributor, NGO]
   enum location_type: {
     contributor: 0,
     ngo: 1,
@@ -20,6 +17,9 @@ class Location < ApplicationRecord
   include PgSearch::Model
   pg_search_scope :global_search,
     against: [ :address, :name ],
+    associated_against: {
+      contributions: [ :supply_type, :description ]
+    },
     using: {
       tsearch: { prefix: true }
     }

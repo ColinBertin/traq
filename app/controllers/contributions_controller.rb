@@ -3,6 +3,7 @@ class ContributionsController < ApplicationController
     @contributions = policy_scope(Contribution).order(created_at: :desc)
     if params[:query].present?
       @contributions = @contributions.where("supply_type ILIKE ?", "%#{params[:query]}%")
+      @contributions.tag_list.add("food, water, supplies, first aid, clothing, shelter", parse: true)
     end
   end
 
@@ -31,6 +32,6 @@ class ContributionsController < ApplicationController
   private
 
   def contribution_params
-    params.require(:contribution).permit(:supply_type, :description, :quantity)
+    params.require(:contribution).permit(:supply_type, :description, :quantity, :tag_list)
   end
 end
