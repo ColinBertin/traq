@@ -4,7 +4,6 @@ class Contribution < ApplicationRecord
 
   validates :supply_type, presence: true
   validates :description, presence: true
-  acts_as_taggable_on :tags
 
   include PgSearch::Model
   pg_search_scope :global_search,
