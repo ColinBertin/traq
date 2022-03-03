@@ -2,7 +2,7 @@
 <p>By Kim, Takeshi & Colin </p>
 <div class="container">
   <%= simple_form_for :search, url: locations_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-      <%= f.input :search, input_html: {value: ""} %>
+      <%= f.input :search, collection: [:Food, :Water, :Shelter, :Medicine] %>
       <%= f.submit "Search", class: "btn btn-primary" %>
     <% end %>
     </div>
