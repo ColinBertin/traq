@@ -5,8 +5,8 @@ export default class extends Controller {
 
   connect() {
     navigator.geolocation.getCurrentPosition((position) => {
-      localStorage.setItem("latitude", position.coords.latitude)
-      localStorage.setItem("longitude", position.coords.longitude)
+      localStorage.setItem("user_latitude", position.coords.latitude)
+      localStorage.setItem("user_longitude", position.coords.longitude)
       console.log(position.coords.latitude, position.coords.longitude);
     });
   }

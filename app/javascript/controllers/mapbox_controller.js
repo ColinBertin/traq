@@ -23,7 +23,7 @@ export default class extends Controller {
 
   #addMarkersToMap() {
     new mapboxgl.Marker({color: "#FF0000"})
-      .setLngLat([ localStorage.getItem("longitude"), localStorage.getItem("latitude") ])
+      .setLngLat([ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ])
       .addTo(this.map)
     this.markersValue.forEach((marker) => {
       new mapboxgl.Marker()
@@ -33,8 +33,8 @@ export default class extends Controller {
   }
   #fitMapToMarkers() {
     const bounds = new mapboxgl.LngLatBounds()
-    // this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
-    bounds.extend([ localStorage.getItem("longitude"), localStorage.getItem("latitude") ])
+    this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
+    bounds.extend([ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ])
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
 }
