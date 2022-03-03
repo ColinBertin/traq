@@ -1,5 +1,6 @@
 class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
+
   def index
     @locations = policy_scope(Location).order(created_at: :desc)
     if params[:search].present?

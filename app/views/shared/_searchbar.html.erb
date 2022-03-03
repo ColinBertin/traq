@@ -1,6 +1,4 @@
-<div class="container">
   <%= simple_form_for :search, url: locations_path, method: "GET", class:"d-flex align-items space-between", html: { class: 'form-inline' }  do |f| %>
     <%= f.input :search, input_html: {value: ""} %>
     <%= f.submit "Search", class: "btn btn-flat-dark" %>
   <% end %>
-</div>
