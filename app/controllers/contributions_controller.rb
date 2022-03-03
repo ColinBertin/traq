@@ -33,5 +33,4 @@ class ContributionsController < ApplicationController
 
   def contribution_params
     params.require(:contribution).permit(:supply_type, :description, :quantity, :tag_list)
-    end
   end
