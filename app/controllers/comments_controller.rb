@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     @comment.location = Location.find(params[:location_id])
     authorize @comment
     if @comment.save
-      redirect_to location_path(@comment.location)
+      redirect_to location_path(@comment.location, anchor: "comment-#{@comment.id}")
     else
       render :new
     end
