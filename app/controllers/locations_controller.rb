@@ -27,7 +27,6 @@ class LocationsController < ApplicationController
         lng: location.longitude
       }
     end
-
   end
 
   def new
