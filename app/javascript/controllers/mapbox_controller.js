@@ -34,7 +34,12 @@ export default class extends Controller {
         .addTo(this.map)
       const locationCard = this.locationTargets.find(target => target.dataset.locationId == marker.id)
       const distance = userMarker.getLngLat().distanceTo(locationMarker.getLngLat())
-      locationCard.insertAdjacentHTML('beforeend', distance)
+      if(distance > 1000) {
+        const disFormat = (distance/1000).toFixed(1)
+        locationCard.insertAdjacentHTML('beforeend', `${disFormat} Km`)
+      } else {
+        locationCard.insertAdjacentHTML('beforeend', `${Math.round(distance)} m`)
+      }
       });
 
   }
