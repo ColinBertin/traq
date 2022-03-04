@@ -4,7 +4,6 @@
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   <div class="text-center mb-2">
-    <%= render "shared/searchbar"%>
     <%= link_to 'All locations', locations_path, class:"btn btn-flat"  %>
     <%= link_to 'home', root_path, class:"btn btn-flat"  %>
   </div>

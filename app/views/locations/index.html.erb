@@ -3,13 +3,12 @@
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-userPosition-value="<%= @user.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-  <%= render "shared/searchbar"%>
   <h1>Locations</h1>
   <div style="width: 100%; height: 600px;"
   data-mapbox-target="map">
   </div>
   <%= link_to 'Add location', new_location_path %>
-  <div class="locations_card mt-4">
+  <div class="locations_card mt-4 testWrapper">
     <% @locations.each do |location| %>
       <%= render "locations/card", location: location %>
     <% end %>

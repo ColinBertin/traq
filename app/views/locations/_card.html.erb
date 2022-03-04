@@ -18,7 +18,7 @@
   </div>
   <%= link_to '', location_path(location), class: 'card-link' %>
 </div>
-<% if location.user == current_user %>
+<% if user_signed_in? && location.user == current_user %>
   <%= link_to location_path(location),
             class: "text-danger cards-delete-btn",
             method: :delete,

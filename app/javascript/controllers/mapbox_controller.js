@@ -36,16 +36,16 @@ export default class extends Controller {
       const distance = userMarker.getLngLat().distanceTo(locationMarker.getLngLat())
       if(distance > 1000) {
         const disFormat = (distance/1000).toFixed(1)
-        locationCard.insertAdjacentHTML('beforeend', `${disFormat} Km`)
+        locationCard.insertAdjacentHTML('beforeend', `<p class="card-distance"><i class="fas fa-map-marker-alt"></i> ${disFormat} Km</p>`)
       } else {
-        locationCard.insertAdjacentHTML('beforeend', `${Math.round(distance)} m`)
+        locationCard.insertAdjacentHTML('beforeend', `<p class="card-distance"><i class="fas fa-map-marker-alt"></i> ${Math.round(distance)} m</p>`)
       }
       });
 
   }
   #fitMapToMarkers() {
     const bounds = new mapboxgl.LngLatBounds()
-    // this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
+    this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
     bounds.extend([ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ])
     this.map.fitBounds(bounds, { padding: 90, maxZoom: 14, duration: 0 })
   }
