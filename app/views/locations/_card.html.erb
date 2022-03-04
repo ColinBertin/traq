@@ -3,6 +3,19 @@
     <%= location.location_type%></small>
   <h2><%= location.name %></h2>
   <p><%= location.address%></p>
+  <div class="contri-card contributions p-3">
+    <p class="mint-green-text">SUPPLIES AVAILABLE</p>
+    <% location.contributions.each do |contribution| %>
+      <div class="contri-card-mint mt-2 p-2">
+        <div class="d-flex flex-row">
+          <small><strong><%#= contribution.quantity ? contribution.quantity : 'Unknown' %></strong></small>
+          &nbsp
+          <small class="text-success"><strong><%= contribution.supply_type %></strong></small>
+        </div>
+        <p><%#= contribution.description %></p>
+      </div>
+    <% end %>
+  </div>
   <%= link_to '', location_path(location), class: 'card-link' %>
 </div>
 <% if location.user == current_user %>
