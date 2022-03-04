@@ -1,11 +1,11 @@
-<div class="card-blue-shadow mb-4 p-4">
+<div data-mapbox-target="location" data-location-id="<%= location.id %>" class="card-blue-shadow mb-4 p-4">
   <small>
     <%= location.location_type%></small>
   <h2><%= location.name %></h2>
   <p><%= location.address%></p>
   <%= link_to '', location_path(location), class: 'card-link' %>
 </div>
-<% if location.user == current_user %>
+<% if user_signed_in? && location.user == current_user %>
   <%= link_to location_path(location),
             class: "text-danger cards-delete-btn",
             method: :delete,
