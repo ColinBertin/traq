@@ -9,22 +9,23 @@
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
+
   <% if @location.user == current_user %>
     <%= link_to 'Edit your location', edit_location_path(@location)  %>
   <% end %>
-  <div class="card-no-hover p-4">
+  <div class="card-no-hover p-4 mt-4">
     <h1 class="text-shelter"><%= @location.location_type %></h1>
     <h1 class="card-text-title text-primary"><%= @location.name %></h1>
-    <div class="contributions">
+    <div class="contri-card contributions p-3">
       <p class="mint-green-text">SUPPLIES AVAILABLE</p>
       <% @location_contributions.each do |contribution| %>
         <p><%= contribution.supply_type %></p>
         <p><%= contribution.description %></p>
         <small><%= contribution.quantity ? contribution.quantity : 'Unknown' %></small>
       <% end %>
-      <div class="text-center">
-        <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-outline"  %>
-      </div>
+    </div>
+    <div class="text-center mt-2">
+      <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-outline"  %>
     </div>
   </div>
   <div class="card-no-hover mt-4 p-4">
