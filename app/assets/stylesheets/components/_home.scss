@@ -2,21 +2,15 @@ body {
   background-color: #f8fcff;
 }
 
-.user-nav-bar {
-  position: fixed;
-  bottom: 0;
-  background-color: #002b78;
-  height: 60px;
+.background-photo {
+  background-image: linear-gradient(to bottom, #f0f0f0, transparent),
+    asset-url("landing.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  height: 100vh;
   width: 100vw;
-  color: white !important;
-  z-index: 2;
-
-  .p {
-    size: 44px;
-  }
-
-  .h1 {
-    size: 44px;
-    color: white !important;
-  }
+  position: relative;
 }
+
+
