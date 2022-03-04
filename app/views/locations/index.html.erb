@@ -9,7 +9,7 @@
   data-mapbox-target="map">
   </div>
   <%= link_to 'Add location', new_location_path %>
-  <div class="locations_card mt-4">
+  <div class="locations_card mt-4 testWrapper">
     <% @locations.each do |location| %>
       <%= render "locations/card", location: location %>
     <% end %>
