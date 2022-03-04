@@ -41,12 +41,14 @@ export default class extends Controller {
         locationCard.insertAdjacentHTML('beforeend', `<p class="card-distance"><i class="fas fa-map-marker-alt"></i> ${Math.round(distance)} m</p>`)
       }
       });
-
+      new mapboxgl.Marker({color: "#FF0000"})
+      .setLngLat([ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ])
+      .addTo(this.map);
   }
   #fitMapToMarkers() {
     const bounds = new mapboxgl.LngLatBounds()
-    this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
+    // this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
     bounds.extend([ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ])
-    this.map.fitBounds(bounds, { padding: 90, maxZoom: 14, duration: 0 })
+    this.map.fitBounds(bounds, { padding: 90, maxZoom: 13, duration: 0 })
   }
 }
