@@ -40,13 +40,17 @@ yml_file.each do |row|
     latitude: row["lat"], longitude: row["long"], location_type: 2)
 end
 
+Location.create!(name: "Marunochi Park", address: "129-1217, Marunochi Shimmarunochibirudeingu(2-kai) Chiyoda-ku, Tokyo",
+location_type: 2)
 puts "There are now #{Location.count} shelters"
 puts 'Finished making shelters'
+
 
 puts "Start making individual and NGO Locations"
 # Creating Location for Individual Controbutor
 Location.create!(name: "Marunochi Park", address: "129-1217, Marunochi Shimmarunochibirudeingu(2-kai) Chiyoda-ku, Tokyo",
 location_type: 0)
+
 
 Location.create!(name: "Shibuya Building", address: "1-39, Hiroo 1-chome, Shibuya-ku, Tokyo",
 location_type: 0)

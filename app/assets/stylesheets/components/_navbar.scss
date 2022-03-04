@@ -1,5 +1,6 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  display:flex;
+  justify-content: center;
   background: white;
 }
 
@@ -9,4 +10,13 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+select#search_search {
+  margin-top:18px;
+  width: 50vw;
+}
+
+label.form-label.select.required {
+  display: none;
 }

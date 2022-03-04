@@ -29,7 +29,6 @@ class LocationsController < ApplicationController
         id: location.id
       }
     end
-
   end
 
   def new
