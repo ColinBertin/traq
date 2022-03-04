@@ -15,12 +15,12 @@
   h2 {
     color: #002b78;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   small {
     color: #139dff;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -47,4 +47,25 @@
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.contri-card {
+  width: flex;
+  background: #f8fcff;
+  border-radius: 8px;
+  border: 1px solid #00c0a3;
+  line-height: 1em;
+}
+
+.contri-card-mint {
+  border: 1px solid #00c0a3;
+  background: #ebfffc;
+  border-radius: 8px;
+  width: flex;
+  color: #00c0a3;
+}
+
+.contri-card-mint-info {
+  justify-content: space-between;
+  display: flex;
 }

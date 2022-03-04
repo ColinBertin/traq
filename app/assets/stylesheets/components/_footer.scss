@@ -1,0 +1,20 @@
+.user-nav-bar {
+  position: fixed;
+  bottom: 0;
+  background-color: #002b78;
+  height: 60px;
+  width: 100vw;
+  color: white !important;
+  z-index: 9999;
+  list-style-type: none;
+
+
+  .p {
+    size: 44px;
+  }
+
+  .h1 {
+    size: 44px;
+    color: white !important;
+  }
+}

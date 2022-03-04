@@ -1,4 +1,5 @@
-<div class="container mt-4 px-4"
+
+<div class="container mt-4 px-4 mb-4"
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
@@ -13,24 +14,30 @@
   <% if @location.user == current_user %>
     <%= link_to 'Edit your location', edit_location_path(@location)  %>
   <% end %>
-  <div class="card-no-hover p-4"
+
+  <div class="card-no-hover p-4 mt-4"
   data-mapbox-target="location"
   data-location-id="<%= @location.id %>">
     <h1 class="text-shelter"><%= @location.location_type %></h1>
     <h1 class="card-text-title text-primary"><%= @location.name %></h1>
-    <div class="contributions">
+    <div class="contri-card contributions p-3">
       <p class="mint-green-text">SUPPLIES AVAILABLE</p>
       <% @location_contributions.each do |contribution| %>
-        <p><%= contribution.supply_type %></p>
-        <p><%= contribution.description %></p>
-        <small><%= contribution.quantity ? contribution.quantity : 'Unknown' %></small>
+        <div class="contri-card-mint mt-2 p-2">
+          <div class="d-flex flex-row">
+            <small><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %></strong></small>
+            &nbsp
+            <small><strong><%= contribution.supply_type %></strong></small>
+          </div>
+          <p><%= contribution.description %></p>
+        </div>
       <% end %>
-      <div class="text-center">
-        <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-outline"  %>
-      </div>
+    </div>
+    <div class="text-center mt-2">
+      <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-flat"  %>
     </div>
   </div>
-  <div class="card-no-hover mt-4 p-4">
+  <div class="card-no-hover mt-4 p-4 mb-4">
     <div class="comments">
       <div class="messages">
         <% @comments.each do |comment| %>
@@ -43,7 +50,7 @@
           <%= simple_form_for([@location, @comment], remote: true) do |f| %>
             <%= f.input :content, input_html: {class:"comment-box"}  %>
             <div class="text-center">
-              <%= f.button :submit, "Add Comment", class:"btn btn-outline" %>
+              <%= f.button :submit, "Add Comment", class:"btn btn-flat" %>
             </div>
           <% end %>
         <% end %>
