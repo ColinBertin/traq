@@ -9,7 +9,8 @@ class LocationsController < ApplicationController
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
-        lng: location.longitude
+        lng: location.longitude,
+        id: location.id
       }
     end
   end
@@ -24,7 +25,8 @@ class LocationsController < ApplicationController
     @markers = @marker_location.geocoded.map do |location|
       {
         lat: location.latitude,
-        lng: location.longitude
+        lng: location.longitude,
+        id: location.id
       }
     end
 
