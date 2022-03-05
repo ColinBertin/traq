@@ -19,7 +19,7 @@ class LocationPolicy < ApplicationPolicy
   end
 
   def destroy?
-    user_is_owner?
+    user_is_owner? || user.admin
   end
 
   private
