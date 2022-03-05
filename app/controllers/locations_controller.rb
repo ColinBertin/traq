@@ -3,9 +3,7 @@ class LocationsController < ApplicationController
 
   def index
     @locations = policy_scope(Location).order(created_at: :desc)
-    if params[:search].present?
-      @locations = Location.global_search(params[:search]["search"])
-    end
+    params[:search].present? && @locations = Location.global_search(params[:search]["search"])
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
