@@ -7,7 +7,7 @@ export default class extends Controller {
     navigator.geolocation.getCurrentPosition((position) => {
       localStorage.setItem("user_latitude", position.coords.latitude)
       localStorage.setItem("user_longitude", position.coords.longitude)
-      console.log(position.coords.latitude, position.coords.longitude);
-    });
+      // console.log(position.coords.latitude, position.coords.longitude);
+    })
   }
 }
