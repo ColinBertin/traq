@@ -31,13 +31,29 @@ export default class extends Controller {
   }
 
   #addMarkersToMap() {
-    const userMarker = new mapboxgl.Marker({color: "#FF0000"})
+    // Create a HTML element for your custom marker
+    const userCustomMarker = document.createElement("div")
+    userCustomMarker.className = "marker"
+    userCustomMarker.style.backgroundImage = `url('../assets/man.png')`
+    userCustomMarker.style.backgroundSize = "contain"
+    userCustomMarker.style.width = "40px"
+    userCustomMarker.style.height = "40px"
+    const userMarker = new mapboxgl.Marker(userCustomMarker)
     // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
       .setLngLat([ leWagonLng, leWagonLat ])
       .addTo(this.map);
     this.markersValue.forEach((marker) => {
       const popup = new mapboxgl.Popup().setHTML(marker.info_window)
-      const locationMarker = new mapboxgl.Marker()
+      const customMarker = document.createElement("div")
+
+      // Create a HTML element for your custom marker
+      customMarker.className = "marker"
+      customMarker.style.backgroundImage = `url('${marker.image_url}')`
+      customMarker.style.backgroundSize = "contain"
+      customMarker.style.width = "30px"
+      customMarker.style.height = "30px"
+
+      const locationMarker = new mapboxgl.Marker(customMarker)
         .setLngLat([ marker.lng, marker.lat ])
         .setPopup(popup)
         .addTo(this.map)
@@ -49,7 +65,7 @@ export default class extends Controller {
         this.#addRoutes()
       }
     });
-    new mapboxgl.Marker({color: "#FF0000"})
+    new mapboxgl.Marker(userCustomMarker)
     .setLngLat([ leWagonLng, leWagonLat ])
     .addTo(this.map);
   }
