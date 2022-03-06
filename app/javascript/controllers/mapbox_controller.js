@@ -1,8 +1,8 @@
 import { Controller } from "@hotwired/stimulus"
 import mapboxgl from "mapbox-gl"
 
-const leWagonLat = 35.6290224
-const leWagonLng = 139.7006397
+const leWagonLat = 35.633868
+const leWagonLng = 139.708205
 let routeCoordinates
 
 export default class extends Controller {
@@ -36,8 +36,10 @@ export default class extends Controller {
       .setLngLat([ leWagonLng, leWagonLat ])
       .addTo(this.map);
     this.markersValue.forEach((marker) => {
+      const popup = new mapboxgl.Popup().setHTML(marker.info_window)
       const locationMarker = new mapboxgl.Marker()
         .setLngLat([ marker.lng, marker.lat ])
+        .setPopup(popup)
         .addTo(this.map)
       const locationCard = this.locationTargets.find(target => target.dataset.locationId == marker.id)
       const distance = userMarker.getLngLat().distanceTo(locationMarker.getLngLat())
@@ -58,7 +60,7 @@ export default class extends Controller {
       this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
     }
     bounds.extend([ leWagonLng, leWagonLat ])
-    this.map.fitBounds(bounds, { padding: 90, maxZoom: 13, duration: 0 })
+    this.map.fitBounds(bounds, { padding: 90, maxZoom: (this.#pathName() ? 15 : 13), duration: 0 })
   }
 
   #formatAndInsertDistance(distance, htmlElement) {

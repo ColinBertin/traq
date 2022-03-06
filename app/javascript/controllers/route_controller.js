@@ -1,8 +1,8 @@
 import { Controller } from "@hotwired/stimulus"
 import mapboxgl from "mapbox-gl"
 
-const leWagonLat = 35.6290224
-const leWagonLng = 139.7006397
+const leWagonLat = 35.633868
+const leWagonLng = 139.708205
 
 let routeCoordinates
 
