@@ -27,6 +27,7 @@ export default class extends Controller {
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
     this.#addRoutes()
+    console.log(window.location.pathname)
   }
 
   #addMarkersToMap() {
@@ -63,35 +64,35 @@ export default class extends Controller {
     const url = `https://api.mapbox.com/directions/v5/mapbox/walking/${leWagonLng},${leWagonLat};${destination.lng},${destination.lat}?geometries=geojson&access_token=${this.apiKeyValue}`
     fetch(url).then(response => response.json()).then(data => {
       routeCoordinates = data.routes[0].geometry.coordinates
-      console.log(data.routes[0].geometry.coordinates)
+      console.log(data.routes[0].distance)
     })
   }
   #addRoutes() {
     this.map.on('load', () => {
       this.map.addSource('route', {
-      'type': 'geojson',
-      'data': {
-      'type': 'Feature',
-      'properties': {},
-      'geometry': {
-      'type': 'LineString',
-      'coordinates': routeCoordinates
-      }
-      }
+        'type': 'geojson',
+        'data': {
+          'type': 'Feature',
+          'properties': {},
+          'geometry': {
+            'type': 'LineString',
+            'coordinates': routeCoordinates
+          }
+        }
       });
       this.map.addLayer({
-      'id': 'route',
-      'type': 'line',
-      'source': 'route',
-      'layout': {
-      'line-join': 'round',
-      'line-cap': 'round'
-      },
-      'paint': {
-      'line-color': '#FF0000',
-      'line-width': 6
-      }
+        'id': 'route',
+        'type': 'line',
+        'source': 'route',
+        'layout': {
+          'line-join': 'round',
+          'line-cap': 'round'
+        },
+        'paint': {
+          'line-color': '#FF0000',
+          'line-width': 6
+        }
       });
-  })
+    })
   }
 }
