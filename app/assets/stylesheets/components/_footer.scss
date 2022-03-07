@@ -8,7 +8,6 @@
   z-index: 9999;
   list-style-type: none;
 
-
   .p {
     size: 44px;
   }
@@ -17,4 +16,27 @@
     size: 44px;
     color: white !important;
   }
+}
+
+.new-nav-bar {
+  background-color: #002b78;
+}
+
+.icon-color {
+  background-color: #002b78;
+  height: 60px;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+}
+
+.icon-color:hover {
+  background-color: #139dff;
+}
+
+.icon-color img {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 4px;
+  margin-top: 12px;
 }

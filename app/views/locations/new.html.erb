@@ -1,13 +1,12 @@
-<div class="container">
+<div class="container"></div>
   <div class="row justify-content-center mt-4 p-4">
     <div class="card-no-hover p-4">
-      <h1 class="card-text-title text-primary text-center">Add New Location</h1>
+      <h1 class="card-text-title text-primary text-center">Contribute</h1>
       <%= simple_form_for(@location) do |f| %>
         <%= f.input :name %>
-        <%= f.input :address, input_html: { data: { geocoder_target: "address" } },
-              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
+        <%= f.input :address %>
         <%= f.input :location_type, collection: ['contributor', 'ngo'] %>
-        <%= f.button :submit, "Create Location", class:"btn btn-flat" %>
+        <%= f.button :submit, "New Contribution", class:"btn btn-flat" %>
       <% end %>
     </div>
   </div>
