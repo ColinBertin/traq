@@ -85,15 +85,17 @@ export default class extends Controller {
   #formatAndInsertDistance(distance, htmlElement) {
     // const target = document.getElementsByClassName('distance')
     const distFormat = (distance/1000).toFixed(1)
-    htmlElement.insertAdjacentHTML('beforeend', `<p class="card-distance"><i class="fas fa-map-marker-alt"></i> ${distFormat} Km</p>`)
-
+    htmlElement.querySelector('.distance').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${distFormat} Km`
   }
 
   async #fetchRoutes(destination, user_location) {
     const url = `https://api.mapbox.com/directions/v5/mapbox/walking/${user_location.longitude},${user_location.latitude};${destination.lng},${destination.lat}?geometries=geojson&access_token=${this.apiKeyValue}`
     const routes = await fetch(url)
-    const data = routes.json()
-    return data.routes[0].geometry.coordinates
+    const data = await routes.json()
+    // await fetch(url).then(res => res.json()).then(data => {
+    //   console.log(data)
+    // })
+      return data.routes[0].geometry.coordinates
   }
 
   #addRoutes(routeCoordinates) {
@@ -141,5 +143,18 @@ export default class extends Controller {
     return new Promise((res, rej) => {
       navigator.geolocation.getCurrentPosition(res, rej)
     })
+  }
+
+  #addCurrentLocationButton() {
+    // Adds a current location button.
+    this.map.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true,
+        },
+        trackUserLocation: true,
+        showUserHeading: true,
+      })
+    );
   }
 }
