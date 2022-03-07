@@ -28,7 +28,11 @@
       <% end %>
     </div>
     <div class="text-center mt-2">
-      <%= link_to 'Add a contribution', new_location_contribution_path(@location), class:"btn btn-flat"  %>
+      <%= link_to 'Contribute', new_location_contribution_path(@location), class:"btn btn-flat"%>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin">
+  Check-in
+</button>
+      <%= render 'checkin_modal' %>
     </div>
     <p class="distance"></p>
   </div>
