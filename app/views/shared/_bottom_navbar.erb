@@ -1,13 +1,17 @@
-<div class="user-nav-bar d-flex justify-content-around align-items-center p-3">
-  <h1><%= link_to locations_path, class:"btn-white" do %>
-      <i class="fas fa-map-marker-alt"></i>
-    <% end %></h1>
-  <h1><%= link_to '#', class:"btn-white" do %><i class="fas fa-hand-holding-medical"></i><% end %></h1>
-  <h1><%= link_to new_location_path, class:"btn-white" do %><i class="fas fa-hand-holding-heart"></i><% end %></h1>
+<div class="user-nav-bar d-flex justify-content-around align-items-center">
+  <div class= "icon-color">
+    <%= link_to image_tag("white_icon/emergency_call_01") %>
+  </div>
+  <div class= "icon-color">
+    <%= link_to image_tag("white_icon/add_contribution_02.png"), new_location_path %>
+  </div>
+  <div class= "icon-color">
+    <%= link_to image_tag("white_icon/shelter.png"), locations_path %>
+  </div>
   <!-- NEW HERE -->
   <% if user_signed_in? %>
-    <li class="nav-item dropdown">
-      <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+    <li class="nav-item dropdown icon-color">
+      <%= image_tag ("white_icon/profile"), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
         <%= link_to "Action", "#", class: "dropdown-item" %>
         <%= link_to "My contributions", users_contributions_path, class: "dropdown-item" %>
@@ -15,6 +19,8 @@
       </div>
     </li>
   <% else %>
-    <%= link_to "Login", new_user_session_path, class: "nav-link text-white" %>
-  <% end %>
+    <div class= "icon-color">
+      <%= link_to image_tag("white_icon/profile.png"), new_user_session_path %>
+    <% end %>
+  </div>
 </div>
