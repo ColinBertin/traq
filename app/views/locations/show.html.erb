@@ -11,6 +11,7 @@
   <div class="card-no-hover p-4 mt-4"
   data-mapbox-target="location"
   data-location-id="<%= @location.id %>">
+    <p><%= request.location.latitude %></p>
     <h1 class="text-shelter"><%= @location.location_type %></h1>
     <h1 class="card-text-title text-primary"><%= @location.name %></h1>
     <div class="contri-card contributions p-3">
@@ -31,6 +32,7 @@
       <%= link_to 'Check-in', "#",class:"btn btn-flat"%>
       <%# How do I trigger the model once user presses checkin button? %>
     </div>
+    <p class="distance"></p>
   </div>
   <div class="card-no-hover mt-4 p-4 mb-4">
     <div class="comments">

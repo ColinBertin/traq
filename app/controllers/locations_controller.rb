@@ -2,15 +2,15 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @locations = policy_scope(Location).order(created_at: :desc)
-    if params[:search].present?
-      @locations = Location.global_search(params[:search]["search"])
-    end
+    @locations = policy_scope(Location).includes(:contributions).order(created_at: :desc)
+    params[:search].present? && @locations = Location.global_search(params[:search]["search"])
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
         lng: location.longitude,
-        id: location.id
+        id: location.id,
+        info_window: render_to_string(partial: "info_window", locals: { location: location }),
+        image_url: helpers.asset_url(marker_icon(location.location_type))
       }
     end
   end
@@ -26,7 +26,8 @@ class LocationsController < ApplicationController
       {
         lat: location.latitude,
         lng: location.longitude,
-        id: location.id
+        id: location.id,
+        image_url: helpers.asset_url(marker_icon(location.location_type))
       }
     end
   end
@@ -70,5 +71,18 @@ class LocationsController < ApplicationController
 
   def location_params
     params.require(:location).permit(:name, :address, :location_type)
+  end
+
+  def marker_icon(location)
+    case location
+    when "contributor"
+      return 'solidarity.png'
+    when "ngo"
+      return 'globe.png'
+    when "shelter"
+      return 'family.png'
+    else
+      return 'location-sign.png'
+    end
   end
 end
