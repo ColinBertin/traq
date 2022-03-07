@@ -15,11 +15,11 @@ class LocationPolicy < ApplicationPolicy
   end
 
   def update?
-    user_is_owner?
+    user_is_owner? || user.admin
   end
 
   def destroy?
-    user_is_owner?
+    user_is_owner? || user.admin
   end
 
   private
