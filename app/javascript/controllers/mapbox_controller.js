@@ -27,20 +27,16 @@ export default class extends Controller {
 
     this.#addMarkersToMap(user_location)
     this.#fitMapToMarkers(user_location)
-
-    // if (this.#pathName()) {
-    //   this.#addRoutes()
-    // }
   }
 
   async #addMarkersToMap(user_location) {
     // Create a HTML element for your custom marker
     const userCustomMarker = document.createElement("div")
     userCustomMarker.className = "marker"
-    userCustomMarker.style.backgroundImage = `url('../assets/man.png')`
-    userCustomMarker.style.backgroundSize = "contain"
+    userCustomMarker.style.backgroundImage = `url('../assets/user.png')`
+    userCustomMarker.style.backgroundSize = "cover"
     userCustomMarker.style.width = "40px"
-    userCustomMarker.style.height = "40px"
+    userCustomMarker.style.height = "50px"
     const userMarker = new mapboxgl.Marker(userCustomMarker)
     // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
       .setLngLat([ user_location.longitude, user_location.latitude ])
@@ -83,7 +79,6 @@ export default class extends Controller {
   }
 
   #formatAndInsertDistance(distance, htmlElement) {
-    // const target = document.getElementsByClassName('distance')
     const distFormat = (distance/1000).toFixed(1)
     htmlElement.querySelector('.distance').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${distFormat} Km`
   }
@@ -92,10 +87,7 @@ export default class extends Controller {
     const url = `https://api.mapbox.com/directions/v5/mapbox/walking/${user_location.longitude},${user_location.latitude};${destination.lng},${destination.lat}?geometries=geojson&access_token=${this.apiKeyValue}`
     const routes = await fetch(url)
     const data = await routes.json()
-    // await fetch(url).then(res => res.json()).then(data => {
-    //   console.log(data)
-    // })
-      return data.routes[0].geometry.coordinates
+    return data.routes[0].geometry.coordinates
   }
 
   #addRoutes(routeCoordinates) {
@@ -132,29 +124,21 @@ export default class extends Controller {
   }
 
   #getUserLocation() {
-    // const coords = {}
-    // navigator.geolocation.getCurrentPosition((position) => {
-    //   coords.latitude = position.coords.latitude
-    //   coords.longitude = position.coords.longitude
-    //   // localStorage.setItem("user_latitude", position.coords.latitude)
-    //   // localStorage.setItem("user_longitude", position.coords.longitude)
-    // })
-    // return coords
     return new Promise((res, rej) => {
       navigator.geolocation.getCurrentPosition(res, rej)
     })
   }
 
-  #addCurrentLocationButton() {
-    // Adds a current location button.
-    this.map.addControl(
-      new mapboxgl.GeolocateControl({
-        positionOptions: {
-          enableHighAccuracy: true,
-        },
-        trackUserLocation: true,
-        showUserHeading: true,
-      })
-    );
-  }
+  // #addCurrentLocationButton() {
+  //   // Adds a current location button.
+  //   this.map.addControl(
+  //     new mapboxgl.GeolocateControl({
+  //       positionOptions: {
+  //         enableHighAccuracy: true,
+  //       },
+  //       trackUserLocation: true,
+  //       showUserHeading: true,
+  //     })
+  //   );
+  // }
 }
