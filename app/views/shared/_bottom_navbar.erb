@@ -1,21 +1,21 @@
 <div class="user-nav-bar d-flex justify-content-around align-items-center">
   <div class= "icon-color" data-bs-toggle="modal" data-bs-target="#emergencyModal">
-    <%= image_tag "white_icon/emergency_call_01.png" %>
+    <%= image_tag "emergency_call_01.png" %>
   </div>
   <div class= "icon-color">
     <%= link_to new_location_path do %>
-      <%= image_tag "white_icon/add_contribution_02.png" %>
+      <%= image_tag "add_contribution_02.png" %>
     <% end %>
   </div>
   <div class= "icon-color">
     <%= link_to locations_path do %>
-      <%= image_tag "white_icon/shelter.png" %>
+      <%= image_tag "shelter.png" %>
     <% end %>
   </div>
   <!-- NEW HERE -->
   <% if user_signed_in? %>
     <li class="nav-item dropdown icon-color">
-      <%= image_tag ("white_icon/profile"), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+      <%= image_tag ("profile.png"), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
         <%= link_to "Action", "#", class: "dropdown-item" %>
         <%= link_to "My contributions", users_contributions_path, class: "dropdown-item" %>
@@ -25,7 +25,7 @@
   <% else %>
     <div class= "icon-color">
       <%= link_to new_user_session_path do %>
-        <%= image_tag image_tag("white_icon/profile.png") %>
+        <%= image_tag "profile.png" %>
       <% end %>
     <% end %>
   </div>
