@@ -29,8 +29,10 @@
     </div>
     <div class="text-center mt-2">
       <%= link_to 'Contribute', new_location_contribution_path(@location), class:"btn btn-flat"%>
-      <%= link_to 'Check-in', "#",class:"btn btn-flat"%>
-      <%# How do I trigger the model once user presses checkin button? %>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin">
+  Check-in
+</button>
+      <%= render 'checkin_modal' %>
     </div>
     <p class="distance"></p>
   </div>
