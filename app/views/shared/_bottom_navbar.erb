@@ -1,12 +1,16 @@
 <div class="user-nav-bar d-flex justify-content-around align-items-center">
   <div class= "icon-color" data-bs-toggle="modal" data-bs-target="#emergencyModal">
-    <%= image_tag("white_icon/emergency_call_01") %>
+    <%= image_tag "white_icon/emergency_call_01.png" %>
   </div>
   <div class= "icon-color">
-    <%= link_to image_tag("white_icon/add_contribution_02.png"), new_location_path %>
+    <%= link_to new_location_path do %>
+      <%= image_tag "white_icon/add_contribution_02.png" %>
+    <% end %>
   </div>
   <div class= "icon-color">
-    <%= link_to image_tag("white_icon/shelter.png"), locations_path %>
+    <%= link_to locations_path do %>
+      <%= image_tag "white_icon/shelter.png" %>
+    <% end %>
   </div>
   <!-- NEW HERE -->
   <% if user_signed_in? %>
@@ -20,7 +24,9 @@
     </li>
   <% else %>
     <div class= "icon-color">
-      <%= link_to image_tag("white_icon/profile.png"), new_user_session_path %>
+      <%= link_to new_user_session_path do %>
+        <%= image_tag image_tag("white_icon/profile.png") %>
+      <% end %>
     <% end %>
   </div>
 </div>
