@@ -4,6 +4,7 @@ class LocationsController < ApplicationController
   def index
     @locations = policy_scope(Location).includes(:contributions).order(created_at: :desc)
     params[:search].present? && @locations = Location.global_search(params[:search]["search"])
+
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
@@ -16,6 +17,8 @@ class LocationsController < ApplicationController
     @user_asset = {
       image_url: helpers.asset_url('user.png')
     }
+    @locations = request.location
+    raise
   end
 
   def show
