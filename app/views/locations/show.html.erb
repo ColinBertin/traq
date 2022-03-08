@@ -33,6 +33,11 @@
   Check-in
 </button>
       <%= render 'checkin_modal' %>
+      <% if 'checkin_modal'.click() %>
+      <%= simple_form_for([@location.checkin],
+      data: { insert_in_list_target: "form" }) do |f| %>
+      <%= f.input :content, input_html: {class:"comment-box"}  %>
+      <% end %>
     </div>
     <p class="distance"></p>
   </div>

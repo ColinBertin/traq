@@ -2,6 +2,6 @@ import { Controller } from "stimulus";
 
 export default class extends Controller {
   connect() {
-    console.log("hello from navbar_controller!");
+    console.log("hello from checkin_controller!");
   }
 }
