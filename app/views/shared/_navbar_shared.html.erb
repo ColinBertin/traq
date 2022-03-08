@@ -1,19 +1,11 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
-  <%= simple_form_for :search, url: locations_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-    <div class="searchbar container d-flex align-items-center">
-      <div>
-        <%= link_to root_path, class: "navbar-brand" do %>
-          <%= image_tag 'icon-brand.png' %>
-        <% end %>
-      </div>
-      <div>
-        <%= f.input :search, collection: [:Food, :Water, :Medicine] %>
-      </div>
-      <div class="mx-3">
-        <%= f.submit "Search", class: "btn btn-gradient" %>
-      </div>
+  <div class="justify-content-center">
+    <div>
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag 'icon-brand.png' %>
+      <% end %>
     </div>
-  <% end %>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
   </div>
 </div>
