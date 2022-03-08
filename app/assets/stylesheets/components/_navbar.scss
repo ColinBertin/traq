@@ -20,3 +20,10 @@ select#search_search {
 label.form-label.select.required {
   display: none;
 }
+
+.top-nav-bar {
+position: fixed;
+height: 70px;
+  z-index: 9999;
+
+}
