@@ -8,9 +8,9 @@
 require 'yaml'
 
 puts 'Cleaning database...'
-User.destroy_all
-Location.destroy_all
 Contribution.destroy_all
+Location.destroy_all
+User.destroy_all
 
 # Create User
 # Individual Contributor Profile
