@@ -1,2 +1,10 @@
-<h1>Contributions#edit</h1>
-<p>Find me in app/views/contributions/edit.html.erb</p>
+
+<div class="container">
+  <h1>Update Contributions</h1>
+  <%= simple_form_for (@contribution) do |f| %>
+    <%= f.input :supply_type %>
+    <%= f.input :description %>
+    <%= f.input :quantity %>
+     <%= f.button :submit, "Update", class:"btn btn-flat" %>
+  <% end %>
+</div>

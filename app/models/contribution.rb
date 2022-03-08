@@ -8,11 +8,11 @@ class Contribution < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :global_search,
-    against: [ :supply_type, :description, :location_id ],
-    associated_against: {
-      location: [ :address, :latitude, :longitude, :location_type]
-    },
-    using: {
-      tsearch: { prefix: true }
-    }
+                  against: %i[supply_type location_id],
+                  associated_against: {
+                    location: %i[address location_type]
+                  },
+                  using: {
+                    tsearch: { prefix: true }
+                  }
 end
