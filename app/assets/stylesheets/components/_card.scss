@@ -64,11 +64,18 @@
   border-radius: 8px;
   width: flex;
   color: #00c0a3;
+
+  p {
+    font-size: 14px;
+  }
 }
+
+
 
 .contri-card-mint-info {
   justify-content: space-between;
   display: flex;
+  color: #00c0a3;
 }
 
 .distance {
