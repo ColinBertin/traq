@@ -1,9 +1,16 @@
 <div class="container">
   <% @contributions.each do |contribution| %>
-    <div class="border-bottom mt-3 mb-3">
-      <p><%= contribution.supply_type %></p>
-      <p><%= contribution.location.name %></p>
-      <p><%= contribution.location.location_type %></p>
+    <div class="contri-user mt-4 p-2 mb-2">
+      <div class="border-bottom mt-3 mb-3">
+        <small><%= contribution.location.location_type %></small>
+        <h2><%= contribution.location.name %></h2>
+        <small class="text-success">Your Contribution</small>
+        <div class="contri-card-mint p-1">
+          <small class="text-success"><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %>   <%= contribution.supply_type %></strong></small>
+          <p></p>
+          <p><%= contribution.description%></p>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>

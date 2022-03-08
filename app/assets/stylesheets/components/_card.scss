@@ -71,6 +71,27 @@
   display: flex;
 }
 
+.contri-user {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 2px 2px 10px #d0e1ff;
+  border-radius: 8px;
+  text-decoration: none;
+
+  h2 {
+    color: #002b78;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  small {
+    color: #139dff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
 .distance {
   position: absolute;
   top: 8px;

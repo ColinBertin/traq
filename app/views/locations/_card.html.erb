@@ -7,7 +7,7 @@
     <% location.contributions.each do |contribution| %>
       <div class="contri-card-mint mt-2 p-2">
         <div class="d-flex flex-row">
-          <small><strong><%#= contribution.quantity ? contribution.quantity : 'Unknown' %></strong></small>
+          <small class="text-success"><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %></strong></small>
           &nbsp
           <small class="text-success"><strong><%= contribution.supply_type %></strong></small>
         </div>

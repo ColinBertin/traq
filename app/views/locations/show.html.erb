@@ -36,7 +36,7 @@
     <div class="comments">
       <div class="messages">
         <% @comments.each do |comment| %>
-          <small><%= comment.created_at %></small>
+          <small><%= comment.created_at.strftime("%m-%d-%Y %I:%M%p") %></small>
           <p id="comment-<%= comment.id %>"><i class="fas fa-angle-right"></i> <%= comment.content %></p>
         <% end %>
       </div>
