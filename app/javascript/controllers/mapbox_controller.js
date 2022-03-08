@@ -8,27 +8,15 @@ export default class extends Controller {
   static values = {
     apiKey: String,
     markers: Array,
-<<<<<<< HEAD
-  };
-=======
     userAsset: String
   }
->>>>>>> 8f7c139143141f04b4c53df2ca30ed0dc111f2ab
 
   static targets = ["location", "map"];
 
   async connect() {
-<<<<<<< HEAD
-    const geo_location = await this.#getUserLocation();
-    const user_location = geo_location.coords;
-    console.log({ user_location });
-    console.log("Hello world");
-    mapboxgl.accessToken = this.apiKeyValue;
-=======
     const geo_location = await this.#getUserLocation()
     const user_location = geo_location.coords
     mapboxgl.accessToken = this.apiKeyValue
->>>>>>> 8f7c139143141f04b4c53df2ca30ed0dc111f2ab
     this.map = new mapboxgl.Map({
       container: this.mapTarget,
       style: "mapbox://styles/mapbox/streets-v10",
@@ -47,15 +35,6 @@ export default class extends Controller {
   }
 
   async #addMarkersToMap(user_location) {
-<<<<<<< HEAD
-    // Create a HTML element for your custom marker
-    const userCustomMarker = document.createElement("div");
-    userCustomMarker.className = "marker";
-    userCustomMarker.style.backgroundImage = `url('../assets/user.png')`;
-    userCustomMarker.style.backgroundSize = "cover";
-    userCustomMarker.style.width = "40px";
-    userCustomMarker.style.height = "50px";
-=======
     // Create a HTML element for your custom marker for the user
     const userCustomMarker = document.createElement("div")
     userCustomMarker.className = "marker"
@@ -64,23 +43,10 @@ export default class extends Controller {
     userCustomMarker.style.backgroundRepeat = "no-repeat"
     userCustomMarker.style.width = "25px"
     userCustomMarker.style.height = "50px"
->>>>>>> 8f7c139143141f04b4c53df2ca30ed0dc111f2ab
     const userMarker = new mapboxgl.Marker(userCustomMarker)
       // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
       .setLngLat([user_location.longitude, user_location.latitude])
       .addTo(this.map);
-<<<<<<< HEAD
-    this.markersValue.forEach(async (marker) => {
-      const popup = new mapboxgl.Popup().setHTML(marker.info_window);
-      const customMarker = document.createElement("div");
-
-      // Create a HTML element for your custom marker
-      customMarker.className = "marker";
-      customMarker.style.backgroundImage = `url('${marker.image_url}')`;
-      customMarker.style.backgroundSize = "contain";
-      customMarker.style.width = "30px";
-      customMarker.style.height = "30px";
-=======
 
       // Create marker and info window for each locations
     this.markersValue.forEach( async (marker) => {
@@ -93,7 +59,6 @@ export default class extends Controller {
       customMarker.style.backgroundSize = "cover"
       customMarker.style.width = "35px"
       customMarker.style.height = "40px"
->>>>>>> 8f7c139143141f04b4c53df2ca30ed0dc111f2ab
 
       const locationMarker = new mapboxgl.Marker(customMarker)
         .setLngLat([marker.lng, marker.lat])
