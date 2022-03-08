@@ -26,12 +26,16 @@
       <%# <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin"> %>
       <%# Check-in %>
       <%# </button> %>
-      <%= simple_form_for([@location, @checkin]) do |f| %>
-        <%= f.submit 'Check in', class:"btn btn-flat ps-4 pe-4 ms-3" %>
-      <% end %>
-      <%= render 'checkin_modal' %>
+      <div data-controller="checkin-count">
+        <%= simple_form_for([@location, @checkin],
+                      data: { checkin_count_target: "form",
+                      action: "submit->insert-in-list#send" }) do |f| %>
+          <%= f.submit 'Check in', class:"btn btn-flat ps-4 pe-4 ms-3" %>
+        <% end %>
+        <%= render 'checkin_modal' %>
+      </div>
+      <p data-checkin-count-target="count"><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
     </div>
-    <p><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
     <% if user_signed_in? && @location.user == current_user %>
       <%= link_to 'Edit your location', edit_location_path(@location)  %>
     <% end %>
