@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import { csrfToken } from "@rails/ujs"
 
 export default class extends Controller {
   static targets = ["count", "form"]
@@ -8,7 +9,7 @@ export default class extends Controller {
     console.log(this.formTarget)
   }
 
-  send(event) {
+  count(event) {
     event.preventDefault()
 
     fetch(this.formTarget.action, {

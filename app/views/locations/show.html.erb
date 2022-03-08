@@ -21,20 +21,20 @@
         </div>
       <% end %>
     </div>
-    <div class="d-flex justify-content-center mt-2">
+    <div class="d-flex justify-content-center mt-2" data-controller="checkin">
       <%= link_to 'Contribute', new_location_contribution_path(@location), class:"btn btn-flat"%>
       <%# <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin"> %>
       <%# Check-in %>
       <%# </button> %>
-      <div data-controller="checkin-count">
+      <div>
         <%= simple_form_for([@location, @checkin],
-                      data: { checkin_count_target: "form",
-                      action: "submit->insert-in-list#send" }) do |f| %>
+                      data: { checkin_target: "form",
+                      action: "submit->checkin#count" }) do |f| %>
           <%= f.submit 'Check in', class:"btn btn-flat ps-4 pe-4 ms-3" %>
         <% end %>
-        <%= render 'checkin_modal' %>
+        <%#= render 'checkin_modal' %>
       </div>
-      <p data-checkin-count-target="count"><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
+      <p data-checkin-target="count"><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
     </div>
     <% if user_signed_in? && @location.user == current_user %>
       <%= link_to 'Edit your location', edit_location_path(@location)  %>
