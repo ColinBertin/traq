@@ -13,6 +13,9 @@ class LocationsController < ApplicationController
         image_url: helpers.asset_url(marker_icon(location.location_type))
       }
     end
+    @user_asset = {
+      image_url: helpers.asset_url('user.png')
+    }
   end
 
   def show
@@ -30,6 +33,9 @@ class LocationsController < ApplicationController
         image_url: helpers.asset_url(marker_icon(location.location_type))
       }
     end
+    @user_asset = {
+      image_url: helpers.asset_url('user.png')
+    }
   end
 
   def new
