@@ -27,6 +27,15 @@ class ContributionsController < ApplicationController
   end
 
   def edit
+    @contribution = Contribution.find(params[:id])
+    authorize @contribution
+  end
+
+  def update
+    @contribution = Contribution.find(params[:id])
+    authorize @contribution
+    @contribution.update(contribution_params)
+    redirect_to users_contributions_path
   end
 
   private

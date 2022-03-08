@@ -5,4 +5,7 @@ class User::ContributionPolicy < ApplicationPolicy
       scope.where(user: user)
     end
   end
+  def update?
+    true
+  end
 end

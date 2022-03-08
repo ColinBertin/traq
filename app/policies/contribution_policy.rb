@@ -9,4 +9,13 @@ class ContributionPolicy < ApplicationPolicy
   def create?
     user.present?
   end
+
+  def update?
+    user_is_owner?
+  end
+
+  private
+  def user_is_owner?
+    user == record.user
+  end
 end
