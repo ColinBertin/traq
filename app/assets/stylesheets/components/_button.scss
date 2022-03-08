@@ -35,3 +35,37 @@
   color: white;
   background: #139dff;
 }
+
+.btn-white {
+  color: white;
+
+  &:hover {
+    color: white;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  }
+}
+
+.btn-mint {
+  background: #00c0a3;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: #00937d;
+  }
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}

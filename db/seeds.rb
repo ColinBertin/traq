@@ -37,36 +37,37 @@ puts "... #{User.count} users has been created"
 yml_file = YAML::load_file('shelters.yml')
 yml_file.each do |row|
   Location.create(name: row["name"], address: row["address"],
-    latitude: row["lat"], longitude: row["long"], location_type: 2)
+    latitude: row["latitude"], longitude: row["longitude"], location_type: 2)
 end
 
+Location.create!(name: "Marunochi Park", address: "Marunochi Shimmarunochibirudeingu(2-kai) Chiyoda-ku, Tokyo",
+location_type: 2)
 puts "There are now #{Location.count} shelters"
 puts 'Finished making shelters'
-
 puts "Start making individual and NGO Locations"
 # Creating Location for Individual Controbutor
-Location.create!(name: "Marunochi Park", address: "129-1217, Marunochi Shimmarunochibirudeingu(2-kai) Chiyoda-ku, Tokyo",
+Location.create!(name: "Marunochi Park", address: "Marunochi Shimmarunochibirudeingu(2-kai) Chiyoda-ku, Tokyo",
 location_type: 0)
 
-Location.create!(name: "Shibuya Building", address: "1-39, Hiroo 1-chome, Shibuya-ku, Tokyo",
+Location.create!(name: "Shibuya Building", address: "Hiroo 1-chome, Shibuya-ku, Tokyo",
 location_type: 0)
 
-Location.create!(name: "Kanda Recreation Building", address: "3-3, Kanda Ogawamachi, Chiyoda-ku, Tokyo",
+Location.create!(name: "Kanda Recreation Building", address: "Kanda Ogawamachi, Chiyoda-ku, Tokyo",
   location_type: 0)
 
-Location.create!(name: "Setagaya Park", address: "262-1094, Ohara, Setagaya-ku, Tokyo",
+Location.create!(name: "Setagaya Park", address: "Ohara, Setagaya-ku, Tokyo",
   location_type: 0, user_id: User.first)
 
-Location.create!(name: "Kanda Recreation Building", address: "3-3, Kanda Ogawamachi, Chiyoda-ku, Tokyo",
+Location.create!(name: "Kanda Recreation Building", address: "Kanda Ogawamachi, Chiyoda-ku, Tokyo",
   location_type: 0, user_id: User.last)
 
 # Creating Location for NGO
 
-Location.create!(name: "Japanese Red Cross Society", address: "1-1-3, Shiba Daimon, Minato-ku, Tokyo 105-8521",
-  location_type: 1)
+Location.create!(name: "Japanese Red Cross Society", address: "Shiba Daimon, Minato-ku, Tokyo",
+  latitude: 40, longitude: 110, location_type: 1)
 
 Location.create!(name: "The Nippon Foundation", address: "1 Chome−2−2 Minato City, Akasaka,
-  Tokyo 107-8404 Nihon Building", location_type: 1)
+  Tokyo 107-8404 Nihon Building", latitude: 35.6432, longitude: 108.375683, location_type: 1)
 
 # Creating contributions
 

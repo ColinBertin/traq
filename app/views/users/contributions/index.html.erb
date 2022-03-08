@@ -1,0 +1,9 @@
+<div class="container">
+  <% @contributions.each do |contribution| %>
+    <div class="border-bottom mt-3 mb-3">
+      <p><%= contribution.supply_type %></p>
+      <p><%= contribution.location.name %></p>
+      <p><%= contribution.location.location_type %></p>
+    </div>
+  <% end %>
+</div>

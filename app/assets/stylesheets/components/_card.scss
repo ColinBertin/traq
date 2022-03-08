@@ -1,6 +1,6 @@
 .card-blue-shadow {
   width: flex;
-  height: 180px;
+  height: flex;
   left: 0px;
   top: 0px;
   background: #ffffff;
@@ -15,12 +15,12 @@
   h2 {
     color: #002b78;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   small {
     color: #139dff;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -35,6 +35,7 @@
 }
 
 .card-no-hover {
+  position: relative;
   background: #ffffff;
   box-shadow: 2px 2px 10px #d0e1ff;
   border-radius: 8px;
@@ -47,4 +48,31 @@
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.contri-card {
+  width: flex;
+  background: #f8fcff;
+  border-radius: 8px;
+  border: 1px solid #00c0a3;
+  line-height: 1em;
+}
+
+.contri-card-mint {
+  border: 1px solid #00c0a3;
+  background: #ebfffc;
+  border-radius: 8px;
+  width: flex;
+  color: #00c0a3;
+}
+
+.contri-card-mint-info {
+  justify-content: space-between;
+  display: flex;
+}
+
+.distance {
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
