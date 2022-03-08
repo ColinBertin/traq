@@ -1,22 +1,12 @@
-<<<<<<< HEAD
-<h1>Locations#new</h1>
-<%= simple_form_for(@location) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :location_type, collection: ['contributor', 'ngo'] %>
-  <%= f.submit %>
-<% end %>
-=======
 <div class="container"></div>
-  <div class="row justify-content-center mt-4 p-4">
-    <div class="card-no-hover p-4">
-      <h1 class="card-text-title text-primary text-center">New Location</h1>
-      <%= simple_form_for(@location) do |f| %>
-        <%= f.input :name %>
-        <%= f.input :address %>
-        <%= f.input :location_type, collection: ['contributor', 'ngo'] %>
-        <%= f.button :submit, "Make New Location", class:"btn btn-flat" %>
-      <% end %>
-    </div>
+<div class="row justify-content-center mt-4 p-4">
+  <div class="card-no-hover p-4">
+    <h1 class="card-text-title text-primary text-center">New Location</h1>
+    <%= simple_form_for(@location) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :location_type, collection: ['contributor', 'ngo'] %>
+      <%= f.button :submit, "Make New Location", class:"btn btn-flat" %>
+    <% end %>
   </div>
->>>>>>> 8f7c139143141f04b4c53df2ca30ed0dc111f2ab
+</div>
