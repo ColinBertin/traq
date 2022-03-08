@@ -4,12 +4,11 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   namespace :users do
     resources :contributions, only: [:index]
-    resources :checkin, only: [:new, :create]
   end
   resources :locations do
     resources :comments, only: [:index, :create] # check where goes the comments
     resources :contributions, only: [:new, :create]
-    resources :checkin, only: [:update, :destroy]
+    resources :checkins, only: [:create]
   end
   resources :contributions, only: [:edit, :update, :destroy]
   resources :news, only: [:index]

@@ -30,6 +30,7 @@ class LocationsController < ApplicationController
         image_url: helpers.asset_url(marker_icon(location.location_type))
       }
     end
+    @checkin = Checkin.new
   end
 
   def new
