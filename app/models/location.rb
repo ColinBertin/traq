@@ -5,11 +5,12 @@ class Location < ApplicationRecord
   belongs_to :user, optional: true
   has_many :contributions, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_many :checkins, dependent: :destroy
 
   validates :name, presence: true
 
   enum location_type: {
-    contributor: 0,
+    individual: 0,
     ngo: 1,
     shelter: 2
   }, _default: 0
