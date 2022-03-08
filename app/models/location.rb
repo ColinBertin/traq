@@ -16,11 +16,11 @@ class Location < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :global_search,
-    against: [ :address, :name ],
-    associated_against: {
-      contributions: [ :supply_type, :description ]
-    },
-    using: {
-      tsearch: { prefix: true }
-    }
+                  against: %i[address name],
+                  associated_against: {
+                    contributions: %i[supply_type]
+                  },
+                  using: {
+                    tsearch: { prefix: true }
+                  }
 end
