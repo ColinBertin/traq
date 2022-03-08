@@ -33,8 +33,9 @@ export default class extends Controller {
     const userCustomMarker = document.createElement("div")
     userCustomMarker.className = "marker"
     userCustomMarker.style.backgroundImage = `url('${JSON.parse(this.userAssetValue).image_url}')`
-    userCustomMarker.style.backgroundSize = "cover"
-    userCustomMarker.style.width = "40px"
+    userCustomMarker.style.backgroundSize = "contain"
+    userCustomMarker.style.backgroundRepeat = "no-repeat"
+    userCustomMarker.style.width = "25px"
     userCustomMarker.style.height = "50px"
     const userMarker = new mapboxgl.Marker(userCustomMarker)
     // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
@@ -49,9 +50,9 @@ export default class extends Controller {
       // Create a HTML element for your custom marker
       customMarker.className = "marker"
       customMarker.style.backgroundImage = `url('${marker.image_url}')`
-      customMarker.style.backgroundSize = "contain"
-      customMarker.style.width = "30px"
-      customMarker.style.height = "30px"
+      customMarker.style.backgroundSize = "cover"
+      customMarker.style.width = "35px"
+      customMarker.style.height = "40px"
 
       const locationMarker = new mapboxgl.Marker(customMarker)
         .setLngLat([ marker.lng, marker.lat ])
