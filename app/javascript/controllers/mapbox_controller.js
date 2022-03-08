@@ -9,6 +9,7 @@ export default class extends Controller {
   static values = {
     apiKey: String,
     markers: Array,
+    userAsset: String
   }
 
   static targets = ["location", "map"]
@@ -16,8 +17,6 @@ export default class extends Controller {
   async connect() {
     const geo_location = await this.#getUserLocation()
     const user_location = geo_location.coords
-    console.log({user_location})
-    console.log('Hello world')
     mapboxgl.accessToken = this.apiKeyValue
     this.map = new mapboxgl.Map({
       container: this.mapTarget,
@@ -30,10 +29,10 @@ export default class extends Controller {
   }
 
   async #addMarkersToMap(user_location) {
-    // Create a HTML element for your custom marker
+    // Create a HTML element for your custom marker for the user
     const userCustomMarker = document.createElement("div")
     userCustomMarker.className = "marker"
-    userCustomMarker.style.backgroundImage = `url('../assets/user.png')`
+    userCustomMarker.style.backgroundImage = `url('${JSON.parse(this.userAssetValue).image_url}')`
     userCustomMarker.style.backgroundSize = "cover"
     userCustomMarker.style.width = "40px"
     userCustomMarker.style.height = "50px"
@@ -41,6 +40,8 @@ export default class extends Controller {
     // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
       .setLngLat([ user_location.longitude, user_location.latitude ])
       .addTo(this.map);
+
+      // Create marker and info window for each locations
     this.markersValue.forEach( async (marker) => {
       const popup = new mapboxgl.Popup().setHTML(marker.info_window)
       const customMarker = document.createElement("div")
