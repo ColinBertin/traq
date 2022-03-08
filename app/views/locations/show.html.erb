@@ -3,13 +3,7 @@
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-user-asset-value="<%= @user_asset.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-  <div style="width: 100%; height: 500px; border-radius: 8px; box-shadow: 2px 2px 10px #d0e1ff;"
-    data-mapbox-target="map">
-  </div>
-  <% if @location.user == current_user %>
-    <%= link_to 'Edit your location', edit_location_path(@location)  %>
-  <% end %>
-  <div class="card-no-hover p-4 mt-4"
+  <div class="card-no-hover p-4 mb-4"
   data-mapbox-target="location"
   data-location-id="<%= @location.id %>">
     <h1 class="text-shelter"><%= @location.location_type %></h1>
@@ -38,7 +32,13 @@
       <%= render 'checkin_modal' %>
     </div>
     <p><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
+    <% if user_signed_in? && @location.user == current_user %>
+      <%= link_to 'Edit your location', edit_location_path(@location)  %>
+    <% end %>
     <p class="distance"></p>
+  </div>
+  <div style="width: 100%; height: 500px; border-radius: 8px; box-shadow: 2px 2px 10px #d0e1ff;"
+    data-mapbox-target="map">
   </div>
   <div class="card-no-hover mt-4 p-4 mb-4">
     <div class="comments">
