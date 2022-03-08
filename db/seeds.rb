@@ -8,9 +8,9 @@
 require 'yaml'
 
 puts 'Cleaning database...'
-User.destroy_all
-Location.destroy_all
 Contribution.destroy_all
+Location.destroy_all
+User.destroy_all
 
 # Create User
 # Individual Contributor Profile
@@ -65,9 +65,6 @@ Location.create!(name: "Kanda Recreation Building", address: "Kanda Ogawamachi, 
 
 Location.create!(name: "Japanese Red Cross Society", address: "Shiba Daimon, Minato-ku, Tokyo",
   latitude: 40, longitude: 110, location_type: 1)
-
-Location.create!(name: "The Nippon Foundation", address: "1 Chome−2−2 Minato City, Akasaka,
-  Tokyo 107-8404 Nihon Building", latitude: 35.6432, longitude: 108.375683, location_type: 1)
 
 # Creating contributions
 
