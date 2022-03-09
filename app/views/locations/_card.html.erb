@@ -25,12 +25,7 @@
     <%= link_to '', location_path(location), class: 'card-link' %>
     <p class="distance"></p>
   <% end %>
-</div>
-<% if user_signed_in? && location.user == current_user %>
-  <%= link_to location_path(location),
-            class: "text-danger cards-delete-btn",
-            method: :delete,
-            data: { confirm: "Are you sure you would like to delete this location?" } do %>
-    <i class="fas fa-times"></i>
-  <% end %>
+<% if location.location_type == "shelter" %>
+    <p class="card-user-count"><i class="fas fa-male"></i> - <%= location.checkins.count %></p>
 <% end %>
+</div>
