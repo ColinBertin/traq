@@ -2,8 +2,10 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @locations = policy_scope(Location).includes(:contributions).order(created_at: :desc)
+    @locations = policy_scope(Location).includes(:contributions)
+    @locations = @locations.near([35.633868, 139.708205], 0.8)
     params[:search].present? && @locations = Location.global_search(params[:search]["search"])
+
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
@@ -16,6 +18,7 @@ class LocationsController < ApplicationController
     @user_asset = {
       image_url: helpers.asset_url('user.png')
     }
+    # @locations = request.location
   end
 
   def show
@@ -33,7 +36,7 @@ class LocationsController < ApplicationController
         image_url: helpers.asset_url(marker_icon(location.location_type))
       }
     end
-    @checkin = Checkin.new
+    @checkin = Checkin.find_by(user: current_user, location: @location) || Checkin.new
     @user_asset = {
       image_url: helpers.asset_url('user.png')
     }
@@ -82,7 +85,7 @@ class LocationsController < ApplicationController
 
   def marker_icon(location)
     case location
-    when "contributor"
+    when "individual"
       return 'contribution_location.png'
     when "ngo"
       return 'ngo.png'

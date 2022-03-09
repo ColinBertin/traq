@@ -3,7 +3,7 @@
   <h2><%= location.name %></h2>
   <p><%= location.address%></p>
   <div class="contri-card contributions p-2">
-    <small class="text-success">SUPPLIES AVAILABLE</small>
+    <small class="text-success">Supplies Available</small>
     <% location.contributions.each do |contribution| %>
       <div class="contri-card-mint p-1 mt-1">
         <div class="d-flex flex-row">
@@ -17,13 +17,15 @@
   </div>
   <%= link_to '', location_path(location), class: 'card-link' %>
   <p class="distance"></p>
-  <p><i class="fas fa-male"></i> - <%= location.checkins.count %></p>
+  <% if location.location_type == "shelter" %>
+    <p class="card-user-count"><i class="fas fa-male"></i> - <%= location.checkins.count %></p>
+  <% end %>
 </div>
-<% if user_signed_in? && location.user == current_user %>
+<!--<% if user_signed_in? && location.user == current_user %>
   <%= link_to location_path(location),
             class: "text-danger cards-delete-btn",
             method: :delete,
             data: { confirm: "Are you sure you would like to delete this location?" } do %>
     <i class="fas fa-times"></i>
   <% end %>
-<% end %>
+<% end %>-->
