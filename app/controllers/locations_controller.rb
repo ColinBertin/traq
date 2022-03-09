@@ -40,7 +40,6 @@ class LocationsController < ApplicationController
     @user_asset = {
       image_url: helpers.asset_url('user.png')
     }
-    raise
   end
 
   def new
@@ -55,7 +54,7 @@ class LocationsController < ApplicationController
     @location.contributions.first.user = current_user
     authorize @location
     if @location.save
-      redirect_to locations_path
+      redirect_to location_path(@location)
     else
       render :new
     end

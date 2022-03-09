@@ -3,13 +3,14 @@
     <div class="card-no-hover p-4">
       <h1 class="card-text-title text-primary text-center">New Location</h1>
       <p>Please register a new location in order to distribute supplies.
-      You may add or edit the information later in the edit page.</p>
+        You may add or edit the information later in the edit page.</p>
       <%= simple_form_for @location do |f| %>
         <%= f.input :name %>
         <%= f.input :address %>
-        <%= f.input :location_type, collection: ['individual', 'ngo'] %>
+        <%= f.input :location_type, collection: ['ngo'], include_blank: false %>
         <%= f.simple_fields_for :contributions do |g| %>
-          <%= g.input :supply_type, input_html: {class:"comment-box"} %>
+          <%= g.input :supply_type, collection: ["water", "food", "medicine", "sanitation", "others"],input_html: {class:"comment-box"}, include_blank: false %>
+          <%#= g.input :supply_type, input_html: {class:"comment-box"} %>
           <%= g.input :description, input_html: {class:"comment-box"} %>
           <%= g.input :quantity, input_html: {class:"comment-box"} %>
         <% end %>
