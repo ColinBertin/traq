@@ -85,7 +85,7 @@ class LocationsController < ApplicationController
 
   def marker_icon(location)
     case location
-    when "contributor"
+    when "individual"
       return 'contribution_location.png'
     when "ngo"
       return 'ngo.png'
