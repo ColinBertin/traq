@@ -2,12 +2,20 @@
   <div class="row justify-content-center mt-4 p-4">
     <div class="card-no-hover p-4">
       <h1 class="card-text-title text-primary text-center">New Location</h1>
-      <%= simple_form_for(@location) do |f| %>
+      <p>Please register a new location in order to distribute supplies.
+      You may add or edit the information later in the edit page.</p>
+      <%= simple_form_for @location do |f| %>
         <%= f.input :name %>
         <%= f.input :address %>
-        <%= f.input :location_type, collection: ['individual', 'ngo'], include_blank: false %>
-        <%= f.button :submit, "Make New Location", class:"btn btn-flat" %>
+        <%= f.input :location_type, collection: ['individual', 'ngo'] %>
+        <%= f.simple_fields_for :contributions do |g| %>
+          <%= g.input :supply_type, input_html: {class:"comment-box"} %>
+          <%= g.input :description, input_html: {class:"comment-box"} %>
+          <%= g.input :quantity, input_html: {class:"comment-box"} %>
+        <% end %>
+        <%= f.button :submit, "Add Contribution", class:"btn btn-flat" %>
       <% end %>
+      <%#= link_to 'Check Contributions', location_path(@location), class:"btn btn-outline mt-2" %>
     </div>
   </div>
 </div>
