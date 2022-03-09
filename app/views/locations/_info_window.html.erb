@@ -4,6 +4,11 @@
   <% if location.location_type == "shelter" %>
     <small class="card-user-count" data-checkin-target="count"><i class="fas fa-male"></i> - <%= location.checkins.count %></small>
   <% end %>
+  <ul>
+    <% location.contributions.each do |contribution| %>
+      <li><%= contribution.supply_type %></li>
+    <% end %>
+  </ul>
   <br>
   <%= link_to "info", location_path(location) %>
 </div>
