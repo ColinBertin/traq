@@ -2,10 +2,10 @@ class LocationsController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
+    @coords = request.location
     @locations = policy_scope(Location).includes(:contributions)
-    @locations = @locations.near([35.633868, 139.708205], 1)
+    @locations = @locations.near(filter_location, 0.8)
     params[:search].present? && @locations = Location.global_search(params[:search]["search"])
-
     @markers = @locations.geocoded.map do |location|
       {
         lat: location.latitude,
@@ -40,6 +40,7 @@ class LocationsController < ApplicationController
     @user_asset = {
       image_url: helpers.asset_url('user.png')
     }
+    raise
   end
 
   def new
@@ -95,6 +96,14 @@ class LocationsController < ApplicationController
       return 'shelter.png'
     else
       return 'location-sign.png'
+    end
+  end
+
+  def filter_location
+    if request.location.latitude.present?
+      [request.location.latitude, request.location.longitude]
+    else
+      [35.633868, 139.708205]
     end
   end
 end

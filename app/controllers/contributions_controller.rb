@@ -38,6 +38,13 @@ class ContributionsController < ApplicationController
     redirect_to users_contributions_path
   end
 
+  def destroy
+    @contribution = Contribution.find(params[:id])
+    authorize @contribution
+    @contribution.destroy
+    redirect_to users_contributions_path
+  end
+
   private
 
   def contribution_params
