@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   end
   resources :contributions, only: [:edit, :update, :destroy]
   resources :news, only: [:index]
+  resources :checkins, only: [:destroy]
 end

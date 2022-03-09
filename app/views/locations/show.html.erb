@@ -32,7 +32,7 @@
       <%# <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin"> %>
       <%# Check-in %>
       <%# </button> %>
-      <%= render "locations/checkin_btn", location: location %>
+      <%= render "locations/checkin_btn", location: @location %>
       <%= render 'checkin_modal' %>
     </div>
     <p><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>

@@ -1,3 +1,10 @@
-<%= simple_form_for([@location, @checkin]) do |f| %>
-  <%= f.submit 'Check in', class:"btn btn-flat ps-4 pe-4 ms-3" %>
+<% if @checkin.new_record? %>
+  <%= simple_form_for([@location, @checkin], remote: true) do |f| %>
+    <%= f.submit 'Check in', class:"btn btn-flat ps-4 pe-4 ms-3" %>
+  <% end %>
+<% else %>
+  <%= link_to 'Check out', checkin_path(@checkin),
+          class: "btn btn-flat ps-4 pe-4 ms-3",
+          method: :delete,
+          remote: true %>
 <% end %>
