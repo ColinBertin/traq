@@ -10,8 +10,9 @@ class Contribution < ApplicationRecord
     water: 0,
     food: 1,
     sanitation: 2,
-    others: 3
-  }, _default: 0
+    medicine: 3,
+    others: 4
+  }
 
   include PgSearch::Model
   pg_search_scope :global_search,
