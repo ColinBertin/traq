@@ -32,9 +32,7 @@
       <%# <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin"> %>
       <%# Check-in %>
       <%# </button> %>
-      <%= simple_form_for([@location, @checkin]) do |f| %>
-        <%= f.submit 'Check in', class:"btn btn-flat ps-4 pe-4 ms-3" %>
-      <% end %>
+      <%= render "locations/checkin_btn", location: @location %>
       <%= render 'checkin_modal' %>
     </div>
     <p><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>

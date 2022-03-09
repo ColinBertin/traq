@@ -8,4 +8,11 @@ class CheckinsController < ApplicationController
     authorize @checkin
     redirect_to location_path(location), notice: "Thank you for checking in!"
   end
+
+  def destroy
+    @checkin = Checkin.find(params[:id])
+    authorize @checkin
+    @checkin.destroy
+    redirect_to location_path(@checkin.location)
+  end
 end
