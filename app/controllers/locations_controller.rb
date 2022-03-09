@@ -1,5 +1,5 @@
 class LocationsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: %i[index show]
 
   def index
     @locations = policy_scope(Location).includes(:contributions)
@@ -45,11 +45,13 @@ class LocationsController < ApplicationController
   def new
     @location = Location.new
     authorize @location
+    @location.contributions.build
   end
 
   def create
     @location = Location.new(location_params)
     @location.user = current_user
+    @location.contributions.first.user = current_user
     authorize @location
     if @location.save
       redirect_to locations_path
@@ -80,7 +82,7 @@ class LocationsController < ApplicationController
   private
 
   def location_params
-    params.require(:location).permit(:name, :address, :location_type)
+    params.require(:location).permit(:name, :address, :location_type, contributions_attributes: {})
   end
 
   def marker_icon(location)
