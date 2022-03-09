@@ -1,14 +1,14 @@
 <div class="container">
-    <div class="row justify-content-center mt-4 p-4">
+  <div class="row justify-content-center mt-4 p-4">
     <div class="card-no-hover p-4">
       <h1 class="card-text-title text-primary text-center">Add Contribution</h1>
-
-  <%= simple_form_for [@location, @contribution] do |f| %>
-    <%= f.input :supply_type, input_html: {class:"comment-box"} %>
-    <%= f.input :description, input_html: {class:"comment-box"} %>
-    <%= f.input :quantity, input_html: {class:"comment-box"} %>
-    <%= f.button :submit, "Add Contribution", class:"btn btn-flat" %>
-  <% end %>
-    <%= link_to 'back to the location', location_path(@location), class:"btn btn-outline mt-2" %>
-</div>
-</div>
+      <%= simple_form_for [@location, @contribution] do |f| %>
+        <!--<%= f.select :supply_type, Contribution.supply_types, {}, class:"", as: :integer %>-->
+        <%= f.input :supply_type, collection: ["water", "food", "medicine", "sanitation", "others"], include_blank: false %>
+        <%= f.input :description, input_html: {class:"comment-box"} %>
+        <%= f.input :quantity, input_html: {class:"comment-box"} %>
+        <%= f.button :submit, "Add Contribution", class:"btn btn-flat" %>
+      <% end %>
+      <%= link_to 'back to the location', location_path(@location), class:"btn btn-outline mt-2" %>
+    </div>
+  </div>

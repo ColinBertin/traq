@@ -19,4 +19,11 @@ class CheckinsController < ApplicationController
     @checkin.destroy
     redirect_to location_path(@checkin.location)
   end
+
+  def destroy
+    @checkin = Checkin.find(params[:id])
+    authorize @checkin
+    @checkin.destroy
+    redirect_to location_path(@checkin.location)
+  end
 end
