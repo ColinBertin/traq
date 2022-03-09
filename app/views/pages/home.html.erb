@@ -8,6 +8,18 @@
         <div class="row">
           <div class="d-flex justify-content-center mt-2">
             <h1>Seek Help & Shelter</h1>
+            </div>
+            <div class="btn-flat-dark">
+              <div class="row">
+              <%= link_to locations_path(:Water), class: "btn-flat-dark" do %>
+            <%= image_tag "white_icon/bottled_water.png" %>
+                <% end %>
+                    <%= link_to locations_path, class: "btn-flat-dark" do %>
+            <%= image_tag "white_icon/food.png" %>
+                <% end %>
+                    <%= link_to locations_path, class: "btn-flat-dark" do %>
+            <%= image_tag "white_icon/medical.png" %>
+                <% end %>
           </div>
         </div>
       </div>
