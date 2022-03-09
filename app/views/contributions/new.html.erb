@@ -4,7 +4,7 @@
       <h1 class="card-text-title text-primary text-center">Add Contribution</h1>
 
   <%= simple_form_for [@location, @contribution] do |f| %>
-    <%= f.input :supply_type, input_html: {class:"comment-box"} %>
+    <%= f.select :supply_type, Contribution.supply_types, {}, placeholder: 0, class:"" %>
     <%= f.input :description, input_html: {class:"comment-box"} %>
     <%= f.input :quantity, input_html: {class:"comment-box"} %>
     <%= f.button :submit, "Add Contribution", class:"btn btn-flat" %>
