@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   namespace :users do
     resources :contributions, only: [:index]
+    resources :locations, only: [:index]
   end
   resources :locations do
     resources :comments, only: [:index, :create] # check where goes the comments
