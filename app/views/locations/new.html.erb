@@ -5,7 +5,7 @@
       <%= simple_form_for(@location) do |f| %>
         <%= f.input :name %>
         <%= f.input :address %>
-        <%= f.input :location_type, collection: ['contributor', 'ngo'] %>
+        <%= f.input :location_type, collection: ['individual', 'ngo'] %>
         <%= f.button :submit, "Make New Location", class:"btn btn-flat" %>
       <% end %>
     </div>
