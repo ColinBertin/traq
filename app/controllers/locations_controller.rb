@@ -4,7 +4,7 @@ class LocationsController < ApplicationController
   def index
     @coords = request.location
     @locations = policy_scope(Location).includes(:contributions)
-    @locations = @locations.near([35.633868, 139.708205], 0.8)
+    @locations = @locations.near(filter_location, 0.8)
     params[:search].present? && @locations = Location.global_search(params[:search]["search"])
     @markers = @locations.geocoded.map do |location|
       {
