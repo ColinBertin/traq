@@ -4,6 +4,7 @@ class LocationsController < ApplicationController
   def index
     @coords = request.location
     @locations = policy_scope(Location).includes(:contributions)
+    @locations = @locations.where(location_type: params[:location_type]) if params[:location_type]
     @locations = @locations.near([35.633868, 139.708205], 0.8)
     params[:search].present? && @locations = Location.global_search(params[:search]["search"])
     @markers = @locations.geocoded.map do |location|
@@ -19,6 +20,7 @@ class LocationsController < ApplicationController
       image_url: helpers.asset_url('user.png')
     }
     # @locations = request.location
+
   end
 
   def show
@@ -33,7 +35,9 @@ class LocationsController < ApplicationController
         lat: location.latitude,
         lng: location.longitude,
         id: location.id,
-        image_url: helpers.asset_url(marker_icon(location.location_type))
+        image_url: helpers.asset_url(marker_icon(location.location_type)),
+        location_user: location.user_id,
+        user: current_user.id
       }
     end
     @checkin = Checkin.find_by(user: current_user, location: @location) || Checkin.new

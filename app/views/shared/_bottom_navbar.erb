@@ -3,12 +3,12 @@
     <%= image_tag "white_icon/emergency_call_01.png" %>
   </div>
   <div class= "icon-color">
-    <%= link_to new_location_path do %>
-      <%= image_tag "white_icon/add_contribution_02.png" %>
+    <%= link_to(locations_path(:location_type => 'ngo')) do %>
+      <%= image_tag "white_icon/ngo-white.png" %>
     <% end %>
   </div>
   <div class= "icon-color">
-    <%= link_to locations_path do %>
+    <%= link_to(locations_path(:location_type => 'shelter')) do %>
       <%= image_tag "white_icon/shelter.png" %>
     <% end %>
   </div>
@@ -17,6 +17,7 @@
     <li class="nav-item dropdown icon-color">
       <%= image_tag ("white_icon/profile.png"), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+        <%= link_to "Add a Location", new_location_path, class: "dropdown-item" %>
         <%= link_to "My locations", users_locations_path, class: "dropdown-item" %>
         <%= link_to "My contributions", users_contributions_path, class: "dropdown-item" %>
         <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>

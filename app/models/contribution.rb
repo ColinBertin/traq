@@ -5,13 +5,21 @@ class Contribution < ApplicationRecord
   validates :description, presence: true
   acts_as_taggable_on :tags
 
+  SUPPLY_ICON = {
+    'water' => 'fas fa-tint',
+    'medicine' => 'fas fa-tablets',
+    'food' => 'fas fa-cookie-bite',
+    'sanitation' => 'fas fa-pump-medical',
+    'others' =>  'fas fa-box-open'
+  }
+
   enum supply_type:
   {
-    water: 0,
-    food: 1,
-    sanitation: 2,
-    medicine: 3,
-    others: 4
+    Water: 0,
+    Food: 1,
+    Sanitation: 2,
+    Medicine: 3,
+    Others: 4
   }
 
   include PgSearch::Model

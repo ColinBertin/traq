@@ -4,9 +4,11 @@
     <h2><%= contribution.location.name %></h2>
     <small class="text-success">Your Contribution</small>
     <div class="contri-card-mint p-1">
-      <small class="text-success"><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %>   <%= contribution.supply_type %></strong></small>
-      <p></p>
-      <p><%= contribution.description%></p>
+      <%= render "locations/supplies_kind", contribution: contribution %>
+      <div class="d-flex flex-row">
+        <small class="text-uppercase text-success"><strong>&nbsp<%= contribution.quantity ? contribution.quantity : 'Unknown' %></strong>,&nbsp</small>
+        <p><%= contribution.description %></p>
+      </div>
     </div>
   </div>
   <div class="d-flex ">
