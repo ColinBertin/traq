@@ -8,7 +8,7 @@ Location.destroy_all
 User.destroy_all
 
 # Create User
-
+puts 'test'
 puts 'Creating users'
 User.create!(email: "kimm@gmail.com", password:123456, admin:true)
 
