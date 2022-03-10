@@ -2,7 +2,9 @@
   data-controller="mapbox"
   data-mapbox-markers-value="<%= @markers.to_json %>"
   data-mapbox-user-asset-value="<%= @user_asset.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"
+  data-mapbox-user-id-value="<%= current_user&.id %>"
+  data-mapbox-location-user-id-value="<%= @location.user_id %>">
   <div class="card-no-hover p-4 mb-4"
   data-mapbox-target="location"
   data-location-id="<%= @location.id %>">
@@ -38,8 +40,10 @@
     <% if user_signed_in? && @location.user == current_user %>
       <%= link_to 'Edit your location', edit_location_path(@location)  %>
     <% end %>
-    <p class="distance"></p>
-    <p class="card-user-count" data-checkin-target="count"><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
+    <% if @location.location_type == 'shelter' %>
+      <p class="distance"></p>
+      <p class="card-user-count"><i class="fas fa-male"></i> <%= @location.checkins.count %></p>
+    <% end %>
   </div>
   <div style="width: 100%; height: 500px; border-radius: 8px; box-shadow: 2px 2px 10px #d0e1ff;"
     data-mapbox-target="map">

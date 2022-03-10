@@ -5,8 +5,8 @@ export default class extends Controller {
   static targets = ["count", "form"]
 
   connect() {
-    console.log(this.countTarget)
-    console.log(this.formTarget)
+    // console.log(this.countTarget)
+    // console.log(this.formTarget)
   }
 
   count(event) {
