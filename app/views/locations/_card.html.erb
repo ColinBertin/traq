@@ -9,17 +9,18 @@
       <div class="contri-card-mint p-2 mt-2">
         <%= render "locations/supplies_kind", contribution: contribution %>
       </div>
-      <%= link_to '', location_path(location), class: 'card-link' %>
       <p class="distance"></p>
     <%end%>
   <%else%>
     <div class="contri-card-grey p-1">
       <small class="text-muted">No Supplies Available</small>
     </div>
-    <%= link_to '', location_path(location), class: 'card-link' %>
     <p class="distance"></p>
   <% end %>
   <% if location.location_type == "shelter" %>
     <p class="card-user-count"><i class="fas fa-male"></i> <%= location.checkins.count %></p>
   <% end %>
+  <div class="d-flex justify-content-center">
+    <%= link_to 'Get Direction', location_path(location), class:"btn btn-flat mt-2"%>
+  </div>
 </div>
