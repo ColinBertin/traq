@@ -61,45 +61,68 @@ Location.create!(name: "Shibuya Building", address: "Hiroo 1-chome, Shibuya-ku, 
   location_type: 0)
 
   Location.create!(name: "Kanda Recreation Building", address: "Kanda Ogawamachi, Chiyoda-ku, Tokyo",
-    location_type: 0)
+  location_type: 0)
 
-    Location.create!(name: "Setagaya Park", address: "Ohara, Setagaya-ku, Tokyo",
-      location_type: 0, user_id: User.first)
+  Location.create!(name: "Setagaya Park", address: "Ohara, Setagaya-ku, Tokyo",
+  location_type: 0, user_id: User.first)
 
-      Location.create!(name: "Kanda Recreation Building", address: "Kanda Ogawamachi, Chiyoda-ku, Tokyo",
-        location_type: 0, user_id: User.last)
+  Location.create!(name: "Kanda Recreation Building", address: "Kanda Ogawamachi, Chiyoda-ku, Tokyo",
+  location_type: 0, user_id: User.last)
 
-        # Creating Location for NGO
+  # Creating Location for NGO
 
-        redcross = Location.create!(name: "Japanese Red Cross Society", address: "Shiba Daimon, Minato-ku, Tokyo",
-          latitude: 40, longitude: 110, location_type: 1)
+redcross = Location.create!(name: "Japanese Red Cross Society", address: "Shiba Daimon, Minato-ku, Tokyo",
+  latitude: 40, longitude: 110, location_type: 1)
 
-          10.times do
-            user = User.new(email:Faker::Internet.email, password: 000000)
-            user.save
-            # location = Location.where
-            # checkin.location = Checkin.where(location_id: 1104)
-            # checkin.user = user
-            checkin = Checkin.new(user_id: user.id, location_id: redcross.id)
-            checkin.save
-          end
+  yml_file = YAML::load_file('shelters.yml')
+  yml_file.each do |row|
+    Location.create(name: row["name"], address: row["address"],
+      latitude: row["latitude"], longitude: row["longitude"], location_type: 2)
+  end
 
-          # Creating checkin for 目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU
-          150.times do
-            user = User.new(email:Faker::Internet.email, password: 000000)
-            user.save
-            # location = Location.where
-            # checkin.location = Checkin.where(location_id: 1104)
-            # checkin.user = user
-            checkin = Checkin.new(user_id: user.id, location_id: Location.where(name:"目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU"))
-            checkin.save
-          end
+  # New checkin 目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU
+  1556.times do
+    user = User.create(email:Faker::Internet.email, password: "newrandompassword")
+      location = Location.where(name:"目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU").first
+      user.checkin = Checkin.new(user: user, location: location)
+      user.save
+  end
+  puts "NEW ONE #{User.count} users has been created"
 
+  # 目黒区立田道小学校 MEGUROKU TATSUTA MICHI SHOUGAKKOU
+    256.times do
+    user = User.create(email:Faker::Internet.email, password: "newrandompassword")
+      location = Location.where(name:"目黒区立田道小学校 MEGUROKU TATSUTA MICHI SHOUGAKKOU").first
+      user.checkin = Checkin.new(user: user, location: location)
+      user.save
+  end
 
+  # 目黒区立第三中学校 MEGUROKU RITSU DAISAN CHUUGAKKOU
+    1754.times do
+    user = User.create(email:Faker::Internet.email, password: "newrandompassword")
+      location = Location.where(name:"目黒区立第三中学校 MEGUROKU RITSU DAISAN CHUUGAKKOU").first
+      user.checkin = Checkin.new(user: user, location: location)
+      user.save
+  end
 
-          # Creating contributions
+    # 特別養護老人ホーム中目黒 TOKUBETSU YOUGO ROUJIN HOME NAKAMEGURO
+    469.times do
+    user = User.create(email:Faker::Internet.email, password: "newrandompassword")
+      location = Location.where(name:"特別養護老人ホーム中目黒 TOKUBETSU YOUGO ROUJIN HOME NAKAMEGURO").first
+      user.checkin = Checkin.new(user: user, location: location)
+      user.save
+  end
 
-          10.times do
+      # 品川区立第四日野小学校 SHINAGAWAKU RITSU DAIYOKKA NO SHOUGAKKOU
+    780.times do
+    user = User.create(email:Faker::Internet.email, password: "newrandompassword")
+      location = Location.where(name:"品川区立第四日野小学校 SHINAGAWAKU RITSU DAIYOKKA NO SHOUGAKKOU").first
+      user.checkin = Checkin.new(user: user, location: location)
+      user.save
+  end
+
+# Creating contributions
+10.times do
   food = Contribution.new(supply_type: 1, description: "I have 20 packs of instant noodles
     in my house that I would like to give away for free", quantity: 20)
     food.user = User.all.sample
@@ -107,10 +130,10 @@ Location.create!(name: "Shibuya Building", address: "Hiroo 1-chome, Shibuya-ku, 
     food.save
   end
 
-  food = Contribution.new(supply_type: 2, description: "I have 50 packs of water to give away.", quantity: 20)
-  food.user = User.all.sample
-  food.location = Location.all.sample
-  food.save
+  water = Contribution.new(supply_type: 2, description: "We have 500 litres of water", quantity: 500)
+  water.user = User.all.sample
+  water.location = Location.all.sample
+  water.save
 
 # food = Contribution.new(supply_type: 0, description: "I have some first aid to share.", quantity: 100)
 # food.user = User.all.sample
