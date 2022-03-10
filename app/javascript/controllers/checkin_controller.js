@@ -1,8 +1,8 @@
-import { Controller } from "@hotwired/stimulus"
-import { csrfToken } from "@rails/ujs"
+import { Controller } from "@hotwired/stimulus";
+import { csrfToken } from "@rails/ujs";
 
 export default class extends Controller {
-  static targets = ["count", "form"]
+  static targets = ["count", "form"];
 
   connect() {
     // console.log(this.countTarget)
@@ -10,16 +10,19 @@ export default class extends Controller {
   }
 
   count(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     fetch(this.formTarget.action, {
       method: "POST",
-      headers: { "Accept": "application/json", "X-CSRF-Token": csrfToken() },
-      body: new FormData(this.formTarget)
+      headers: { Accept: "application/json", "X-CSRF-Token": csrfToken() },
+      body: new FormData(this.formTarget),
     })
-      .then(response => response.json())
+      .then((response) => response.json())
       .then((data) => {
-        console.log(data)
-      })
+        console.log(data);
+        var c = console.log(data);
+      });
   }
 }
+
+console.log(c);
