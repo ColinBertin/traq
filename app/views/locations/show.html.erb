@@ -26,7 +26,7 @@
       </div>
     <% end %>
     <div class="d-flex justify-content-center mt-2" data-controller="checkin">
-      <%= link_to 'Contribute', new_location_contribution_path(@location), class:"btn btn-flat"%>
+      <a class="btn btn-flat" href="#map-anchor">See Route</a>
       <%# <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#btncheckin"> %>
       <%# Check-in %>
       <%# </button> %>
@@ -41,7 +41,7 @@
     <p class="distance"></p>
     <p class="card-user-count" data-checkin-target="count"><i class="fas fa-male"></i> - <%= @location.checkins.count %></p>
   </div>
-  <div style="width: 100%; height: 500px; border-radius: 8px; box-shadow: 2px 2px 10px #d0e1ff;"
+  <div id="map-anchor" style="width: 100%; height: 500px; border-radius: 8px; box-shadow: 2px 2px 10px #d0e1ff;"
     data-mapbox-target="map">
   </div>
   <div class="card-no-hover mt-4 p-4 mb-4">
