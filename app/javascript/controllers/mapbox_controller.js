@@ -15,8 +15,6 @@ export default class extends Controller {
   static targets = ["location", "map"];
 
   async connect() {
-    console.log(this.userIdValue)
-    console.log(this.locationUserIdValue)
     const geo_location = await this.#getUserLocation()
     const user_location = geo_location.coords
     mapboxgl.accessToken = this.apiKeyValue
