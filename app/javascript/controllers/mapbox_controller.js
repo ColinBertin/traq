@@ -15,13 +15,18 @@ export default class extends Controller {
   static targets = ["location", "map"];
 
   async connect() {
+    console.log(this.userIdValue)
+    console.log(this.locationUserIdValue)
     const geo_location = await this.#getUserLocation()
-    const user_location = geo_location.coords
+    const user_location = {
+      longitude: 139.708205,
+      latitude: 35.633868
+    }
     mapboxgl.accessToken = this.apiKeyValue
     this.map = new mapboxgl.Map({
       container: this.mapTarget,
       style: "mapbox://styles/mapbox/streets-v10?optimize=true",
-      center: [user_location.longitude, user_location.latitude]
+      center: [leWagonLng, leWagonLat]
     });
 
     this.#addMarkersToMap(user_location);
@@ -37,6 +42,7 @@ export default class extends Controller {
 
   async #addMarkersToMap(user_location) {
     // Create a HTML element for your custom marker for the user
+    console.log(this.userIdValue, this.locationUserIdValue)
     if (this.#showPathName() && this.#userOwnLocation(this.userIdValue, this.locationUserIdValue)) {
       var userCustomMarker = document.createElement("div")
       userCustomMarker.className = "marker"
@@ -50,7 +56,9 @@ export default class extends Controller {
         // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
         .setLngLat([user_location.longitude, user_location.latitude])
         .addTo(this.map);
-    } else {
+    }
+
+    if (!this.#showPathName()) {
       var userCustomMarker = document.createElement("div")
       userCustomMarker.className = "marker"
       userCustomMarker.style.backgroundImage = `url('${JSON.parse(this.userAssetValue).image_url}')`
@@ -88,6 +96,14 @@ export default class extends Controller {
 
       if (this.#showPathName() && this.#userOwnLocation(this.userIdValue, this.locationUserIdValue)) {
       const distance = userMarker
+        .getLngLat()
+        .distanceTo(locationMarker.getLngLat());
+      this.#formatAndInsertDistance(distance, locationCard);
+        const routesCoords = await this.#fetchRoutes(marker, user_location);
+        this.#addRoutes(routesCoords);
+      }
+      if(!this.#showPathName()) {
+        const distance = userMarker
         .getLngLat()
         .distanceTo(locationMarker.getLngLat());
       this.#formatAndInsertDistance(distance, locationCard);
@@ -169,21 +185,6 @@ export default class extends Controller {
       navigator.geolocation.getCurrentPosition(res, rej);
     });
   }
-
-  // #createUserMarker(user_location) {
-  //   var userCustomMarker = document.createElement("div")
-  //     userCustomMarker.className = "marker"
-  //     userCustomMarker.style.backgroundImage = `url('${JSON.parse(this.userAssetValue).image_url}')`
-  //     userCustomMarker.style.backgroundSize = "contain"
-  //     userCustomMarker.style.backgroundRepeat = "no-repeat"
-  //     userCustomMarker.style.width = "25px"
-  //     userCustomMarker.style.height = "50px"
-
-  //     var userMarker = new mapboxgl.Marker(userCustomMarker)
-  //       // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
-  //       .setLngLat([user_location.longitude, user_location.latitude])
-  //       .addTo(this.map);
-  // }
 
   #userOwnLocation(user, location) {
     return user != location
