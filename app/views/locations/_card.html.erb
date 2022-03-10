@@ -1,23 +1,17 @@
 <div data-mapbox-target="location" data-location-id="<%= location.id %>" class="card-blue-shadow mb-4 p-4">
   <small><%= location.location_type%></small>
+  <%= render "locations/location_kind", location: location %>
   <h2><%= location.name %></h2>
   <p><%= location.address%></p>
   <% if location.contributions.present?%>
-    <div class="contri-card p-2">
-      <small class="text-success">Supplies Available</small>
-      <% location.contributions.each do |contribution| %>
-        <div class="contri-card-mint p-1 mt-1">
-          <div class="d-flex flex-row">
-            <small class="text-success"><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %></strong></small>
-            &nbsp
-            <small class="text-success"><strong><%= contribution.supply_type %></strong></small>
-          </div>
-          <p><%= contribution.description %></p>
-        </div>
-        <%= link_to '', location_path(location), class: 'card-link' %>
-        <p class="distance"></p>
-      <%end%>
-    </div>
+    <small class="text-success">Supplies Available</small>
+    <% location.contributions.each do |contribution| %>
+      <div class="contri-card-mint p-2 mt-2">
+        <%= render "locations/supplies_kind", contribution: contribution %>
+      </div>
+      <%= link_to '', location_path(location), class: 'card-link' %>
+      <p class="distance"></p>
+    <%end%>
   <%else%>
     <div class="contri-card-grey p-1">
       <small class="text-muted">No Supplies Available</small>
@@ -25,7 +19,7 @@
     <%= link_to '', location_path(location), class: 'card-link' %>
     <p class="distance"></p>
   <% end %>
-<% if location.location_type == "shelter" %>
+  <% if location.location_type == "shelter" %>
     <p class="card-user-count"><i class="fas fa-male"></i> - <%= location.checkins.count %></p>
-<% end %>
+  <% end %>
 </div>

@@ -5,6 +5,14 @@ class Contribution < ApplicationRecord
   validates :description, presence: true
   acts_as_taggable_on :tags
 
+  SUPPLY_ICON = {
+    'water' => 'fas fa-tint',
+    'medicine' => 'fas fa-tablets',
+    'food' => 'fas fa-cookie-bite',
+    'sanitation' => 'fas fa-pump-medical',
+    'others' =>  'fas fa-box-open'
+  }
+
   enum supply_type:
   {
     water: 0,

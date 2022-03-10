@@ -1,7 +1,4 @@
-<% if location.location_type == 2%>
-<i class="fas fa-running">
-<% elsif location.location_type == 1%>
-<i class="fas fa-hand-holding-heart"></i>
-<% else %>
-<i class="fas fa-hand-holding"></i>
-<% end %>
+<%if location.location_type == 'shelter'%>
+    <p class="text-success"><i class="fas fa-shower">&nbsp</i><i class="fas fa-bed"></i>&nbsp<i class="fas fa-band-aid"></i></p>
+  <%else%>
+  <%end%>

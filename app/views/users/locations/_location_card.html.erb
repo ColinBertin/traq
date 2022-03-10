@@ -5,8 +5,8 @@
     <small class="text-success">Your Contribution</small>
     <% location.contributions.each do |contribution| %>
       <div class="contri-card-mint p-1">
-        <small class="text-success"><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %>   <%= contribution.supply_type %></strong></small>
-        <p></p>
+        <small class="text-uppercase"><strong><%= contribution.supply_type %>, </strong></small>
+        <small class="text-uppercase"><strong><%= contribution.quantity ? contribution.quantity : 'Unknown' %></strong></small>
         <p><%= contribution.description%></p>
       </div>
     </div>
