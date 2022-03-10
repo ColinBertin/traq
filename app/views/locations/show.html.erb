@@ -38,12 +38,21 @@
           <% end %>
         </div>
         <div>
-          <% if @location.user_id == current_user.id %>
+          <% if @location.location_type == "shelter" %>
             <%= simple_form_for([@location, @comment], remote: true) do |f| %>
               <%= f.input :content, input_html: {class:"comment-box"}  %>
               <div class="text-center">
                 <%= f.button :submit, "Add Notice", class:"btn btn-flat" %>
               </div>
+            <% end %>
+          <% else %>
+            <% if @location.user_id == current_user.id %>
+              <%= simple_form_for([@location, @comment], remote: true) do |f| %>
+                <%= f.input :content, input_html: {class:"comment-box"}  %>
+                <div class="text-center">
+                  <%= f.button :submit, "Add Notice", class:"btn btn-flat" %>
+                </div>
+              <% end %>
             <% end %>
           <% end %>
         </div>
