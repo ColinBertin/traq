@@ -35,7 +35,9 @@ class LocationsController < ApplicationController
         lat: location.latitude,
         lng: location.longitude,
         id: location.id,
-        image_url: helpers.asset_url(marker_icon(location.location_type))
+        image_url: helpers.asset_url(marker_icon(location.location_type)),
+        location_user: location.user_id,
+        user: current_user.id
       }
     end
     @checkin = Checkin.find_by(user: current_user, location: @location) || Checkin.new
