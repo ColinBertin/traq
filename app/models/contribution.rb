@@ -15,11 +15,11 @@ class Contribution < ApplicationRecord
 
   enum supply_type:
   {
-    water: 0,
-    food: 1,
-    sanitation: 2,
-    medicine: 3,
-    others: 4
+    Water: 0,
+    Food: 1,
+    Sanitation: 2,
+    Medicine: 3,
+    Others: 4
   }
 
   include PgSearch::Model
