@@ -9,7 +9,7 @@
         <%= f.input :address %>
         <%= f.input :location_type, collection: ['ngo'], include_blank: false %>
         <%= f.simple_fields_for :contributions do |g| %>
-          <%= g.input :supply_type, collection: ["water", "food", "medicine", "sanitation", "others"],input_html: {class:"comment-box"}, include_blank: false %>
+          <%= g.input :supply_type, collection: ["Water", "Food", "Medicine", "Sanitation", "Others"],input_html: {class:"comment-box"}, include_blank: false %>
           <%#= g.input :supply_type, input_html: {class:"comment-box"} %>
           <%= g.input :description, input_html: {class:"comment-box"} %>
           <%= g.input :quantity, input_html: {class:"comment-box"} %>
