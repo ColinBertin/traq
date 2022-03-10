@@ -170,20 +170,20 @@ export default class extends Controller {
     });
   }
 
-  #createUserMarker(user_location) {
-    var userCustomMarker = document.createElement("div")
-      userCustomMarker.className = "marker"
-      userCustomMarker.style.backgroundImage = `url('${JSON.parse(this.userAssetValue).image_url}')`
-      userCustomMarker.style.backgroundSize = "contain"
-      userCustomMarker.style.backgroundRepeat = "no-repeat"
-      userCustomMarker.style.width = "25px"
-      userCustomMarker.style.height = "50px"
+  // #createUserMarker(user_location) {
+  //   var userCustomMarker = document.createElement("div")
+  //     userCustomMarker.className = "marker"
+  //     userCustomMarker.style.backgroundImage = `url('${JSON.parse(this.userAssetValue).image_url}')`
+  //     userCustomMarker.style.backgroundSize = "contain"
+  //     userCustomMarker.style.backgroundRepeat = "no-repeat"
+  //     userCustomMarker.style.width = "25px"
+  //     userCustomMarker.style.height = "50px"
 
-      var userMarker = new mapboxgl.Marker(userCustomMarker)
-        // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
-        .setLngLat([user_location.longitude, user_location.latitude])
-        .addTo(this.map);
-  }
+  //     var userMarker = new mapboxgl.Marker(userCustomMarker)
+  //       // [ localStorage.getItem("user_longitude"), localStorage.getItem("user_latitude") ]
+  //       .setLngLat([user_location.longitude, user_location.latitude])
+  //       .addTo(this.map);
+  // }
 
   #userOwnLocation(user, location) {
     return user != location
