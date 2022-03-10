@@ -1,6 +1,6 @@
 <div class="container">
+  <h1 class="text-success">All Contributions</h1>
   <% @contributions.each do |contribution| %>
     <%= render "users/contributions/contribution_card", contribution: contribution %>
   <% end %>
 </div>
-
