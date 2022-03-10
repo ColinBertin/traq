@@ -19,8 +19,8 @@ export default class extends Controller {
     mapboxgl.accessToken = this.apiKeyValue
     this.map = new mapboxgl.Map({
       container: this.mapTarget,
-      style: "mapbox://styles/mapbox/streets-v10",
-      center: [user_location.longitude, user_location.latitude],
+      style: "mapbox://styles/mapbox/streets-v10?optimize=true",
+      center: [user_location.longitude, user_location.latitude]
     });
 
     this.#addMarkersToMap(user_location);
