@@ -3,7 +3,7 @@ class LocationsController < ApplicationController
 
   def index
     @coords = request.location
-    @locations = policy_scope(Location).includes(:contributions)
+    @locations = policy_scope(Location).eager_load([:contributions, :checkins])
     @locations = @locations.where(location_type: params[:location_type]) if params[:location_type]
     @locations = @locations.near([35.633868, 139.708205], 0.8)
     params[:search].present? && @locations = Location.global_search(params[:search]["search"])
