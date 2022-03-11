@@ -24,10 +24,10 @@
       <% end %>
     </div>
     <div class="d-flex justify-content-center mt-2" data-controller="checkin">
-      <% if @location.user_id != current_user.id %>
-        <a class="btn btn-flat" href="#map-anchor" remote="true">See Route</a>
-      <% end %>
       <% if user_signed_in? %>
+        <% if @location.user_id != current_user.id %>
+          <a class="btn btn-flat" href="#map-anchor" remote="true">See Route</a>
+        <% end %>
         <% if @location.location_type == "shelter"%>
           <%= render "locations/checkin_btn", location: @location %>
           <%= render 'checkin_modal' %>
@@ -43,14 +43,7 @@
           <% end %>
         </div>
         <div>
-          <% if @location.location_type == "shelter" %>
-            <%= simple_form_for([@location, @comment], remote: true) do |f| %>
-              <%= f.input :content, input_html: {class:"comment-box"}  %>
-              <div class="text-center">
-                <%= f.button :submit, "Add Notice", class:"btn btn-flat" %>
-              </div>
-            <% end %>
-          <% else %>
+          <% if user_signed_in? %>
             <% if @location.user_id == current_user.id %>
               <%= simple_form_for([@location, @comment], remote: true) do |f| %>
                 <%= f.input :content, input_html: {class:"comment-box"}  %>
