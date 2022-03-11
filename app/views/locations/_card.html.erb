@@ -5,6 +5,7 @@
   <% if location.tel.present? %>
     <small><i class="fas fa-phone-alt"></i> - <strong><%= location.tel %></strong></small>
   <% end %>
+  <br>
   <% if location.contributions.present?%>
     <small class="text-success">Supplies Available</small>
     <% location.contributions.each do |contribution| %>
