@@ -2,7 +2,6 @@
   <small><%= location.location_type%></small>
   <%= render "locations/location_kind", location: location %>
   <h2><%= location.name %></h2>
-  <p><%= location.address%></p>
   <% if location.contributions.present?%>
     <small class="text-success">Supplies Available</small>
     <% location.contributions.each do |contribution| %>
