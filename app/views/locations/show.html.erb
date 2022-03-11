@@ -9,8 +9,10 @@
   data-mapbox-target="location"
   data-location-id="<%= @location.id %>">
     <h1 class="text-shelter"><%= @location.location_type %></h1>
+    <%= render "locations/location_kind", location: @location %>
     <h1 class="card-text-title text-primary"><%= @location.name %></h1>
-    <div class="contri-card contributions p-3">
+    <small><strong><%= @location.tel %></strong></small>
+    <% if @location.contributions.present?%>
       <p class="mint-green-text">SUPPLIES AVAILABLE</p>
       <% @location_contributions.each do |contribution| %>
         <div class="contri-card-mint mt-2 p-2">
@@ -22,7 +24,11 @@
           <p><%= contribution.description %></p>
         </div>
       <% end %>
-    </div>
+    <%else%>
+      <div class="contri-card-grey p-1">
+        <small class="text-muted">NO SUPPLIES AVAILABLE</small>
+      </div>
+    <% end %>
     <div class="d-flex justify-content-center mt-2" data-controller="checkin">
       <% if user_signed_in? %>
         <% if @location.user_id != current_user.id %>
@@ -56,8 +62,11 @@
         </div>
       </div>
     </div>
+
     <% if user_signed_in? && @location.user == current_user %>
-      <%= link_to 'Edit your location', edit_location_path(@location)  %>
+      <%= link_to edit_location_path(@location), class: "text-decoration-none"  do %>
+        <i class="fas fa-edit"></i>
+      <% end %>
     <% end %>
     <p class="distance"></p>
     <% if @location.location_type == "shelter" %>
