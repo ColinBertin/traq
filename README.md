@@ -37,11 +37,11 @@ As a user who needs help during an emergency, you may click the buttons on the n
 * <a href= "https://www.ruby-lang.org/en/">Ruby</a> 
 * <a href="https://guides.rubyonrails.org/">Rails 6</a> 
 * <a href="https://sass-lang.com/documentation">SCSS</a>
-* Heroku  <a href="https://www.heroku.com/">Heroku</a> 
+* <a href="https://www.heroku.com/">Heroku</a> 
 * <a href="https://html.com/">HTML</a> 
 * <a href="https://www.mapbox.com/">Mapbox</a> 
 
-## Time spent to create
+## Time spent 
 9 days
 
 ## Authors
