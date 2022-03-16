@@ -4,12 +4,13 @@ TraQ is an app designed to simplify emergency tracking and response. It will tak
 
 ## Getting Started
 
-To use TraQ, simply go to https://www.traq.info
+Home: https://www.traq.info
 Then, when prompted press 'allow' to share your location.
 
 ### Prerequisites
 
 Bundle install
+`install gems`
 
 ### How to use
 
