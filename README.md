@@ -13,13 +13,16 @@ Install gems
 `Bundle install`
 
 Install JS Packages
-`Bundle install`
+`Yarn install`
 
 ENV Variables
-Create `.env` file
+
+Create `.env` files
+
 `touch .env`
 
-Inside .env, set these variables.
+Inside .env, set these variables:
+
 `MAPBOX_API_KEY=your_own_mapbox_api_key`
 
 DB Setup
