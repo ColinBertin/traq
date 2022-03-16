@@ -7,10 +7,25 @@ TraQ is an app designed to simplify emergency tracking and response. It will tak
 Home: https://www.traq.info
 Then, when prompted press 'allow' to share your location.
 
-### Prerequisites
+### Setup
 
-Bundle install
-`install gems`
+Install gems
+`Bundle install`
+
+Install JS Packages
+`Bundle install`
+
+ENV Variables
+Create `.env` file
+`touch .env`
+
+Inside .env, set these variables.
+`MAPBOX_API_KEY=your_own_mapbox_api_key`
+
+DB Setup
+`rails db:create
+rails db:migrate
+rails db:seed`
 
 ### How to use
 
@@ -19,23 +34,22 @@ As a user who needs help during an emergency, you may click the buttons on the n
 
 ## Built with
 
-* Ruby - The programming language used
-* SQL - Database
-* Rails Active Record - Web structure
-* Heroku - Web hosting
-* SCSS - Front End
-* Mapbox API
-* Admin gem
+* <a href= "https://www.ruby-lang.org/en/">Ruby</a> 
+* <a href="https://guides.rubyonrails.org/">Rails 6</a> 
+* <a href="https://sass-lang.com/documentation">SCSS</a>
+* Heroku  <a href="https://www.heroku.com/">Heroku</a> 
+* <a href="https://html.com/">HTML</a> 
+* <a href="https://www.mapbox.com/">Mapbox</a> 
 
 ## Time spent to create
 9 days
 
 ## Authors
 
-* **Colin Bertin - lead developer & backend (https://github.com/ColinBertin)
-* **Takeshi Shinohara - front end developer (https://github.com/madebytak)
-* **Duangrudee Methakullachat - backend developer (https://github.com/Sleepycatfuji)
-## License
+* **<a href="https://github.com/ColinBertin">Colin Bertin</a> 
+* **<a href="https://github.com/madebytak">Takeshi Shinohara</a> 
+* **<a href="https://github.com/Sleepycatfuji"> Duangrudee Methakullachat</a> 
+
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
@@ -43,4 +57,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Thank you so much to Colin and Takeshi!
 * Thank you all the teachers and TAs at LeWagon for your advice and guidance during the two weeks. 
-* We could never have done it without you! 
+* We could never have done it without you!!
