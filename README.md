@@ -14,23 +14,23 @@ Then, when prompted press 'allow' to share your location.
 
 ### Setup
 
-Install gems
+Install gems <br>
 `Bundle install`
 
 Install JS Packages
 `Yarn install`
 
-ENV Variables
+ENV Variables<br>
 
-Create `.env` files
+Create `.env` files<br>
 
 `touch .env`
 
-Inside .env, set these variables:
+Inside .env, set these variables: <br><br>
 
 `MAPBOX_API_KEY=your_own_mapbox_api_key`
 
-DB Setup
+DB Setup<br>
 `rails db:create
 rails db:migrate
 rails db:seed`
