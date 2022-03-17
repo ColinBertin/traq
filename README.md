@@ -2,10 +2,15 @@
 
 TraQ is an app designed to simplify emergency tracking and response. It will take your location at time of login and direct you to the nearest shelter or NGO deistribution site.
 
+<img src="https://github.com/ColinBertin/traq/blob/master/app/assets/images/TraQ.jpg" width="450" height="480">
+
 ## Getting Started
 
 Home: https://www.traq.info
 Then, when prompted press 'allow' to share your location.
+
+
+<img src="app/assets/images/IMG_8426_iphone13promaxsierrablue_portrait.png" width="300" height="480"> <img src="app/assets/images/IMG_8427_iphone13promaxsierrablue_portrait.png" width="300" height="480"> <img src="app/assets/images/IMG_8428_iphone13promaxsierrablue_portrait.png" width="300" height="480"> <img src="app/assets/images/IMG_8429_iphone13promaxsierrablue_portrait.png" width="300" height="480"> <img src="app/assets/images/IMG_8430_iphone13promaxsierrablue_portrait.png" width="300" height="480"> <img src="app/assets/images/IMG_8431_iphone13promaxsierrablue_portrait.png" width="300" height="480">
 
 ### Setup
 
@@ -55,6 +60,10 @@ As a user who needs help during an emergency, you may click the buttons on the n
 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Contributions
+We welcome any additional suggestions for this project.
+Please feel free to reach out to any of us directly if you would like to collaborate.
 
 ## Acknowledgments
 
