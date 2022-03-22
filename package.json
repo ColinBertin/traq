@@ -2,6 +2,7 @@
   "name": "traq",
   "private": true,
   "dependencies": {
+    "@mapbox/mapbox-gl-directions": "^4.1.0",
     "@mapbox/mapbox-gl-geocoder": "^4.7.4",
     "@popperjs/core": "^2.11.2",
     "@rails/actioncable": "^6.0.0",
