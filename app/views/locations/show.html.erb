@@ -4,7 +4,7 @@
   data-mapbox-user-asset-value="<%= @user_asset.to_json %>"
   data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"
   data-mapbox-user-id-value="<%= current_user&.id %>"
-  data-mapbox-location-user-id-value="<%= @location.user_id %>">
+  data-mapbox-location-user-id-value="<%= @location.user_id.present? ? @location.user_id : 00000000 %>">
   <div class="card-no-hover p-4 mb-4"
   data-mapbox-target="location"
   data-location-id="<%= @location.id %>">
