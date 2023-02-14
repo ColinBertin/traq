@@ -51,7 +51,7 @@ puts "There are now #{Location.count} shelters and NGO Points"
 puts 'Finished making shelters and NGO Points'
 
 # New checkin 目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU
-1556.times do
+56.times do
   user = User.create(email:Faker::Internet.email, password: "newrandompassword")
     location = Location.where(name:"目黒区立下目黒小学校 MEGUROKU RITSU SHIMOMEGURO SHOUGAKKOU").first
     user.checkin = Checkin.new(user: user, location: location)
@@ -60,7 +60,7 @@ end
 puts "NEW ONE #{User.count} users has been created"
 
 # 目黒区立田道小学校 MEGUROKU TATSUTA MICHI SHOUGAKKOU
-  256.times do
+  26.times do
   user = User.create(email:Faker::Internet.email, password: "newrandompassword")
     location = Location.where(name:"目黒区立田道小学校 MEGUROKU TATSUTA MICHI SHOUGAKKOU").first
     user.checkin = Checkin.new(user: user, location: location)
@@ -68,7 +68,7 @@ puts "NEW ONE #{User.count} users has been created"
 end
 
 # 目黒区立第三中学校 MEGUROKU RITSU DAISAN CHUUGAKKOU
-  1754.times do
+  14.times do
   user = User.create(email:Faker::Internet.email, password: "newrandompassword")
     location = Location.where(name:"目黒区立第三中学校 MEGUROKU RITSU DAISAN CHUUGAKKOU").first
     user.checkin = Checkin.new(user: user, location: location)
@@ -76,7 +76,7 @@ end
 end
 
   # 特別養護老人ホーム中目黒 TOKUBETSU YOUGO ROUJIN HOME NAKAMEGURO
-  469.times do
+  69.times do
   user = User.create(email:Faker::Internet.email, password: "newrandompassword")
     location = Location.where(name:"特別養護老人ホーム中目黒 TOKUBETSU YOUGO ROUJIN HOME NAKAMEGURO").first
     user.checkin = Checkin.new(user: user, location: location)
@@ -84,7 +84,7 @@ end
 end
 
     # 品川区立第四日野小学校 SHINAGAWAKU RITSU DAIYOKKA NO SHOUGAKKOU
-  780.times do
+  70.times do
   user = User.create(email:Faker::Internet.email, password: "newrandompassword")
     location = Location.where(name:"品川区立第四日野小学校 SHINAGAWAKU RITSU DAIYOKKA NO SHOUGAKKOU").first
     user.checkin = Checkin.new(user: user, location: location)
